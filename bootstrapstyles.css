@@ -1,0 +1,148 @@
+:root {
+  --primary-green: #275d38;
+  --lime: #c5e86c;
+  --gray: #efefef;
+}
+
+* {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+section.banner {
+  background-color: var(--primary-green);
+  position: relative;
+}
+
+section.banner::before {
+  content: '';
+  top: -15px;
+  left: -100px;
+  width: 251px;
+  height: 126px;
+  transform: rotateX(180deg);
+  position: absolute;
+  background: url('/images/CETBanner-ShapesLEFT.svg') no-repeat;
+}
+
+section.banner::after {
+  content: '';
+  bottom: 0;
+  right: -25px;
+  width: 181px;
+  height: 151px;
+  position: absolute;
+  background: url('/images/CETBanner-ShapesRIGHT.svg') no-repeat;
+}
+
+section.degreeBanner {
+  background-color: var(--gray);
+  position: relative;
+  margin: 5rem 0;
+  z-index: 0;
+}
+
+section.degreeBanner div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.degreeBanner section#degreeText {
+    width: 60%;
+    z-index: 3;
+}
+
+section.degreeBanner div section#degreeText i {
+  display: block;
+  color: var(--primary-green);
+  font-size: 48px;
+  margin-bottom: 0.9rem;
+}
+
+section.degreeBanner div section#degreeText h2 {
+  display: inline;
+  gap: 1rem;
+  color: var(--primary-green);
+  font-family: 'Rajdhani', sans-serif;
+}
+
+section.degreeBanner div section#degreeText h4 {
+  font-size: 20px;
+  margin-top: 0.6rem;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+section.degreeBanner div section#degreeText h4 strong {
+  font-size: 20px;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+section.degreeBanner div section#degreeText button {
+  padding: 0.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  color: var(--primary-green);
+  border-color: var(--primary-green);
+}
+
+section.degreeBanner div section#degreeText button i {
+  display: inline;
+  font-size: 16px;
+  margin-left: 1rem;
+}
+
+section.degreeBanner div section#numbers {
+    width: 35%;
+    z-index: 5;
+}
+
+section.degreeBanner div section#numbers article {
+    display: grid;
+    grid-template-columns: 1fr 250px 1fr;
+    align-items: center;
+    gap: 2rem;
+    color: var(--primary-green);
+}
+
+section.degreeBanner div section#numbers article h1 {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 48px;
+}
+
+section.degreeBanner div section#numbers article h4 {
+    text-align: left;
+    font-family: 'Rajdhani', sans-serif;
+}
+
+section.degreeBanner::before {
+  content: '';
+  top: -15px;
+  left: 0px;
+  width: 231px;
+  z-index:1;
+  height: 407px;
+  position: absolute;
+  background: url('/images/DegreeMatch-ShapesRIGHT.svg') no-repeat;
+}
+
+section.degreeBanner::after {
+  content: '';
+  bottom: 0;
+  right: -225px;
+  width: 375px;
+  z-index: 2;
+  height: 375px;
+  position: absolute;
+  background: url('/images/DegreeMatch-ShapesLEFT.svg') no-repeat;
+}
