@@ -57,7 +57,7 @@ For questions or media query training contact Web Development Services.
 }
 
 /* DEGREE CARDS */
-.degree-card {
+/* .degree-card {
   background-color: #fff;
   height: 100%;
   display: -webkit-flex;
@@ -75,8 +75,8 @@ For questions or media query training contact Web Development Services.
   margin: 0;
   margin-inline-start: 20px;
   margin-inline-end: 20px;
-  padding-block-start: 30px;
-  padding-block-end: 13px;
+  padding-block-start: 20px;
+  padding-block-end: 10px;
   border-bottom: 4px solid #EAEAEA;
   font-family: "Rajdhani", Arial, sans-serif;
   font-size: 20px;
@@ -91,7 +91,6 @@ For questions or media query training contact Web Development Services.
 }
 .degree-card .degree-content {
   padding: 20px;
-  padding-block-start: 10px;
   grid-area: content;
   font-size: 14px;
 }
@@ -103,6 +102,48 @@ For questions or media query training contact Web Development Services.
   font-family: "Rajdhani", Arial, sans-serif;
   font-weight: bold;
   color: #275d38;
+} */
+.degree-card {
+  background-color: #fff;
+  min-height: 200px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  margin-block-start: 20px;
+}
+.degree-card .degree-name {
+  margin: 0;
+  padding-block-end: 10px;
+  border-bottom: 4px solid #EAEAEA;
+  font-family: "Rajdhani", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.degree-card .degree-img {
+  order: -1;
+  height: 100%;
+  grid-area: img;
+}
+.degree-card .degree-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  grid-area: content;
+}
+.degree-card .degree-content p {
+  margin-bottom: 10px;
+}
+.degree-card .degree-credits {
+  color: #275d38;
+  padding: 0.5rem 0 0 0;
 }
 
 /* STUDENT TESTIMONIAL */
@@ -115,15 +156,23 @@ For questions or media query training contact Web Development Services.
 @media only screen and (min-width: 768px) {
   .degree-card {
     display: grid;
-    grid-template-areas:
-      "img title"
-      "img content";
-    grid-template-columns: 253px 1fr;
+    grid-template-areas: "img content";
   }
   .degree-card .degree-img {
     object-fit: cover;
-    max-width: 253px;
     height: 100%;
+  }
+  .short-card {
+    grid-template-columns: 200px 1fr;
+  }
+  .short-card .degree-img {
+    max-width: 200px;
+  }
+  .large-card {
+    grid-template-columns: 250px 1fr;
+  }
+  .large-card .degree-img {
+    max-width: 250px;
   }
 }
 
