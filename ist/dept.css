@@ -8,20 +8,23 @@ For questions or media query training contact Web Development Services.
 /* ====================== Mobile and Up ========================== */
 
 /* SPECIFIC STYLING FOR HELPFUL LINKS LISTS */
-.custom-list-bmed1 {
+.links-list-1 {
   background-color: #f2f9e9;
 }
-.custom-list-bmed1 li {
+.links-list-1 li {
   border-bottom: 1px solid #a1d263;
 }
+.links-list-1 li span {
+  color: #78BE20;
+}
 
-.custom-list-bmed2 {
+.links-list-2 {
   background-color: #edf6ec;
 }
-.custom-list-bmed2 li {
+.links-list-2 li {
   border-bottom: 1px solid #81BE79;
 }
-.custom-list-bmed2 li span {
+.links-list-2 li span {
   color: #4ba23f;
 }
 
@@ -34,55 +37,73 @@ For questions or media query training contact Web Development Services.
 }
 
 /* GENERAL STYLING FOR ALL HELPFUL LINKS LISTS */
-.custom-list {
+.links-list {
   list-style: none;
   padding: 15px;
   border-radius: 5px;
   letter-spacing: Ã‚Â 1px;
 }
-.custom-list li {
+.links-list li {
   margin: 0px;
   padding: 8px 0px;
 }
-.custom-list li:last-of-type {
+.links-list li:last-of-type {
   border: none;
 }
-.custom-list a {
+.links-list a {
   color: #000;
   font-size: 14px;
   display: block;
 }
 
-/* LARGE DEGREE CARD */
-.degree-large {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  margin: 15px;
-  display: flex;
-  flex-direction: column;
-  border-radius: 5px;
-}
-.degree-large img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px 5px 0 0;
-}
-.degree-large div {
+/* DEGREE CARDS */
+.degree-card {
   background-color: #fff;
-  padding: 15px;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 8px;
+  height: unset;
+  overflow: hidden;
+  position: relative;
+  margin-block-start: 20px;
 }
-.degree-large .degree-name {
-  font-weight: 700;
-  text-transform: uppercase;
-  border-bottom: 4px solid #efefef;
-  padding-bottom: 10px;
+.degree-card .degree-name {
+  margin: 0;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+  padding-block-start: 30px;
+  padding-block-end: 13px;
+  border-bottom: 4px solid #EAEAEA;
+  font-family: "Rajdhani", Arial, sans-serif;
   font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  grid-area: title;
 }
-.degree-large .credits-number {
+.degree-card .degree-img {
+  order: -1;
+  height: 100%;
+  grid-area: img;
+}
+.degree-card .degree-content {
+  padding: 20px;
+  padding-block-start: 10px;
+  grid-area: content;
+  font-size: 14px;
+}
+.degree-card .degree-credits {
   color: #275d38;
-  padding: 10px 0;
+  padding: 0.5rem 0 0 0;
 }
-
-/* SHORT DEGREE CARD */
+.degree-card .degree-button {
+  font-family: "Rajdhani", Arial, sans-serif;
+  font-weight: bold;
+  color: #275d38;
+}
 
 /* STUDENT TESTIMONIAL */
 
@@ -92,22 +113,25 @@ For questions or media query training contact Web Development Services.
 /*End mobile and up styles*/
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
-	.degree-large {
-    flex-direction: row;
+  .degree-card {
+    display: grid;
+    grid-template-areas:
+      "img title"
+      "img content";
+    grid-template-columns: 253px 1fr;
   }
-  .degree-large img {
-    width: 33%;
-    height: auto;
-    border-radius: 5px 0 0 5px;
+  .degree-card .degree-img {
+    object-fit: cover;
+    max-width: 253px;
+    height: 100%;
   }
-	
 }
 
 /*end media query*/
 /*End tablet and up styles*/
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
-	
+
 	
 }
 

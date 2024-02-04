@@ -9,6 +9,11 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 h1,
 h2,
 h3,
@@ -46,4 +51,9 @@ h5 {
 h6 {
     font-size: 12px;
     font-weight: 500;
+}
+
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
