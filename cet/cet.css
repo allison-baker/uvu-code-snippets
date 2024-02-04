@@ -4,26 +4,6 @@
   --gray: #efefef;
 }
 
-* {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Lato', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Rajdhani', sans-serif;
-}
-
 /* STATISTICS BANNER */
 
 section.banner {
@@ -183,7 +163,8 @@ section.application div article {
   border-right: 1px solid var(--lime);
 }
 
-section.application div article:first-child, section.application div article:last-child {
+section.application div article:first-child,
+section.application div article:last-child {
   border: none;
 }
 

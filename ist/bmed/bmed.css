@@ -1,0 +1,132 @@
+/* Department CSS Document */
+/*For mobile first adaptive design place styles for mobile and up in the mobile and up area.
+Place styles for tablet and up inside the media query in the tablet and up area.
+Place styles for desktop only inside the media query in the desktop only area.
+
+For questions or media query training contact Web Development Services.
+*/
+/* ====================== Mobile and Up ========================== */
+
+/* SPECIFIC STYLING FOR HELPFUL LINKS LISTS */
+.custom-list-bmed1 {
+  background-color: #f2f9e9;
+}
+.custom-list-bmed1 li {
+  border-bottom: 1px solid #a1d263;
+}
+
+.custom-list-bmed2 {
+  background-color: #edf6ec;
+}
+.custom-list-bmed2 li {
+  border-bottom: 1px solid #81BE79;
+}
+.custom-list-bmed2 li span {
+  color: #4ba23f;
+}
+
+/* Parent li with child ul */
+.list-dropdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* GENERAL STYLING FOR ALL HELPFUL LINKS LISTS */
+.custom-list {
+  list-style: none;
+  padding: 15px;
+  border-radius: 5px;
+  letter-spacing: Ã‚Â 1px;
+}
+.custom-list li {
+  margin: 0px;
+  padding: 8px 0px;
+}
+.custom-list li:last-of-type {
+  border: none;
+}
+.custom-list a {
+  color: #000;
+  font-size: 14px;
+  display: block;
+}
+
+/* LARGE DEGREE CARD */
+.degree-large {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.degree-large img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px 5px 0 0;
+}
+.degree-large div {
+  background-color: #fff;
+  padding: 15px;
+}
+.degree-large .degree-name {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 4px solid #efefef;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.degree-large .credits-number {
+  color: #275d38;
+  padding: 10px 0;
+}
+
+/* SHORT DEGREE CARD */
+
+/* STUDENT TESTIMONIAL */
+
+/* FACULTY TESTIMONIAL */
+
+
+/*End mobile and up styles*/
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.degree-large {
+    flex-direction: row;
+  }
+  .degree-large img {
+    width: 33%;
+    height: auto;
+    border-radius: 5px 0 0 5px;
+  }
+	
+}
+
+/*end media query*/
+/*End tablet and up styles*/
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	
+	
+}
+
+/*end media query*/
+/*End landscape tablet and up styles*/
+/* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
+@media only screen and (min-width: 1200px) {
+	
+	
+}
+
+/*end media query*/
+/*End desktop only styles*/
+/* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
+@media only screen and (min-width: 1500px) {
+	
+	
+}
+
+/*end media query*/
+/*End extra-wide desktop only styles*/
+/*END OF DOCUMENT*/
