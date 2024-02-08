@@ -127,6 +127,30 @@ For questions or media query training contact Web Development Services.
   border-radius: 50%;
 }
 
+/* CUSTOM BUTTON */
+.btn-square-outline {
+  padding: 15px;
+  border: 2px solid #275d38;
+  color: #275d38;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn-square-outline i {
+  padding-left: 50px;
+}
+.btn-square-outline:hover {
+ color: #000;
+ border-color: #000;
+}
+.outline-white {
+  color: #fff;
+  border-color: #fff;
+}
+.outline-white:hover {
+  color: #DDDDDD;
+  border-color: #DDDDDD;
+}
+
 
 /*End mobile and up styles*/
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */

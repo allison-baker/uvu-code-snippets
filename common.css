@@ -58,3 +58,11 @@ h6 {
   grid-template-columns: 1fr 1fr;
   column-gap: 30px;
 }
+
+.div {
+  padding: 30px 15px;
+}
+
+.green-div {
+  background-color: #275d38;
+}
