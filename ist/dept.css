@@ -15,14 +15,14 @@ For questions or media query training contact Web Development Services.
   border-bottom: 1px solid #a1d263;
 }
 .links-list-1 li span {
-  color: #78BE20;
+  color: #78be20;
 }
 
 .links-list-2 {
   background-color: #edf6ec;
 }
 .links-list-2 li {
-  border-bottom: 1px solid #81BE79;
+  border-bottom: 1px solid #81be79;
 }
 .links-list-2 li span {
   color: #4ba23f;
@@ -73,8 +73,8 @@ For questions or media query training contact Web Development Services.
 .degree-card .degree-name {
   margin: 0;
   padding-block-end: 10px;
-  border-bottom: 4px solid #EAEAEA;
-  font-family: "Rajdhani", Arial, sans-serif;
+  border-bottom: 4px solid #eaeaea;
+  font-family: 'Rajdhani', Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
@@ -128,27 +128,138 @@ For questions or media query training contact Web Development Services.
 }
 
 /* CUSTOM BUTTON */
-.btn-square-outline {
-  padding: 15px;
-  border: 2px solid #275d38;
+a.button-border.border-uvu-green, a.button-border.border-white {
+  border-radius: 0px;
+  position: relative;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 15px 45px 15px 15px;
+  display: block;
+  transition: 0.6s;
+  margin-block-start: 10px;
+  width: fit-content;
+}
+a.button-border.border-uvu-green:hover {
+  background-color: #275d38;
+  color: #fff;
+  text-decoration: none;
+}
+a.button-border.border-uvu-green::after, a.button-border.border-white::after {
+  content: '\f061';
+  font-family: 'Font Awesome 6 Free';
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  font-size: 10px;
+}
+a.button-border.border-white:hover {
+  background-color: #fff;
   color: #275d38;
   text-decoration: none;
-  font-weight: 600;
 }
-.btn-square-outline i {
-  padding-left: 50px;
-}
-.btn-square-outline:hover {
- color: #000;
- border-color: #000;
-}
-.outline-white {
+a.button-myuvu {
+  text-decoration: none;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-block-start: 1ex;
+  padding-block-end: 1ex;
+  border-radius: 100px;
+  background-color: #275d38;
   color: #fff;
-  border-color: #fff;
+  border: 2px solid #275d38;
+  display: block;
+  margin-block-start: 10px;
+  width: fit-content;
 }
-.outline-white:hover {
-  color: #DDDDDD;
-  border-color: #DDDDDD;
+a.button-myuvu:hover {
+  background-color: #fff;
+  border: 2px solid #275d38;
+  color: #275d38;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a.button-border.border-uvu-green.width-full {
+  width: 100%;
+}
+a.button-border.border-uvu-green.width-full::after {
+  display: none;
+}
+
+/* ICON TABLE */
+div.icon-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+p.grid-item {
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Rajdhani', sans-serif;
+  color: #275d38;
+  font-weight: 500;
+  flex-basis: 20%
+}
+p.grid-item i {
+  font-size: 75px;
+}
+
+/* FACULTY CARD */
+div.faculty-card {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px;
+}
+div.faculty-card img {
+  grid-area: image;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+div.faculty-content {
+  grid-area: content;
+}
+div.name-button {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div.name-button h3 {
+  color: #4BA23F;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+}
+div.name-button a {
+  margin: 0;
+}
+
+/* HOME PAGE ICONS */
+div.icon-list {
+  max-width: 970px;
+  margin: 0 auto;
+}
+article.icon-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+article.icon-item i {
+  font-size: 75px;
+}
+article.icon-item h2 {
+  margin-top: 0;
+  font-size: 24px;
 }
 
 
@@ -157,7 +268,7 @@ For questions or media query training contact Web Development Services.
 @media only screen and (min-width: 768px) {
   .degree-card {
     display: grid;
-    grid-template-areas: "img content";
+    grid-template-areas: 'img content';
   }
   .degree-card .degree-img {
     object-fit: cover;
@@ -175,30 +286,50 @@ For questions or media query training contact Web Development Services.
   .large-card .degree-img {
     max-width: 250px;
   }
+  div.icon-grid {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  p.grid-item {
+    font-size: 18px;
+  }
+  p.grid-item i {
+    font-size: 60px;
+  }
+  div.faculty-card {
+    flex-direction: row;
+  }
 }
 
 /*end media query*/
 /*End tablet and up styles*/
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
-
-	
+  p.grid-item {
+    font-size: 22px;
+  }
+  p.grid-item i {
+    font-size: 75px;
+  }
+  div.name-button {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
+  }
 }
 
 /*end media query*/
 /*End landscape tablet and up styles*/
 /* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1200px) {
-	
-	
 }
 
 /*end media query*/
 /*End desktop only styles*/
 /* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
 @media only screen and (min-width: 1500px) {
-	
-	
 }
 
 /*end media query*/

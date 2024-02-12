@@ -53,6 +53,10 @@ h6 {
     font-weight: 500;
 }
 
+main {
+  padding: 15px;
+}
+
 .two-col {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -65,4 +69,14 @@ h6 {
 
 .green-div {
   background-color: #275d38;
+}
+
+.border-uvu-green {
+  border: 2px solid #275d38;
+  color: #275d38;
+}
+
+.border-white {
+  border: 2px solid #fff;
+  color: #fff;
 }
