@@ -67,8 +67,12 @@ For questions or media query training contact Web Development Services.
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 8px;
   overflow: hidden;
-  position: relative;
+}
+.degree-card + .degree-card {
   margin-block-start: 20px;
+}
+.main-degree {
+  margin-block-start: 40px;
 }
 .degree-card .degree-name {
   margin: 0;
@@ -78,11 +82,14 @@ For questions or media query training contact Web Development Services.
   font-size: 20px;
   font-weight: bold;
   text-transform: uppercase;
+  color: #000;
 }
 .degree-card .degree-img {
+  object-fit: cover;
   order: -1;
-  height: 100%;
+  height: auto;
   grid-area: img;
+  width: 100%;
 }
 .degree-card .degree-content {
   padding: 20px;
@@ -92,12 +99,9 @@ For questions or media query training contact Web Development Services.
   font-size: 14px;
   grid-area: content;
 }
-.degree-card .degree-content p {
-  margin-bottom: 10px;
-}
 .degree-card .degree-credits {
   color: #275d38;
-  padding: 0.5rem 0 0 0;
+  font-weight: 500;
 }
 
 /* ICON TABLE */
@@ -116,7 +120,7 @@ p.grid-item {
   font-family: 'Rajdhani', sans-serif;
   color: #275d38;
   font-weight: 500;
-  flex-basis: 20%
+  flex-basis: 20%;
 }
 p.grid-item i {
   font-size: 75px;
@@ -140,7 +144,6 @@ article.icon-item h2 {
   margin-top: 0;
   font-size: 24px;
 }
-
 
 /*End mobile and up styles*/
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
