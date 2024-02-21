@@ -70,6 +70,9 @@ main {
 .green-div {
   background-color: #275d38;
 }
+.bg-black {
+  background-color: #000;
+}
 
 .border-uvu-green {
   border: 2px solid #275d38;
@@ -89,4 +92,34 @@ a {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+.align-items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.padding-40 {
+  padding: 40px;
+}
+.padding-60 {
+  padding: 60px;
 }

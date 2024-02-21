@@ -6,25 +6,104 @@ Place styles for desktop only inside the media query in the desktop only area.
 For questions or media query training contact Web Development Services.
 */
 /* ====================== Mobile and Up ========================== */
-
-/* STACKABLE DEGREES BANNER */
-.stackable-h1 {
+h1,
+h2 {
   font-weight: 600;
-  color: white;
-  font-size: 136px;
-  line-height: 115px;
 }
-.stackable-h2 {
-  font-weight: 400;
-  color: white;
-  font-size: 110px;
-  text-transform: uppercase;
-  line-height: 110px;
+
+/* CUSTOM BUTTON - MODIFIED FROM UVU ACADEMICS */
+a.button-border.border-uvu-green,
+a.button-border.border-white {
+  border-radius: 0px;
+  position: relative;
+  text-transform: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 15px 45px 15px 15px;
+  display: block;
+  transition: 0.6s;
+  margin-block-start: 20px;
+  width: 100%;
 }
-.stackable-h3 {
-  font-weight: 700;
-  color: white;
+a.button-border.border-uvu-green::after,
+a.button-border.border-white::after {
+  content: '\f061';
+  font-family: 'Font Awesome 5 Pro';
+  position: absolute;
+  right: 15px;
+  top: 17px;
+  font-size: 14px;
+}
+a.button-border.border-uvu-green:hover {
+  background-color: #275d38;
+  color: #fff;
+  text-decoration: none;
+}
+a.button-border.border-white:hover {
+  background-color: #fff;
+  color: #275d38;
+  text-decoration: none;
+}
+a.button-border.border-uvu-green.width-full {
+  width: 100%;
+}
+a.button-myuvu {
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  padding-block-start: 1ex;
+  padding-block-end: 1ex;
+  border-radius: 100px;
+  background-color: #275d38;
+  color: #fff;
+  border: 2px solid #275d38;
+  display: block;
+  margin-block-start: 10px;
+  width: fit-content;
+}
+a.button-myuvu:hover {
+  background-color: #fff;
+  border: 2px solid #275d38;
+  color: #275d38;
+}
+
+/* FACULTY TESTIMONIAL */
+blockquote {
+  border-color: #275d38;
+  padding: 0 20px;
+}
+div.faculty-card {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px;
+}
+div.faculty-card img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+div.faculty-card h1 {
+  color: #000;
+  margin-top: 0;
   text-transform: uppercase;
+}
+div.name-button {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+div.name-button h3 {
+  color: #4ba23f;
+  font-style: italic;
+  font-weight: 600;
+  margin: 0;
+}
+div.name-button a {
+  margin: 0;
 }
 
 /* SPECIFIC STYLING FOR HELPFUL LINKS LISTS */
@@ -120,28 +199,6 @@ For questions or media query training contact Web Development Services.
   padding: 0.5rem 0 0 0;
 }
 
-/* ICON TABLE */
-div.icon-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-p.grid-item {
-  display: flex;
-  padding: 1rem;
-  flex-direction: column;
-  text-align: center;
-  font-size: 22px;
-  font-family: 'Rajdhani', sans-serif;
-  color: #275d38;
-  font-weight: 500;
-  flex-basis: 20%
-}
-p.grid-item i {
-  font-size: 75px;
-}
-
 /* HOME PAGE ICONS */
 div.icon-list {
   max-width: 970px;
@@ -161,10 +218,17 @@ article.icon-item h2 {
   font-size: 24px;
 }
 
-
 /*End mobile and up styles*/
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
+  a.button-border.border-uvu-green,
+  a.button-border.border-white {
+    min-width: 200px;
+    width: fit-content;
+  }
+  div.faculty-card {
+    flex-direction: row;
+  }
   .degree-card {
     display: grid;
     grid-template-areas: 'img content';
@@ -185,49 +249,17 @@ article.icon-item h2 {
   .large-card .degree-img {
     max-width: 250px;
   }
-  div.icon-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  p.grid-item {
-    font-size: 18px;
-  }
-  p.grid-item i {
-    font-size: 60px;
-  }
 }
 
 /*end media query*/
 /*End tablet and up styles*/
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
-  p.grid-item {
-    font-size: 22px;
-  }
-  p.grid-item i {
-    font-size: 75px;
-  }
-  .stackable-banner {
-    position: relative;
-  }
-  .stackable-banner::before {
-    content: '';
-    background: url('./images/stackable_shapes_left.svg') no-repeat;
-    width: 125px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-  }
-  .stackable-banner::after {
-    content: '';
-    background: url('./images/stackable_shapes_right.svg') no-repeat;
-    width: 150px;
-    height: 110px;
-    position: absolute;
-    right: 0;
-    top: -20px;
+  div.name-button {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0;
   }
 }
 
@@ -235,15 +267,6 @@ article.icon-item h2 {
 /*End landscape tablet and up styles*/
 /* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1200px) {
-  .stackable-banner::before {
-    content: '';
-    background: url('./images/stackable_shapes_left.svg') no-repeat;
-    width: 160px;
-    height: 275px;
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-  }
 }
 
 /*end media query*/
