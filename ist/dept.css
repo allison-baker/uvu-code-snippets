@@ -6,250 +6,634 @@ Place styles for desktop only inside the media query in the desktop only area.
 For questions or media query training contact Web Development Services.
 */
 /* ====================== Mobile and Up ========================== */
-
-/* STACKABLE DEGREES BANNER */
-.stackable-h1 {
-  font-weight: 600;
-  color: white;
-  font-size: 136px;
-  line-height: 115px;
+h1,
+h2 {
+	font-weight: 600;
 }
-.stackable-h2 {
-  font-weight: 400;
-  color: white;
-  font-size: 110px;
-  text-transform: uppercase;
-  line-height: 110px;
-}
-.stackable-h3 {
-  font-weight: 700;
-  color: white;
-  text-transform: uppercase;
+.contained {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-/* SPECIFIC STYLING FOR HELPFUL LINKS LISTS */
-.links-list-1 {
-  background-color: #f2f9e9;
+/* HOME PAGE BANNER (FROM WOODBURY BUSINESS HOME PAGE) */
+.degree-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
 }
-.links-list-1 li {
-  border-bottom: 1px solid #a1d263;
+.degree-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
-.links-list-1 li span {
-  color: #78be20;
+a.degree-button {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
 }
-
-.links-list-2 {
-  background-color: #edf6ec;
+a.degree-button span {
+	display: block;
+	margin-top: -20px;
 }
-.links-list-2 li {
-  border-bottom: 1px solid #81be79;
+a.degree-button:hover {
+	color: #c5e86c;
 }
-.links-list-2 li span {
-  color: #4ba23f;
+a.degree-button::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #c5e86c;
+	transition: width 0.3s;
 }
-
-/* Parent li with child ul */
-.list-dropdown {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* GENERAL STYLING FOR ALL HELPFUL LINKS LISTS */
-.links-list {
-  list-style: none;
-  padding: 15px;
-  border-radius: 5px;
-  letter-spacing: Ã‚Â 1px;
-}
-.links-list li {
-  margin: 0px;
-  padding: 8px 0px;
-}
-.links-list li:last-of-type {
-  border: none;
-}
-.links-list a {
-  color: #000;
-  font-size: 14px;
-  display: block;
-}
-
-/* DEGREE CARDS */
-.degree-card {
-  background-color: #fff;
-  min-height: 200px;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-  border-radius: 8px;
-  overflow: hidden;
-  position: relative;
-  margin-block-start: 20px;
-}
-.degree-card .degree-name {
-  margin: 0;
-  padding-block-end: 10px;
-  border-bottom: 4px solid #eaeaea;
-  font-family: 'Rajdhani', Arial, sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.degree-card .degree-img {
-  order: -1;
-  height: 100%;
-  grid-area: img;
-}
-.degree-card .degree-content {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-size: 14px;
-  grid-area: content;
-}
-.degree-card .degree-content p {
-  margin-bottom: 10px;
-}
-.degree-card .degree-credits {
-  color: #275d38;
-  padding: 0.5rem 0 0 0;
-}
-
-/* ICON TABLE */
-div.icon-grid {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-p.grid-item {
-  display: flex;
-  padding: 1rem;
-  flex-direction: column;
-  text-align: center;
-  font-size: 22px;
-  font-family: 'Rajdhani', sans-serif;
-  color: #275d38;
-  font-weight: 500;
-  flex-basis: 20%
-}
-p.grid-item i {
-  font-size: 75px;
+a.degree-button:hover::after {
+	width: 100%;
+	/*     transition: width .3s; */
 }
 
 /* HOME PAGE ICONS */
 div.icon-list {
-  max-width: 970px;
-  margin: 0 auto;
+	max-width: 970px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 100px 1fr;
+	column-gap: 15px;
+	row-gap: 20px;
 }
-article.icon-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
-}
-article.icon-item i {
-  font-size: 75px;
-}
-article.icon-item h2 {
-  margin-top: 0;
-  font-size: 24px;
+div.icon-list i {
+	font-size: 75px;
+	color: #275d38;
+	align-self: center;
+	justify-self: center;
 }
 
+/* CUSTOM BUTTON - MODIFIED FROM UVU ACADEMICS */
+a.button-border.border-uvu-green,
+a.button-border.border-white {
+	border-radius: 0px;
+	position: relative;
+	text-transform: none;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 15px 45px 15px 15px;
+	display: block;
+	transition: 0.6s;
+	margin-block-start: 20px;
+	width: fit-content;
+}
+a.button-border.border-uvu-green::after,
+a.button-border.border-white::after {
+	content: '\f061';
+	font-family: 'Font Awesome 5 Pro';
+	position: absolute;
+	right: 15px;
+	top: 17px;
+	font-size: 14px;
+}
+a.button-border.border-uvu-green:hover {
+	background-color: #275d38;
+	color: #fff;
+	text-decoration: none;
+}
+a.button-border.border-white:hover {
+	background-color: #fff;
+	color: #275d38;
+	text-decoration: none;
+}
+a.button-border.border-uvu-green.width-full {
+	width: 100%;
+}
+a.button-myuvu {
+	padding-inline-start: 20px;
+	padding-inline-end: 20px;
+	padding-block-start: 1ex;
+	padding-block-end: 1ex;
+	border-radius: 100px;
+	background-color: #275d38;
+	color: #fff;
+	border: 2px solid #275d38;
+	display: block;
+	margin-block-start: 10px;
+	width: fit-content;
+}
+a.button-myuvu:hover {
+	background-color: #fff;
+	border: 2px solid #275d38;
+	color: #275d38;
+}
+
+/* STACKABLE DEGREES BANNER */
+.stackable-banner div:first-child {
+	padding: 40px;
+}
+.stackable-banner div:last-child {
+	padding: 60px;
+}
+.stackable-h1 {
+	font-weight: 600;
+	color: white;
+	font-size: 136px;
+	line-height: 115px;
+	padding: 0;
+	margin: 0;
+}
+.stackable-h2 {
+	font-weight: 400;
+	color: white;
+	font-size: 110px;
+	text-transform: uppercase;
+	line-height: 110px;
+	padding: 0;
+	margin: 0;
+}
+.stackable-h3 {
+	font-weight: 700;
+	color: white;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+/* RESOURCES SECTION */
+.resources-grid {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 100px 1fr;
+	gap: 15px;
+}
+.resources-grid i {
+	font-size: 75px;
+	color: #275d38;
+	align-self: center;
+}
+
+/* ADVISOR CARD */
+.card-advisor-2 {
+	box-shadow: 0px 1px 6px rgb(0 0 0 / 5%);
+	position: relative;
+	border-radius: 8px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #fff;
+}
+.card-advisor-2:after {
+	content: '';
+	bottom: -10px;
+	right: -10px;
+	width: 300px;
+	height: 100px;
+	z-index: -1;
+	position: absolute;
+	background: url(/online/images/programs/assets/rectangle-stripes.png) no-repeat;
+	background-size: 300px;
+}
+.card-advisor-2-img {
+	position: absolute;
+	top: -50px;
+	left: 0;
+}
+.card-advisor-2-img img {
+	width: 200px;
+	position: relative;
+	height: 200px;
+	border-radius: 50%;
+	z-index: 1;
+}
+.card-advisor-2-img p {
+	position: relative;
+}
+.card-advisor-2-img p:before {
+	content: '';
+	position: absolute;
+	width: 190px;
+	height: 190px;
+	left: -10px;
+	z-index: 0;
+	bottom: 0;
+	border-radius: 50%;
+	background-color: #78be48;
+}
+.card-advisor-2-img p:after {
+	content: '';
+	bottom: -40px;
+	left: 10px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: url(/online/images/programs/assets/teal-ladder.svg) no-repeat;
+	background-size: 50px;
+}
+.card-advisor-2-content {
+	padding: 210px 40px 40px 70px;
+}
+.card-advisor-2-inner-content p {
+	margin-bottom: 5px;
+}
+
+/* SPECIFIC STYLING FOR HELPFUL LINKS LISTS */
+.links-list-1 {
+	background-color: #f2f9e9;
+}
+.links-list-1 li {
+	border-bottom: 1px solid #a1d263;
+}
+.links-list-1 li span {
+	color: #78be20;
+}
+
+.links-list-2 {
+	background-color: #edf6ec;
+}
+.links-list-2 li {
+	border-bottom: 1px solid #81be79;
+}
+.links-list-2 li span {
+	color: #4ba23f;
+}
+
+/* Parent li with child ul */
+.list-dropdown {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* GENERAL STYLING FOR ALL HELPFUL LINKS LISTS */
+.links-list {
+	list-style: none;
+	padding: 15px;
+	border-radius: 5px;
+	letter-spacing: Ã‚Â 1px;
+}
+.links-list li {
+	margin: 0px;
+	padding: 8px 0px;
+}
+.links-list li:last-of-type {
+	border: none;
+}
+.links-list a {
+	color: #000;
+	font-size: 14px;
+	display: block;
+}
+
+/* DEGREE CARDS */
+.degree-card {
+	background-color: #fff;
+	min-height: 200px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	border-radius: 8px;
+	overflow: hidden;
+}
+.degree-card + .degree-card {
+	margin-block-start: 20px;
+}
+.main-degree {
+	margin-block-start: 40px;
+}
+.degree-card .degree-name {
+	margin: 0;
+	padding-block-end: 10px;
+	border-bottom: 4px solid #eaeaea;
+	font-family: 'Rajdhani', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+.degree-card .degree-img {
+	object-fit: cover;
+	order: -1;
+	height: auto;
+	grid-area: img;
+	width: 100%;
+}
+.degree-card .degree-content {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 14px;
+	grid-area: content;
+}
+.degree-card .degree-credits {
+	color: #275d38;
+	font-weight: 500;
+}
+
+/* MASTER'S BANNER */
+.banner-img {
+	height: 100%;
+	width: 100%;
+}
+
+/* STUDENT TESTIMONIAL */
+blockquote {
+	border-color: #275d38;
+	padding: 0 20px;
+}
+
+/* FACULTY TESTIMONIAL */
+div.faculty-card {
+	background-color: #fff;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+	border-radius: 10px;
+}
+div.faculty-card img {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+}
+div.faculty-card h1 {
+	color: #000;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+div.name-button {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+div.name-button h3 {
+	color: #4ba23f;
+	font-style: italic;
+	font-weight: 600;
+	margin: 0;
+}
+div.name-button a {
+	margin: 0;
+}
+
+/* ICON TABLE - CYBERSECURITY PAGE */
+div.icon-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+p.grid-item {
+	display: flex;
+	padding: 1rem;
+	flex-direction: column;
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Rajdhani', sans-serif;
+	color: #275d38;
+	font-weight: 500;
+	flex-basis: 20%;
+}
+p.grid-item i {
+	font-size: 75px;
+}
 
 /*End mobile and up styles*/
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
-  .degree-card {
-    display: grid;
-    grid-template-areas: 'img content';
-  }
-  .degree-card .degree-img {
-    object-fit: cover;
-    height: 100%;
-  }
-  .short-card {
-    grid-template-columns: 200px 1fr;
-  }
-  .short-card .degree-img {
-    max-width: 200px;
-  }
-  .large-card {
-    grid-template-columns: 250px 1fr;
-  }
-  .large-card .degree-img {
-    max-width: 250px;
-  }
-  div.icon-grid {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: flex-start;
-  }
-  p.grid-item {
-    font-size: 18px;
-  }
-  p.grid-item i {
-    font-size: 60px;
-  }
+	a.button-border {
+		min-width: 200px;
+	}
+	.degree-card {
+		display: grid;
+		grid-template-areas: 'img content';
+	}
+	.degree-card .degree-img {
+		object-fit: cover;
+		height: 100%;
+	}
+	.short-card {
+		grid-template-columns: 200px 1fr;
+	}
+	.short-card .degree-img {
+		max-width: 200px;
+	}
+	.large-card {
+		grid-template-columns: 250px 1fr;
+	}
+	.large-card .degree-img {
+		max-width: 250px;
+	}
+	div.faculty-card {
+		flex-direction: row;
+	}
+	div.icon-grid {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+	}
+	p.grid-item {
+		font-size: 18px;
+	}
+	p.grid-item i {
+		font-size: 60px;
+	}
+	.stackable-banner {
+		position: relative;
+	}
+	.stackable-banner::before {
+		content: '';
+		background: url('../../images/stackable_shapes_left.svg') no-repeat;
+		width: 125px;
+		height: 200px;
+		position: absolute;
+		left: 0;
+		bottom: -175px;
+		z-index: 2;
+	}
+	.stackable-banner::after {
+		content: '';
+		background: url('../../images/stackable_shapes_right.svg') no-repeat;
+		width: 150px;
+		height: 110px;
+		position: absolute;
+		right: -15px;
+		top: 275px;
+		z-index: 2;
+	}
 }
 
 /*end media query*/
 /*End tablet and up styles*/
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
-  p.grid-item {
-    font-size: 22px;
-  }
-  p.grid-item i {
-    font-size: 75px;
-  }
-  .stackable-banner {
-    position: relative;
-  }
-  .stackable-banner::before {
-    content: '';
-    background: url('./images/stackable_shapes_left.svg') no-repeat;
-    width: 125px;
-    height: 200px;
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-  }
-  .stackable-banner::after {
-    content: '';
-    background: url('./images/stackable_shapes_right.svg') no-repeat;
-    width: 150px;
-    height: 110px;
-    position: absolute;
-    right: 0;
-    top: -20px;
-  }
+	.degree-section {
+		flex-direction: row;
+	}
+	div.name-button {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0;
+	}
+	.masters-banner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+	}
+	.banner-img {
+		height: 100%;
+		display: block;
+	}
+	.banner-img img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+	p.grid-item {
+		font-size: 22px;
+	}
+	p.grid-item i {
+		font-size: 75px;
+	}
+	.contained {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.stackable-banner {
+		height: 325px;
+	}
+	.stackable-banner div:first-child {
+		padding: 0;
+		height: 100%;
+	}
+	.stackable-banner div:last-child {
+		padding: 0 60px;
+		height: 100%;
+	}
+	.stackable-banner::before {
+		width: 125px;
+		height: 200px;
+		left: 0;
+		bottom: -30px;
+	}
+	.stackable-banner::after {
+		width: 150px;
+		height: 110px;
+		right: -15px;
+		top: -20px;
+	}
+	.card-advisor-2 {
+		margin-top: 0;
+	}
+	.card-advisor-2-img {
+		top: 15px;
+		left: -10px;
+	}
+	.card-advisor-2-img img {
+		width: 180px !important;
+		height: 180px !important;
+	}
+	.card-advisor-2-img p:before {
+		width: 170px;
+		height: 170px;
+		left: -10px;
+		bottom: 0;
+	}
+	.card-advisor-2-content {
+		padding: 50px 0px 50px 230px;
+	}
+	.card-advisor-2-img p:after {
+		bottom: -50px;
+		left: -10px;
+	}
 }
 
 /*end media query*/
 /*End landscape tablet and up styles*/
 /* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1200px) {
-  .stackable-banner::before {
-    content: '';
-    background: url('./images/stackable_shapes_left.svg') no-repeat;
-    width: 160px;
-    height: 275px;
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-  }
+	.masters-banner {
+		justify-content: flex-end;
+		max-height: 500px;
+	}
+	.banner-content {
+		max-width: 600px;
+		justify-self: last baseline;
+	}
+	.wolverine-content {
+		position: relative;
+	}
+	.wolverine-content::after {
+		content: '';
+		top: 0;
+		right: 50px;
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		background: url('../../info-systems/images/banner_shapes_right.svg') no-repeat;
+	}
+	.stackable-banner::before {
+		width: 160px;
+		height: 275px;
+		left: 0;
+		bottom: -30px;
+	}
+	.card-advisor-2 {
+		margin-left: auto;
+		margin-right: 20px;
+		width: 80%;
+	}
+	.card-advisor-2-img {
+		left: -70px;
+	}
+	.card-advisor-2-img img {
+		width: 200px !important;
+		height: 200px !important;
+	}
+	.card-advisor-2-img p:before {
+		width: 190px;
+		height: 190px;
+		left: -20px;
+		bottom: -5px;
+	}
+	.card-advisor-2-content {
+		padding: 40px 50px 50px 170px;
+	}
+	.card-advisor-2-img p:after {
+		bottom: -50px;
+		left: -20px;
+		width: 60px;
+		height: 60px;
+		background-size: 60px;
+	}
+	.card-advisor-2:after {
+		bottom: -60px;
+		right: -20px;
+		width: 350px;
+		height: 200px;
+		background-size: 350px;
+	}
 }
 
 /*end media query*/
 /*End desktop only styles*/
 /* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
 @media only screen and (min-width: 1500px) {
+	.wolverine-content::before {
+		content: '';
+		top: 100px;
+		left: -250px;
+		width: 250px;
+		height: 250px;
+		position: absolute;
+		background: url('../../info-systems/images/banner_shapes_left.svg') no-repeat;
+	}
 }
 
 /*end media query*/

@@ -10,15 +10,6 @@ h1,
 h2 {
 	font-weight: 600;
 }
-.contained {
-	max-width: 1200px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.accordion:not(.accordion-unstyled) {
-	padding: 10px;
-}
 
 /* CUSTOM BUTTON - MODIFIED FROM UVU ACADEMICS */
 a.button-border.border-uvu-green,
@@ -175,12 +166,8 @@ div.name-button a {
 	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
 	border-radius: 8px;
 	overflow: hidden;
-}
-.degree-card + .degree-card {
+	position: relative;
 	margin-block-start: 20px;
-}
-.main-degree {
-	margin-block-start: 40px;
 }
 .degree-card .degree-name {
 	margin: 0;
@@ -190,14 +177,11 @@ div.name-button a {
 	font-size: 20px;
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #000;
 }
 .degree-card .degree-img {
-	object-fit: cover;
 	order: -1;
-	height: auto;
+	height: 100%;
 	grid-area: img;
-	width: 100%;
 }
 .degree-card .degree-content {
 	padding: 20px;
@@ -207,27 +191,20 @@ div.name-button a {
 	font-size: 14px;
 	grid-area: content;
 }
+.degree-card .degree-content p {
+	margin-bottom: 10px;
+}
 .degree-card .degree-credits {
 	color: #275d38;
-	font-weight: 500;
+	padding: 0.5rem 0 0 0;
 }
 
-.deco-border {
-	border-bottom: solid;
-}
-.space-between {
-	align-items: center;
-	justify-content: space-evenly;
+/* CAPSTONE BANNER */
+.banner-img {
+	height: 100%;
+	width: 100%;
 }
 
-/* BACHELOR'S BANNER */
-.bachelors-banner {
-	margin-right: -15px;
-	margin-left: -15px;
-}
-.banner-content {
-	padding: 40px 15px;
-}
 
 /*End mobile and up styles*/
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
@@ -272,27 +249,27 @@ div.name-button a {
 		justify-content: space-between;
 		gap: 0;
 	}
-	.bachelors-banner {
+    .capstone-banner {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		max-height: 375px;
+		align-items: center;
 	}
 	.banner-img {
 		height: 100%;
+		display: block;
 	}
 	.banner-img img {
-		max-height: 375px;
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
 	}
 }
+
 /*end media query*/
 /*End landscape tablet and up styles*/
 /* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1200px) {
-	/* BACHELOR'S BANNER */
-	.bachelors-banner {
+    .capstone-banner {
 		justify-content: flex-end;
 		max-height: 500px;
 	}
@@ -304,4 +281,10 @@ div.name-button a {
 
 /*end media query*/
 /*End desktop only styles*/
+/* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
+@media only screen and (min-width: 1500px) {
+}
+
+/*end media query*/
+/*End extra-wide desktop only styles*/
 /*END OF DOCUMENT*/
