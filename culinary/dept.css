@@ -15,14 +15,20 @@ h2 {
 	margin-right: auto;
 	margin-left: auto;
 }
-
+.rajdhani {
+	font-family: 'Rajdhani', sans-serif;
+}
+.justify-content-between {
+	justify-content: space-between;
+}
 .accordion:not(.accordion-unstyled) {
 	padding: 10px;
 }
 
 /* CUSTOM BUTTON - MODIFIED FROM UVU ACADEMICS */
 a.button-border.border-uvu-green,
-a.button-border.border-white {
+a.button-border.border-white,
+a.button-solid.solid-uvu-green {
 	border-radius: 0px;
 	position: relative;
 	text-transform: none;
@@ -35,7 +41,8 @@ a.button-border.border-white {
 	width: 100%;
 }
 a.button-border.border-uvu-green::after,
-a.button-border.border-white::after {
+a.button-border.border-white::after,
+a.button-solid.solid-uvu-green::after {
 	content: '\f061';
 	font-family: 'Font Awesome 5 Pro';
 	position: absolute;
@@ -51,6 +58,11 @@ a.button-border.border-uvu-green:hover {
 a.button-border.border-white:hover {
 	background-color: #fff;
 	color: #275d38;
+	text-decoration: none;
+}
+a.button-solid.solid-uvu-green:hover {
+	background-color: #275d38;
+	color: #fff;
 	text-decoration: none;
 }
 a.button-border.border-uvu-green.width-full {
@@ -113,6 +125,82 @@ div.name-button h3 {
 }
 div.name-button a {
 	margin: 0;
+}
+
+/* RESOURCES SECTION */
+.resources-grid {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 100px 1fr;
+	gap: 15px;
+}
+.resources-grid i {
+	font-size: 75px;
+	color: #275d38;
+	align-self: center;
+}
+
+/* ADVISOR CARD */
+.card-advisor-2 {
+	box-shadow: 0px 1px 6px rgb(0 0 0 / 5%);
+	position: relative;
+	border-radius: 8px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: #fff;
+}
+.card-advisor-2:after {
+	content: '';
+	bottom: -10px;
+	right: -10px;
+	width: 300px;
+	height: 100px;
+	z-index: -1;
+	position: absolute;
+	background: url(/cet/images/rectangle-stripes.png) no-repeat;
+	background-size: 300px;
+}
+.card-advisor-2-img {
+	position: absolute;
+	top: -50px;
+	left: 0;
+}
+.card-advisor-2-img img {
+	width: 200px;
+	position: relative;
+	height: 200px;
+	border-radius: 50%;
+	z-index: 1;
+}
+.card-advisor-2-img p {
+	position: relative;
+}
+.card-advisor-2-img p:before {
+	content: '';
+	position: absolute;
+	width: 190px;
+	height: 190px;
+	left: -10px;
+	z-index: 0;
+	bottom: 0;
+	border-radius: 50%;
+	background-color: #78be48;
+}
+.card-advisor-2-img p:after {
+	content: '';
+	bottom: -40px;
+	left: 10px;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	background: url(/cet/images/teal-ladder.svg) no-repeat;
+	background-size: 50px;
+}
+.card-advisor-2-content {
+	padding: 210px 40px 40px 70px;
+}
+.card-advisor-2-inner-content p {
+	margin-bottom: 5px;
 }
 
 /* SPECIFIC STYLING FOR HELPFUL LINKS LISTS */
@@ -229,11 +317,26 @@ div.name-button a {
 	padding: 40px 15px;
 }
 
+/* ACCREDITATION BANNER */
+.accred-banner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	padding: 15px 0;
+}
+.accred-banner img {
+	width: 65px;
+	height: auto;
+}
+
 /*End mobile and up styles*/
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
 	a.button-border.border-uvu-green,
-	a.button-border.border-white {
+	a.button-border.border-white,
+	a.button-solid.solid-uvu-green {
 		min-width: 200px;
 		width: fit-content;
 	}
@@ -275,16 +378,40 @@ div.name-button a {
 	.bachelors-banner {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		max-height: 375px;
+		max-height: 390px;
 	}
 	.banner-img {
 		height: 100%;
 	}
 	.banner-img img {
-		max-height: 375px;
+		max-height: 390px;
 		height: 100%;
 		width: 100%;
 		object-fit: cover;
+	}
+	.card-advisor-2 {
+		margin-top: 0;
+	}
+	.card-advisor-2-img {
+		top: 15px;
+		left: -10px;
+	}
+	.card-advisor-2-img img {
+		width: 180px !important;
+		height: 180px !important;
+	}
+	.card-advisor-2-img p:before {
+		width: 170px;
+		height: 170px;
+		left: -10px;
+		bottom: 0;
+	}
+	.card-advisor-2-content {
+		padding: 50px 0px 50px 230px;
+	}
+	.card-advisor-2-img p:after {
+		bottom: -50px;
+		left: -10px;
 	}
 }
 /*end media query*/
@@ -299,6 +426,41 @@ div.name-button a {
 	.banner-content {
 		max-width: 600px;
 		justify-self: last baseline;
+	}
+	.card-advisor-2 {
+		margin-left: auto;
+		margin-right: 20px;
+		width: 80%;
+	}
+	.card-advisor-2-img {
+		left: -70px;
+	}
+	.card-advisor-2-img img {
+		width: 200px !important;
+		height: 200px !important;
+	}
+	.card-advisor-2-img p:before {
+		width: 190px;
+		height: 190px;
+		left: -20px;
+		bottom: -5px;
+	}
+	.card-advisor-2-content {
+		padding: 40px 50px 50px 170px;
+	}
+	.card-advisor-2-img p:after {
+		bottom: -50px;
+		left: -20px;
+		width: 60px;
+		height: 60px;
+		background-size: 60px;
+	}
+	.card-advisor-2:after {
+		bottom: -60px;
+		right: -20px;
+		width: 350px;
+		height: 200px;
+		background-size: 350px;
 	}
 }
 

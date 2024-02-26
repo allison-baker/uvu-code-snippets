@@ -200,7 +200,7 @@ div.icon-list i {
 	height: 100px;
 	z-index: -1;
 	position: absolute;
-	background: url(/online/images/programs/assets/rectangle-stripes.png) no-repeat;
+	background: url(/cet/images/rectangle-stripes.png) no-repeat;
 	background-size: 300px;
 }
 .card-advisor-2-img {
@@ -236,7 +236,7 @@ div.icon-list i {
 	width: 50px;
 	height: 50px;
 	position: absolute;
-	background: url(/online/images/programs/assets/teal-ladder.svg) no-repeat;
+	background: url(/cet/images/teal-ladder.svg) no-repeat;
 	background-size: 50px;
 }
 .card-advisor-2-content {
