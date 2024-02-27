@@ -1,218 +1,334 @@
-:root {
-  --primary-green: #275d38;
-  --lime: #c5e86c;
-  --gray: #efefef;
+/* Department CSS Document */
+/*For mobile first adaptive design place styles for mobile and up in the mobile and up area.
+Place styles for tablet and up inside the media query in the tablet and up area.
+Place styles for desktop only inside the media query in the desktop only area.
+
+For questions or media query training contact Web Development Services.
+*/
+/* ====================== Mobile and Up ========================== */
+h1,
+h2 {
+	font-weight: 600;
+}
+.underline-hover:hover {
+	text-decoration: underline;
 }
 
-/* STATISTICS BANNER */
-
-section.banner {
-  background-color: var(--primary-green);
-  position: relative;
-  width: 100%;
+/* CUSTOM BUTTON - MODIFIED FROM UVU ACADEMICS */
+a.button-border.border-uvu-green,
+a.button-border.border-white,
+a.button-border.button-solid-lime {
+	border-radius: 0px;
+	position: relative;
+	text-transform: none;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 15px 45px 15px 15px;
+	display: block;
+	transition: 0.6s;
+	margin-block-start: 20px;
+	width: 100%;
+}
+a.button-border.border-uvu-green::after,
+a.button-border.border-white::after,
+a.button-border.button-solid-lime::after {
+	content: '\f061';
+	font-family: 'Font Awesome 5 Pro';
+	position: absolute;
+	right: 15px;
+	top: 17px;
+	font-size: 14px;
+}
+a.button-border.border-uvu-green:hover {
+	background-color: #275d38;
+	color: #fff;
+	text-decoration: none;
+}
+a.button-border.border-white:hover {
+	background-color: #fff;
+	color: #275d38;
+	text-decoration: none;
+}
+a.button-border.button-solid-lime:hover {
+	background-color: transparent;
+	border-color: #c5e86c;
+	color: #c5e86c;
+	text-decoration: none;
+}
+a.button-border.border-uvu-green.width-full {
+	width: 100%;
+}
+a.button-myuvu {
+	padding-inline-start: 20px;
+	padding-inline-end: 20px;
+	padding-block-start: 1ex;
+	padding-block-end: 1ex;
+	border-radius: 100px;
+	background-color: #275d38;
+	color: #fff;
+	border: 2px solid #275d38;
+	display: block;
+	margin-block-start: 10px;
+	width: fit-content;
+}
+a.button-myuvu:hover {
+	background-color: #fff;
+	border: 2px solid #275d38;
+	color: #275d38;
 }
 
-section.banner div {
-  max-width: 1200px;
-  margin: 0 auto;
+/* HOME PAGE BANNER (FROM WOODBURY BUSINESS HOME PAGE) */
+.degree-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+.degree-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	text-align: center;
+}
+.degree-container span {
+	display: block;
+	margin-top: -20px;
 }
 
-section.banner div h1 {
-  font-size: 48pt;
-  font-family: 'Lato', sans-serif;
+/* FACULTY TESTIMONIAL */
+blockquote {
+	border-color: #275d38;
+	padding: 0 20px;
 }
-
-section.banner div h3 {
-  font-size: 22pt;
-  font-family: 'Lato', sans-serif;
-}
-
-section.banner::before {
-  content: '';
-  top: -15px;
-  left: -100px;
-  width: 251px;
-  height: 126px;
-  transform: rotateX(180deg);
-  position: absolute;
-  background: url('/images/CETBanner-ShapesLEFT.svg') no-repeat;
-}
-
-section.banner::after {
-  content: '';
-  bottom: 0;
-  right: 0px;
-  width: 181px;
-  height: 151px;
-  position: absolute;
-  background: url('/images/CETBanner-ShapesRIGHT.svg') no-repeat;
-}
-
-/* DEGREE BANNER */
-
-section.degreeBanner {
-  background-color: var(--gray);
-  position: relative;
-  margin: 5rem 0;
-  z-index: 0;
-  width: 100%;
-}
-
-section.degreeBanner div {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-section.degreeBanner section#degreeText {
-  z-index: 3;
-}
-
-section.degreeBanner div section#degreeText i {
-  color: var(--primary-green);
-  font-size: 48px;
-  margin-bottom: 0.9rem;
-}
-
-section.degreeBanner div section#degreeText h2 {
-  gap: 1rem;
-  color: var(--primary-green);
-}
-
-section.degreeBanner div section#degreeText h4 {
-  font-size: 20px;
-  margin-top: 0.6rem;
-}
-
-section.degreeBanner div section#degreeText h4 strong {
-  font-size: 20px;
-}
-
-section.degreeBanner div section#degreeText button {
-  padding: 0.8rem;
-  margin-top: 2rem;
-  color: var(--primary-green);
-  border-color: var(--primary-green);
-}
-
-section.degreeBanner div section#degreeText button i {
-  font-size: 16px;
-  margin-left: 1rem;
-}
-
-section.degreeBanner div section#numbers {
-  z-index: 5;
-}
-
-section.degreeBanner div section#numbers article {
-  display: grid;
-  grid-template-columns: 1fr 250px 1fr;
+.faculty-card {
+	display: grid;
+	grid-template-rows: 300px 1fr;
+	gap: 30px;
   align-items: center;
-  gap: 2rem;
-  color: var(--primary-green);
+	background-color: #fff;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	padding: 30px;
+	border-radius: 10px;
+}
+.faculty-img {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+.faculty-img p img {
+	width: 275px;
+	height: 275px;
+	border-radius: 50%;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 25px;
+}
+.faculty-img p::before {
+	content: '';
+	position: absolute;
+	width: 275px;
+	height: 275px;
+	left: 0;
+	z-index: 0;
+	top: 25px;
+	border-radius: 50%;
+	background-color: #78be48;
+}
+.faculty-card h1 {
+	color: #000;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.name-button {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.name-button h3 {
+	color: #4ba23f;
+	font-style: italic;
+	font-weight: 600;
+	margin: 0;
+}
+.name-button a {
+	margin: 0;
 }
 
-section.degreeBanner div section#numbers article h1 {
-  font-size: 48px;
+.padding-top-5 {
+	padding-top: 5px;
+}
+.bg-icon:before {
+	content: '';
+}
+.bg-icon:after {
+	content: '';
 }
 
-section.degreeBanner div section#numbers article h4 {
-  text-align: left;
+/* Bruce Banner */
+.banner-direction {
+	flex-direction: row;
+}
+.banner-container {
+	width: 20%;
+	margin-bottom: 0px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+/* End of Bruce */
+
+.margin-mobile {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.img-radius {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid #4ba23f;
+}
+.custom-text-align {
+	align-self: center;
+	padding-left: 5%;
+}
+.custom-flex {
+	display: flex;
+	justify-content: flex-start;
+}
+.custom-card-flex {
+	display: flex;
+	flex-direction: column;
+	flex-grow: inherit;
+}
+.flex-direction-column {
+	display: flex;
+	flex-direction: column;
+}
+.advisorinfo-card {
+	display: flex;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+	height: 100%;
+	border-radius: 0px;
+	width: 100%;
+}
+.card-content-left {
+	box-sizing: border-box;
+	background-color: #275d38;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+.card-content-right {
+	box-sizing: border-box;
+	background-color: white;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+.outer-container {
+	display: flex;
+	align-items: center;
+}
+.inner-container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+.box-size-20 {
+	box-sizing: border-box;
+	padding: 20px;
+}
+.align-content-center {
+	align-content: center;
+}
+.white-hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+a.white-hover:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+h3.deadlines {
+	text-align: center;
 }
 
-section.degreeBanner::before {
-  content: '';
-  top: -15px;
-  left: 0px;
-  width: 231px;
-  z-index: 1;
-  height: 407px;
-  position: absolute;
-  background: url('/images/DegreeMatch-ShapesRIGHT.svg') no-repeat;
+/*End mobile and up styles*/
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	a.button-border.border-uvu-green,
+	a.button-border.border-white,
+	a.button-border.button-solid-lime {
+		min-width: 200px;
+		width: fit-content;
+	}
 }
 
-section.degreeBanner::after {
-  content: '';
-  bottom: 0;
-  right: 0px;
-  width: 160px;
-  z-index: 2;
-  height: 375px;
-  position: absolute;
-  background: url('/images/DegreeMatch-ShapesLEFT.svg') no-repeat;
+/*end media query*/
+/*End tablet and up styles*/
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	.degree-section {
+		flex-direction: row;
+	}
+	div.faculty-card {
+		grid-template-columns: 300px 1fr;
+		grid-template-rows: auto;
+    min-height: 360px;
+	}
+	div.name-button {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0;
+	}
+	h3.deadlines {
+		text-align: right;
+		padding-right: 60px;
+	}
+	.border-left {
+		border-left: 1px solid #78be20;
+	}
 }
 
-/* APPLICATION BANNER */
-
-section.application {
-  background-color: var(--primary-green);
-  margin-top: 5rem;
-  position: relative;
+/*end media query*/
+/*End landscape tablet and up styles*/
+/* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
+@media only screen and (min-width: 1200px) {
+	.bg-degree-match {
+		position: relative;
+	}
+	.bg-degree-match::after {
+		content: '';
+		bottom: 0;
+		right: 0px;
+		width: 160px;
+		height: 375px;
+		position: absolute;
+		background: url('../../images/degree_banner_shapes_right.svg') no-repeat;
+	}
 }
 
-section.application div {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding: 40px 15px;
+/*end media query*/
+/*End desktop only styles*/
+/* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
+@media only screen and (min-width: 1500px) {
+	.bg-degree-match::before {
+		content: '';
+		top: 25px;
+		left: 0px;
+		width: 231px;
+		height: 407px;
+		position: absolute;
+		background: url('../../images/degree_banner_shapes_left.svg') no-repeat;
+	}
 }
 
-section.application div article {
-  border-left: 1px solid var(--lime);
-  border-right: 1px solid var(--lime);
-}
-
-section.application div article:first-child,
-section.application div article:last-child {
-  border: none;
-}
-
-section.application div article h1 {
-  font-size: 55px;
-  color: white;
-}
-
-section.application div article h3 {
-  font-size: 24px;
-  color: white;
-}
-
-section.application div article:first-child h3 {
-  color: var(--lime);
-  text-align: right;
-}
-
-section.application div article button {
-  background-color: var(--lime);
-  border: none;
-  padding: 0.8rem;
-  color: var(--primary-green);
-  margin-left: 30px;
-}
-
-section.application div article button i {
-  font-size: 16px;
-  margin-left: 1rem;
-}
-
-section.application::before {
-  content: '';
-  top: 15px;
-  left: 200px;
-  transform: rotateX(180deg);
-  width: 61px;
-  height: 54px;
-  position: absolute;
-  background: url('/images/ZigZag.svg') no-repeat;
-}
-
-section.application::after {
-  content: '';
-  bottom: -50px;
-  right: 225px;
-  width: 95px;
-  height: 95px;
-  position: absolute;
-  background: url('/images/Ring.svg') no-repeat;
-}
+/*end media query*/
+/*End extra-wide desktop only styles*/
+/*END OF DOCUMENT*/

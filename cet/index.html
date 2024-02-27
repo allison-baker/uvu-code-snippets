@@ -1,83 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-      crossorigin="anonymous"
-    />
-    <script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link href="../common.css" rel="stylesheet" />
-    <link href="../dept.css" rel="stylesheet" />
-    <link href="dept.css" rel="stylesheet" />
+		<!-- CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+			crossorigin="anonymous"
+		/>
+		<script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="../common.css" rel="stylesheet" />
+		<link href="../dept.css" rel="stylesheet" />
+		<link href="dept.css" rel="stylesheet" />
 
-    <title>Bootstrap Testing</title>
-  </head>
-  <body>
-    <main>
-      <section class="degreeBanner">
-        <div class="d-flex flex-row justify-content-between align-items-center">
-          <section id="degreeText" class="w-60">
-            <i class="fa-solid fa-graduation-cap d-block"></i>
-            <h2 class="fw-bold text-uppercase d-inline">Degree</h2>
-            <h2 class="fw-lighter text-uppercase d-inline">Match</h2>
-            <h4 class="fw-normal">Over <strong>100 degree options</strong> to match your career goals.</h4>
-            <p>
-              With over 100 degrees ranging from certificates to master's degrees, The Smith College of Engineering & Technology has options for you
-              to reach your career goals &mdash; find your unique degree match.
-            </p>
-            <button class="fw-bolder">Check Out Our Degrees<i class="fa-solid fa-arrow-right d-inline"></i></button>
-          </section>
-          <section id="numbers" class="w-35">
-            <article>
-              <h1 class="fw-bold">03</h1>
-              <h4 class="fw-bold text-uppercase">Master's Degrees</h4>
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </article>
-            <article>
-              <h1 class="fw-bold">26</h1>
-              <h4 class="fw-bold text-uppercase">Bachelor's Degrees</h4>
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </article>
-            <article>
-              <h1 class="fw-bold">32</h1>
-              <h4 class="fw-bold text-uppercase">Associate Degrees</h4>
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </article>
-            <article>
-              <h1 class="fw-bold">07</h1>
-              <h4 class="fw-bold text-uppercase">Degree Minors</h4>
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </article>
-            <article>
-              <h1 class="fw-bold">04</h1>
-              <h4 class="fw-bold text-uppercase">Certificates</h4>
-              <span><i class="fa-solid fa-arrow-right"></i></span>
-            </article>
-          </section>
+		<title>Bootstrap Testing</title>
+	</head>
+	<body>
+		<div class="degree-section bg-uvu-green">
+			<div class="degree-container">
+				<span class="text-48 bold padding-10 countup text-white">11</span>
+				<span class="text-22 padding-10 text-white">Departments</span>
+			</div>
+			<div class="degree-container">
+				<span class="text-48 bold padding-10 countup text-white" data-count-delay="50">90+</span>
+				<span class="text-22 padding-10 text-white">Technology<br />Programs</span>
+			</div>
+			<div class="degree-container">
+				<span class="text-48 bold padding-10 text-lime">6,100+</span>
+				<span class="text-22 padding-10 text-lime">Students</span>
+			</div>
+			<div class="degree-container">
+				<span class="text-48 bold padding-10 countup text-white" data-count-delay="150">8</span>
+				<span class="text-22 padding-10 text-white">ENGR/CS<br />Programs</span>
+			</div>
+			<div class="degree-container">
+				<span class="text-48 bold padding-10 countup text-white" data-count-delay="150">310+</span>
+				<span class="text-22 padding-10 text-white">Faculty &amp; Staff</span>
+			</div>
+		</div>
+		<main style="max-width: 1200px; margin: 1rem auto; padding: 15px;">
+			<div class="faculty-card">
+        <div class="faculty-img">
+          <p><img src="images/dean_message_image.jpg" alt="professional headshot of a man" /></p>
         </div>
-      </section>
-      <div class="faculty-card">
-				<img src="images/Image.png" alt="professional headshot of a man" />
 				<div>
 					<h1>Faculty Quote Snippet</h1>
 					<blockquote>
 						Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-						fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus. Maecenas eget condimentum velit, sit amet feugiat
-						lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent auctor purus luctus enim
-						egestas, ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem.
-						Morbi convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
+						fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
 					</blockquote>
 					<div class="name-button">
 						<h3>Faculty Name, Position</h3>
@@ -85,13 +64,27 @@
 					</div>
 				</div>
 			</div>
-    </main>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+			<div class="card-advisor-2" style="margin-top: 50px;">
+				<div class="card-advisor-2-img">
+					<p><img title="Megan Stanley" src="images/dean_message_image.jpg" alt="professional headshot of a woman" width="475" height="auto" /></p>
+				</div>
+				<div class="card-advisor-2-content row">
+					<div class="card-advisor-2-inner-content">
+						<h2 class="bold uppercase margin-0 text-32 card-advisor-2-name">Megan Stanley</h2>
+						<h3 class="text-black text-raleway margin-0 text-18 card-advisor-2-title margin-bottom-20">Last Names A-J</h3>
+						<p><span class="fas fa-comments-alt" aria-hidden="true">&nbsp;</span>Message Megan Stanley</p>
+						<p><span class="fas fa-phone" aria-hidden="true">&nbsp;</span>(801) 863-6597</p>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
