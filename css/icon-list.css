@@ -1,0 +1,18 @@
+/* ====================== Mobile and Up ========================== */
+
+/* HOME PAGE ICONS */
+div.icon-list {
+	max-width: 970px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 100px 1fr;
+	column-gap: 15px;
+	row-gap: 20px;
+}
+div.icon-list i {
+	font-size: 75px;
+	color: #275d38;
+	align-self: center;
+	justify-self: center;
+}

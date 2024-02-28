@@ -1,0 +1,15 @@
+/* ====================== Mobile and Up ========================== */
+
+/* ACCREDITATION BANNER */
+.accred-banner {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	padding: 15px 0;
+}
+.accred-banner img {
+	width: 65px;
+	height: auto;
+}

@@ -1,0 +1,77 @@
+/* ====================== Mobile and Up ========================== */
+
+/* FACULTY TESTIMONIAL */
+blockquote {
+	border-color: #275d38;
+	padding: 0 20px;
+}
+.faculty-card {
+	display: grid;
+	grid-template-rows: 300px 1fr;
+	gap: 30px;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+	padding: 30px;
+	border-radius: 10px;
+}
+.faculty-img {
+	position: relative;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+.faculty-img p img {
+	width: 275px;
+	height: 275px;
+	border-radius: 50%;
+	z-index: 1;
+	position: absolute;
+	top: 0;
+	left: 25px;
+}
+.faculty-img p::before {
+	content: '';
+	position: absolute;
+	width: 275px;
+	height: 275px;
+	left: 0;
+	z-index: 0;
+	top: 25px;
+	border-radius: 50%;
+	background-color: #4ba23f;
+}
+.faculty-card h1 {
+	color: #000;
+	margin-top: 0;
+	text-transform: uppercase;
+}
+.name-button {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+.name-button h3 {
+	color: #4ba23f;
+	font-style: italic;
+	font-weight: 600;
+	margin: 0;
+}
+.name-button a {
+	margin: 0;
+}
+
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	div.faculty-card {
+		grid-template-columns: 300px 1fr;
+		grid-template-rows: auto;
+		min-height: 360px;
+	}
+	div.name-button {
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		gap: 0;
+	}
+}

@@ -1,0 +1,50 @@
+/* ====================== Mobile and Up ========================== */
+
+/* SPECIFIC STYLING FOR HELPFUL LINKS LISTS */
+.links-list-1 {
+	background-color: #f2f9e9;
+}
+.links-list-1 li {
+	border-bottom: 1px solid #a1d263;
+}
+.links-list-1 li span {
+	color: #78be20;
+}
+
+.links-list-2 {
+	background-color: #edf6ec;
+}
+.links-list-2 li {
+	border-bottom: 1px solid #81be79;
+}
+.links-list-2 li span {
+	color: #4ba23f;
+}
+
+/* Parent li with child ul */
+.list-dropdown {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* GENERAL STYLING FOR ALL HELPFUL LINKS LISTS */
+.links-list {
+	list-style: none;
+	padding: 15px;
+	border-radius: 5px;
+	letter-spacing: Ã‚Â 1px;
+}
+.links-list li {
+	margin: 0px;
+	padding: 8px 0px;
+}
+.links-list li:last-of-type {
+	border: none;
+}
+.links-list a {
+	color: #000;
+	font-size: 14px;
+	display: block;
+}

@@ -1,0 +1,47 @@
+/* ====================== Mobile and Up ========================== */
+
+/* HOME PAGE BANNER (FROM WOODBURY BUSINESS HOME PAGE) */
+.degree-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column;
+}
+.degree-container {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+a.degree-button {
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+a.degree-button span {
+	display: block;
+	margin-top: -20px;
+}
+a.degree-button:hover {
+	color: #c5e86c;
+}
+a.degree-button::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #c5e86c;
+	transition: width 0.3s;
+}
+a.degree-button:hover::after {
+	width: 100%;
+	/*     transition: width .3s; */
+}
+
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+    .degree-section {
+		flex-direction: row;
+	}
+}

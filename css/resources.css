@@ -1,0 +1,14 @@
+/* ====================== Mobile and Up ========================== */
+
+/* RESOURCES SECTION */
+.resources-grid {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 100px 1fr;
+	gap: 15px;
+}
+.resources-grid i {
+	font-size: 75px;
+	color: #275d38;
+	align-self: center;
+}

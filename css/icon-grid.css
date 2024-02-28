@@ -1,0 +1,52 @@
+/* ====================== Mobile and Up ========================== */
+
+/* ICON TABLE - CYBERSECURITY PAGE */
+div.icon-grid {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+p.grid-item {
+	display: flex;
+	padding: 1rem;
+	flex-direction: column;
+	text-align: center;
+	font-size: 22px;
+	font-family: 'Rajdhani', sans-serif;
+	color: #275d38;
+	font-weight: 500;
+	flex-basis: 20%;
+}
+p.grid-item i {
+	font-size: 75px;
+}
+
+/*End mobile and up styles*/
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	div.icon-grid {
+		flex-direction: row;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	p.grid-item {
+		font-size: 18px;
+	}
+	p.grid-item i {
+		font-size: 60px;
+	}
+}
+
+/*end media query*/
+/*End tablet and up styles*/
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	p.grid-item {
+		font-size: 22px;
+	}
+	p.grid-item i {
+		font-size: 75px;
+	}
+}

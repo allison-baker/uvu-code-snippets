@@ -1,0 +1,78 @@
+/* ====================== Mobile and Up ========================== */
+
+/* CUSTOM BUTTON - MODIFIED FROM UVU ACADEMICS */
+a.button-border.border-uvu-green,
+a.button-border.border-white,
+a.button-border.button-solid-lime {
+	border-radius: 0px;
+	position: relative;
+	text-transform: none;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 15px 45px 15px 15px;
+	display: block;
+	transition: 0.6s;
+	margin-block-start: 20px;
+	width: 100%;
+}
+a.button-border.border-uvu-green::after,
+a.button-border.border-white::after,
+a.button-border.button-solid-lime::after {
+	content: '\f061';
+	font-family: 'Font Awesome 5 Pro';
+	position: absolute;
+	right: 15px;
+	top: 17px;
+	font-size: 14px;
+}
+a.button-border.border-uvu-green:hover {
+	background-color: #275d38;
+	color: #fff;
+	text-decoration: none;
+}
+a.button-border.border-white:hover {
+	background-color: #fff;
+	color: #275d38;
+	text-decoration: none;
+}
+a.button-border.button-solid-lime:hover {
+	background-color: transparent;
+	border-color: #c5e86c;
+	color: #c5e86c;
+	text-decoration: none;
+}
+a.button-border.border-uvu-green.width-full {
+	width: 100%;
+}
+a.button-myuvu {
+	padding-inline-start: 20px;
+	padding-inline-end: 20px;
+	padding-block-start: 1ex;
+	padding-block-end: 1ex;
+	border-radius: 100px;
+	background-color: #275d38;
+	color: #fff;
+	border: 2px solid #275d38;
+	display: block;
+	margin-block-start: 10px;
+	width: fit-content;
+}
+a.button-myuvu:hover {
+	background-color: #fff;
+	border: 2px solid #275d38;
+	color: #275d38;
+}
+
+/*End mobile and up styles*/
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	a.button-border.border-uvu-green,
+	a.button-border.border-white,
+	a.button-border.button-solid-lime {
+		min-width: 200px;
+		width: fit-content;
+	}
+}
+
+/*end media query*/
+/*End tablet and up styles*/

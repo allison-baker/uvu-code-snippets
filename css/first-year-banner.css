@@ -1,0 +1,59 @@
+/* ====================== Mobile and Up ========================== */
+
+.contained {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* FIRST YEAR BANNER */
+.first-year-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.first-year-left {
+		flex-direction: row;
+	}
+}
+
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	.contained {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+}
+
+/* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
+@media only screen and (min-width: 1500px) {
+	.first-year {
+		position: relative;
+	}
+	.first-year::before {
+		content: '';
+		position: absolute;
+		height: 150px;
+		width: 184px;
+		transform: rotateZ(180deg);
+		background: url('../../images/banner_shapes_left.svg') no-repeat;
+		left: 0;
+		bottom: -15px;
+	}
+	.first-year::after {
+		content: '';
+		position: absolute;
+		height: 300px;
+		width: 174px;
+		transform: rotateZ(180deg);
+		background: url('../../images/banner_shapes_right.svg') no-repeat;
+		right: 0;
+		top: -30px;
+	}
+}
