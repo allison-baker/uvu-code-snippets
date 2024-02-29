@@ -1,0 +1,52 @@
+/* ====================== Mobile and Up ========================== */
+
+/* HOME PAGE CARDS - FROM UVU.EDU */
+.homepage-card .card-picture {
+	padding-bottom: 20px;
+}
+.homepage-card .card-picture-title {
+	background-color: #fff;
+	color: #275d38;
+}
+.homepage-card h2.card-picture-title {
+	font-size: 18px;
+	font-weight: 800;
+	text-transform: uppercase;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0px;
+	padding: 20px;
+	width: 100%;
+	background-color: #fff;
+	text-align: center;
+	color: #275d38;
+}
+.homepage-card .card-picture-img {
+	object-fit: contain;
+}
+.homepage-card .card-picture-content {
+	display: none;
+}
+.homepage-card .card-picture-button {
+	border-top: none;
+	text-align: left;
+	padding: 10px;
+	display: block;
+	border: 2px solid #275d38;
+	border-radius: 8px;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: bold;
+	margin: 0px auto;
+	padding: 20px 35px 20px 20px;
+	width: 80%;
+	font-size: 15px;
+}
+.homepage-card .card-picture-button:after {
+	content: '\f061';
+	font-family: 'Font Awesome 5 Pro';
+	position: absolute;
+	right: 18%;
+	font-size: 10px;
+	display: flex;
+	bottom: 54px;
+}
