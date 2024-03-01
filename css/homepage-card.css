@@ -21,6 +21,14 @@
 	text-align: center;
 	color: #275d38;
 }
+
+/* ONLY FOR ICON VERSION */
+.homepage-card h2.card-picture-title span {
+	display: block;
+	text-align: center;
+	margin-bottom: 8px;
+}
+
 .homepage-card .card-picture-img {
 	object-fit: contain;
 }
@@ -37,16 +45,18 @@
 	font-family: 'Rajdhani', sans-serif;
 	font-weight: bold;
 	margin: 0px auto;
-	padding: 20px 35px 20px 20px;
+	padding: 15px 35px 15px 15px;
 	width: 80%;
 	font-size: 15px;
+	position: relative;
+	color: #275d38;
 }
 .homepage-card .card-picture-button:after {
 	content: '\f061';
 	font-family: 'Font Awesome 5 Pro';
 	position: absolute;
-	right: 18%;
+	right: 15px;
 	font-size: 10px;
 	display: flex;
-	bottom: 54px;
+	bottom: 18px;
 }
