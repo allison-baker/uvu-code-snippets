@@ -2,12 +2,10 @@
 
 /* ADVISOR CARD */
 .card-advisor-2 {
-	box-shadow: 0px 1px 6px rgb(0 0 0 / 5%);
-	position: relative;
-	border-radius: 8px;
-	margin-top: 50px;
+	box-shadow: 0px 1px 6px rgb(0 0 0 / 5%) !important;
 	margin-bottom: 50px;
-	background-color: #fff;
+	flex-direction: column;
+	background-color: #fff !important;
 }
 .card-advisor-2:after {
 	content: '';
@@ -17,79 +15,87 @@
 	height: 100px;
 	z-index: -1;
 	position: absolute;
-	/* background: url(/cet/images/rectangle-stripes.png) no-repeat; */
-	background: url('../images/rectangle-stripes.png') no-repeat;
+	background: url(/cet/images/rectangle-stripes.png) no-repeat;
 	background-size: 300px;
 }
 .card-advisor-2-img {
-	position: absolute;
-	top: -50px;
-	left: 0;
+	left: 0 !important;
 }
 .card-advisor-2-img img {
-	width: 200px;
-	position: relative;
-	height: 200px;
+	width: 128px;
+	height: 128px;
+	object-fit: cover;
+	position: absolute;
+	left: 12px;
+	top: 0;
 	border-radius: 50%;
 	z-index: 1;
 }
-.card-advisor-2-img p {
+.card-advisor-2-img-container {
 	position: relative;
+	width: 140px !important;
+	height: 140px !important;
 }
-.card-advisor-2-img p:before {
+.card-advisor-2-img-container:before {
 	content: '';
 	position: absolute;
-	width: 190px;
-	height: 190px;
-	left: -10px;
+	width: 128px;
+	height: 128px;
+	left: 0;
 	z-index: 0;
 	bottom: 0;
 	border-radius: 50%;
 	background-color: #78be48;
 }
-.card-advisor-2-img p:after {
-	content: '';
-	bottom: -40px;
-	left: 10px;
-	width: 50px;
-	height: 50px;
-	position: absolute;
-	/* background: url(/cet/images/teal-ladder.svg) no-repeat; */
-	background: url('../images/teal-ladder.svg') no-repeat;
-	background-size: 50px;
-}
 .card-advisor-2-content {
-	padding: 210px 40px 40px 70px;
+	flex-direction: column;
+}
+.card-advisor-2-inner-content {
+	width: 100%;
 }
 .card-advisor-2-inner-content p {
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+}
+.card-advisor-2-info {
+	margin: 0 !important;
+}
+.card-advisor-btns {
+	display: none !important;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.card-advisor-2 {
+		margin-top: 50px !important;
+	}
+	.card-advisor-2-img {
+		display: block !important;
+		position: absolute !important;
+		top: -50px !important;
+		left: 0 !important;
+	}
+	.card-advisor-2-content {
+		padding: 110px 20px 20px 20px !important;
+	}
 }
 
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
-	.card-advisor-2 {
-		margin-top: 0;
-	}
-	.card-advisor-2-img {
-		top: 15px;
-		left: -10px;
-	}
 	.card-advisor-2-img img {
-		width: 180px !important;
-		height: 180px !important;
+		width: 185px !important;
+		height: 185px !important;
+		left: 15px;
 	}
-	.card-advisor-2-img p:before {
-		width: 170px;
-		height: 170px;
-		left: -10px;
-		bottom: 0;
+	.card-advisor-2-img-container {
+		width: 200px !important;
+		height: 200px !important;
+	}
+	.card-advisor-2-img-container:before {
+		width: 185px;
+		height: 185px;
 	}
 	.card-advisor-2-content {
-		padding: 50px 0px 50px 230px;
-	}
-	.card-advisor-2-img p:after {
-		bottom: -50px;
-		left: -10px;
+		padding: 175px 20px 20px 20px !important;
 	}
 }
 
@@ -98,30 +104,30 @@
 	.card-advisor-2 {
 		margin-left: auto;
 		margin-right: 20px;
+		margin-top: 0 !important;
+		flex-direction: row;
 		width: 80%;
 	}
 	.card-advisor-2-img {
-		left: -70px;
+		left: -70px !important;
+		top: 0 !important;
+		width: 215px;
+		height: 215px;
 	}
 	.card-advisor-2-img img {
 		width: 200px !important;
 		height: 200px !important;
 	}
-	.card-advisor-2-img p:before {
-		width: 190px;
-		height: 190px;
-		left: -20px;
-		bottom: -5px;
+	.card-advisor-2-img-container {
+		width: 215px !important;
+		height: 215px !important;
+	}
+	.card-advisor-2-img-container:before {
+		width: 200px;
+		height: 200px;
 	}
 	.card-advisor-2-content {
-		padding: 40px 50px 50px 170px;
-	}
-	.card-advisor-2-img p:after {
-		bottom: -50px;
-		left: -20px;
-		width: 60px;
-		height: 60px;
-		background-size: 60px;
+		padding: 30px 20px 30px 170px !important;
 	}
 	.card-advisor-2:after {
 		bottom: -60px;
@@ -130,4 +136,11 @@
 		height: 200px;
 		background-size: 350px;
 	}
+}
+
+/* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
+@media only screen and (min-width: 1345px) {
+	.card-advisor-2-content {
+        padding: 30px 20px 30px 210px !important;
+    }
 }
