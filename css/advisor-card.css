@@ -138,7 +138,7 @@
 	}
 }
 
-/* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
+/* ====================== Wide Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1345px) {
 	.card-advisor-2-content {
         padding: 30px 20px 30px 210px !important;
