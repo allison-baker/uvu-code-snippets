@@ -8,11 +8,12 @@ a.button-border.button-solid-lime {
 	position: relative;
 	text-transform: none;
 	font-size: 16px;
-	font-weight: bold;
 	padding: 15px 45px 15px 15px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
 	display: block;
 	transition: 0.6s;
-	margin-block-start: 20px;
+	margin-top: 20px;
 	width: 100%;
 }
 a.button-border.border-uvu-green::after,
@@ -41,8 +42,8 @@ a.button-border.button-solid-lime:hover {
 	color: #c5e86c;
 	text-decoration: none;
 }
-a.button-border.border-uvu-green.width-full {
-	width: 100%;
+a.button-border + a.button-border {
+	margin-top: 0;
 }
 a.button-myuvu {
 	padding-inline-start: 20px;
@@ -71,6 +72,9 @@ a.button-myuvu:hover {
 	a.button-border.button-solid-lime {
 		min-width: 200px;
 		width: fit-content;
+	}
+	a.button-border.border-uvu-green.width-full {
+		width: 100%;
 	}
 }
 
