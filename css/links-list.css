@@ -21,6 +21,16 @@
 	color: #4ba23f;
 }
 
+.links-list-3 {
+	background-color: #e6f3ec;
+}
+.links-list-3 li {
+	border-bottom: 1px solid #4da977;
+}
+.links-list-3 li span {
+	color: #00843d;
+}
+
 /* Parent li with child ul */
 .list-dropdown {
 	display: flex;
