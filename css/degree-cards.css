@@ -23,7 +23,7 @@
 	padding-block-end: 10px;
 	border-bottom: 4px solid #eaeaea;
 }
-.degree-card .degree-name a {
+.degree-card .degree-name, .degree-card .degree-name a {
 	font-family: 'Rajdhani', Arial, sans-serif;
 	font-size: 20px;
 	font-weight: bold;
