@@ -1,0 +1,23 @@
+/* ====================== Mobile and Up ========================== */
+
+/* HOME PAGE PROGRAMS */
+div.program-list {
+	max-width: 970px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+div.program-list div {
+	display: grid;
+	grid-template-columns: 130px 1fr;
+	align-items: center;
+}
+div.program-list div section {
+	padding: 15px;
+}
+div.program-list img {
+	max-width: 130px;
+	height: 100%;
+	object-fit: cover;
+}
