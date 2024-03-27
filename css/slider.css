@@ -1,0 +1,78 @@
+/* ====================== Mobile and Up ========================== */
+
+/* TESTIMONIAL CARDS & SLIDER */
+.slick-slide.slick-active:not(.slick-current) {
+	opacity: 1;
+}
+.slick-slide.slick-active:not(.slick-center):not(.slick-current):hover {
+	opacity: 1;
+}
+ul.slick-dots {
+	bottom: -40px;
+}
+.slick-slide div.text-center > img {
+	display: inline-block;
+}
+.testimonial-card .card-content-container-2 img {
+	width: 120px;
+	border-radius: 50%;
+	margin-top: -120px;
+	background-color: white;
+	padding: 5px;
+}
+.testimonial-card.card-multicontent .card-content-container-2 {
+	padding: 17px;
+}
+.slick-track > li.slick-slide {
+	height: 440px;
+}
+.testimonial-card .card-content-container-1 {
+	height: 53%;
+}
+.testimonial-card .card-content-container-2 {
+	height: 47%;
+}
+.testimonial-card .card-content-title {
+	font-size: 20px !important;
+	margin-top: 10px !important;
+	padding: 0 !important;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.slick-track > li.slick-slide {
+		height: 400px;
+	}
+	.testimonial-card .card-content-container-1 {
+		height: 45%;
+	}
+	.testimonial-card .card-content-container-2 {
+		height: 55%;
+	}
+}
+
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	.slick-track > li.slick-slide {
+		height: 435px;
+	}
+	.testimonial-card .card-content-container-1 {
+		height: 50%;
+	}
+	.testimonial-card .card-content-container-2 {
+		height: 50%;
+	}
+}
+
+/* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
+@media only screen and (min-width: 1200px) {
+	.slick-track > li.slick-slide {
+		height: 450px;
+	}
+	.testimonial-card .card-content-container-1 {
+		height: 52%;
+	}
+	.testimonial-card .card-content-container-2 {
+		height: 48%;
+	}
+}
