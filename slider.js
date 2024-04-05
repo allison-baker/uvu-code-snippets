@@ -1,8 +1,5 @@
-// Department JavaScript Document
+// FOR USE WITH TESTIMONIAL SLIDER
 $(document).ready(function () {
-
-
-    /*CHSS homepage student testimonial responsive slider*/
     uvu.import('slider', '.responsive-slider', function () {
         $('.responsive-slider ul').slick({
             dots: true,

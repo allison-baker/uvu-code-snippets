@@ -4,15 +4,18 @@ h2 {
 	font-weight: 600;
 }
 
+/* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO */
 .page-header {
 	margin-bottom: 0 !important;
 	border-bottom: none !important;
 }
 
+/* FOR PROGRAM PAGES WITH PROGRAM LEARNING OUTCOMES IN DROPDOWNS */
 .accordion:not(.accordion-unstyled) {
 	padding: 10px;
 }
 
+/* FOR DEGREE PAGES */
 .card-picture-9 + .card-picture-9 {
 	margin-block-start: 30px;
 }

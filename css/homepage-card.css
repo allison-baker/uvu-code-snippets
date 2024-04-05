@@ -1,6 +1,7 @@
 /* ====================== Mobile and Up ========================== */
 
-/* HOME PAGE CARDS - START WITH CARD-PICTURE-2 COMPONENT */
+/* HOME PAGE CARDS - MODIFIED BY AL BAKER FROM THE OLD UVU HOME PAGE */
+/* FOR DEPARTMENTS WITH 4 PROGRAMS. START WITH UVU COMPONENT CARD-PICTURE-2 */
 .homepage-card .card-picture {
 	padding-bottom: 20px;
 }
@@ -22,8 +23,9 @@
 	color: #275d38;
 }
 
-/* ONLY FOR ICON VERSION */
+/* ONLY FOR ICON VERSION - ADDED BY AL BAKER */
 .homepage-card h2.card-picture-title::before {
+	content: '\f19d';
 	font-family: "Font Awesome 5 Pro";
 	display: block;
 	text-align: center;
