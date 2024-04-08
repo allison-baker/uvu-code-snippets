@@ -1,6 +1,6 @@
 /* ====================== Mobile and Up ========================== */
 
-/* CODED BY AL BAKER - CURRENTLY ONLY ON DGM HOME PAGE */
+/* CODED BY AL BAKER - CURRENTLY ONLY ON DGM AND AVIATION HOME PAGES */
 .contained {
 	max-width: 1200px;
 	margin-right: auto;
@@ -8,7 +8,7 @@
 }
 
 /* FIRST YEAR BANNER */
-.first-year-left {
+.icon-banner-left {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -18,7 +18,7 @@
 
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
-	.first-year-left {
+	.icon-banner-left {
 		flex-direction: row;
 	}
 }
@@ -34,10 +34,10 @@
 
 /* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
 @media only screen and (min-width: 1500px) {
-	.first-year {
+	.icon-banner {
 		position: relative;
 	}
-	.first-year::before {
+	.icon-banner::before {
 		content: '';
 		position: absolute;
 		height: 150px;
@@ -47,7 +47,7 @@
 		left: 0;
 		bottom: -15px;
 	}
-	.first-year::after {
+	.icon-banner::after {
 		content: '';
 		position: absolute;
 		height: 300px;
