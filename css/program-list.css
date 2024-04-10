@@ -9,6 +9,7 @@ div.program-list {
 	gap: 20px;
 }
 div.program-list div {
+	min-height: 130px;
 	display: grid;
 	grid-template-rows: 200px 1fr;
 	align-items: center;
