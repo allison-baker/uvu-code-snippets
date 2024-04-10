@@ -15,11 +15,6 @@ h2 {
 	padding: 10px;
 }
 
-/* FOR DEGREE PAGES */
-.card-picture-9 + .card-picture-9 {
-	margin-block-start: 30px;
-}
-
 main {
 	max-width: 1200px;
 	margin: 0 auto;

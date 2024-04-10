@@ -10,14 +10,25 @@ div.program-list {
 }
 div.program-list div {
 	display: grid;
-	grid-template-columns: 130px 1fr;
+	grid-template-rows: 200px 1fr;
 	align-items: center;
 }
 div.program-list div section {
 	padding: 15px;
 }
+div.program-list div section a:hover {
+	text-decoration: underline;
+}
 div.program-list img {
-	max-width: 130px;
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	div.program-list div {
+		grid-template-rows: auto;
+		grid-template-columns: 130px 1fr;
+	}
 }

@@ -3,7 +3,10 @@
 /* CUSTOM BUTTON - MODIFIED BY AL BAKER, ORIGINALLY FROM UVU ACADEMICS */
 a.button-border.border-uvu-green,
 a.button-border.border-white,
-a.button-border.button-solid-lime {
+a.button-border.border-lime,
+a.button-solid,
+a.button-border.button-solid-lime,
+a.button-border.button-solid-forest {
 	border-radius: 0px;
 	position: relative;
 	text-transform: none;
@@ -18,7 +21,10 @@ a.button-border.button-solid-lime {
 }
 a.button-border.border-uvu-green::after,
 a.button-border.border-white::after,
-a.button-border.button-solid-lime::after {
+a.button-border.border-lime::after,
+a.button-solid::after,
+a.button-border.button-solid-lime::after,
+a.button-border.button-solid-forest::after {
 	content: '\f061';
 	font-family: 'Font Awesome 5 Pro';
 	position: absolute;
@@ -36,32 +42,62 @@ a.button-border.border-white:hover {
 	color: #275d38;
 	text-decoration: none;
 }
+a.button-border.border-lime:hover {
+	background-color: #c5e86c;
+	color: #275d38;
+	text-decoration: none;
+}
+a.button-solid:hover {
+	background-color: transparent;
+	color: #275d38;
+	text-decoration: none;
+}
 a.button-border.button-solid-lime:hover {
 	background-color: transparent;
 	border-color: #c5e86c;
 	color: #c5e86c;
 	text-decoration: none;
 }
-a.button-border + a.button-border {
+a.button-border.button-solid-forest:hover {
+	background-color: transparent;
+	border-color: #00843d;
+	color: #00843d;
+	text-decoration: none;
+}
+a.button-border + a.button-border,
+a.button-border + a.button-solid {
 	margin-top: 0;
 }
-a.button-myuvu {
+a.button-myuvu,
+a.button-myuvu-white {
 	padding-inline-start: 20px;
 	padding-inline-end: 20px;
 	padding-block-start: 1ex;
 	padding-block-end: 1ex;
 	border-radius: 100px;
-	background-color: #275d38;
-	color: #fff;
-	border: 2px solid #275d38;
 	display: block;
 	margin-block-start: 10px;
 	width: fit-content;
+}
+a.button-myuvu {
+	background-color: #275d38;
+	color: #fff;
+	border: 2px solid #275d38;
+}
+a.button-myuvu-white {
+	background-color: #fff;
+	color: #275d38;
+	border: 2px solid #fff;
 }
 a.button-myuvu:hover {
 	background-color: #fff;
 	border: 2px solid #275d38;
 	color: #275d38;
+}
+a.button-myuvu-white:hover {
+	background-color: #275d38;
+	border: 2px solid #fff;
+	color: #fff;
 }
 
 /*End mobile and up styles*/
@@ -69,11 +105,17 @@ a.button-myuvu:hover {
 @media only screen and (min-width: 768px) {
 	a.button-border.border-uvu-green,
 	a.button-border.border-white,
-	a.button-border.button-solid-lime {
+	a.button-border.border-lime,
+	a.button-solid,
+	a.button-border.button-solid-lime,
+	a.button-border.button-solid-forest {
 		min-width: 200px;
 		width: fit-content;
 	}
-	a.button-border.border-uvu-green.width-full {
+	a.wide-button {
+		min-width: 250px;
+	}
+	a.width-full {
 		width: 100%;
 	}
 }

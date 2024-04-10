@@ -33,6 +33,9 @@
 	text-transform: uppercase;
 	color: #000;
 }
+.degree-card .degree-name a:hover {
+	text-decoration: underline;
+}
 .degree-card .degree-img {
 	object-fit: cover;
 	order: -1;

@@ -1,0 +1,17 @@
+/* ====================== Mobile and Up ========================== */
+
+/* FOR DEGREE PAGES - MINOR CHANGES TO CARD:PICTURE-CARD 9 COMPONENT */
+.card-picture-9 + .card-picture-9 {
+	margin-block-start: 30px;
+}
+.card-picture-9 .card-picture-button {
+	color: #275d38;
+}
+.card-picture-9 .card-picture-button:hover {
+	text-decoration: underline;
+}
+@media only screen and (max-width: 767px) {
+	.card-picture-9 .card-picture-content ul {
+		padding-inline-start: 0px;
+	}
+}
