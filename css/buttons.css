@@ -65,7 +65,9 @@ a.button-border.button-solid-forest:hover {
 	text-decoration: none;
 }
 a.button-border + a.button-border,
-a.button-border + a.button-solid {
+a.button-border + a.button-solid,
+a.button-solid + a.button-solid,
+a.button-solid + a.button-border {
 	margin-top: 0;
 }
 a.button-myuvu,
