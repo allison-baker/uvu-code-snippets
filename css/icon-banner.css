@@ -1,0 +1,45 @@
+/* ====================== Mobile and Up ========================== */
+
+/* ICON BANNER */
+.icon-banner-left {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.icon-banner-left {
+		flex-direction: row;
+	}
+}
+
+/* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
+@media only screen and (min-width: 1500px) {
+    /* Just for icon banners with APFY shapes, currently only on DGM home page */
+	.icon-banner {
+		position: relative;
+	}
+	.icon-banner::before {
+		content: '';
+		position: absolute;
+		height: 150px;
+		width: 184px;
+		transform: rotateZ(180deg);
+		background: url('../../images/banner_shapes_left.svg') no-repeat;
+		left: 0;
+		bottom: -15px;
+	}
+	.icon-banner::after {
+		content: '';
+		position: absolute;
+		height: 300px;
+		width: 174px;
+		transform: rotateZ(180deg);
+		background: url('../../images/banner_shapes_right.svg') no-repeat;
+		right: 0;
+		top: -30px;
+	}
+}
