@@ -20,6 +20,7 @@
 		/>
 		<link href="../common.css" rel="stylesheet" />
 		<link href="../dept.css" rel="stylesheet" />
+		<link href="../css/salaries-section.css" rel="stylesheet" />
 
 		<title>Salaries Section</title>
 	</head>
@@ -43,32 +44,75 @@
 					<!-- END OF FIRST COLUMN -->
 				</div>
 				<div class="col-xs-12 col-sm-6">
-					<!-- CODE FOR THE SECOND COLUMN. WORKS WITH THREE STATS, CREATE A justify-around OR justify-evenly CLASS IF USING TWO STATS -->
-					<!-- MUST ADD .justify-between CLASS TO CSS: justify-content: space-between -->
+					<!-- CODE FOR THE SECOND COLUMN. WORKS WITH THREE STATS, USE .justify-around OR .justify-evenly CLASS IF USING TWO STATS -->
 					<div class="display-flex flex-column justify-between height-100">
 						<div class="row padding-top-10 display-flex flex-row align-items-center">
 							<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
 							<div class="col-sm-9">
-								<p class="text-lato text-24 margin-0">
-									Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
-								</p>
+								<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
 							</div>
 						</div>
 						<div class="row padding-top-10 display-flex flex-row align-items-center">
 							<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
 							<div class="col-sm-9">
-								<p class="text-lato text-24 margin-0">
-									Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
-								</p>
+								<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
 							</div>
 						</div>
 						<div class="row padding-top-10 display-flex flex-row align-items-center">
 							<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
 							<div class="col-sm-9">
-								<p class="text-lato text-24 margin-0">
-									Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
-								</p>
+								<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
 							</div>
+						</div>
+					</div>
+					<!-- END OF SECOND COLUMN -->
+				</div>
+			</section>
+
+			<!-- MODIFIED BANNER TO USE CSS GRID - CODED BY AL BAKER -->
+			<!-- FOR DEPARTMENTS THAT WANT FOUR STATS, A MIX BETWEEN ICONS AND LARGE NUMBERS IN THE SMALL COLUMN,
+				AND OTHER MODIFICATIONS. CAN ALSO HAVE A <hr /> TO BREAK UP SMALL STAT COLUMN -->
+			<!-- SET SECTION TO TWO COLUMN -->
+			<section>
+				<div class="col-xs-12 col-sm-6">
+					<!-- CODE FOR FIRST COLUMN. USE AS BIG SHOUTOUT FOR A MEDIAN SALARY/OTHER IMPRESSIVE NUMBER -->
+					<div class="height-100 display-flex flex-column align-items-center justify-evenly">
+						<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
+						<p class="text-rajdhani text-uvu-green text-96 bold">$164,070</p>
+						<p class="text-lato text-24 bold text-center">Median Salary [INSERT JOB TITLE]</p>
+						<p class="text-lato italic text-18 text-center">(Based on <a href="#" target="_blank" rel="noopener">[SOURCE LINK]</a>)</p>
+						<!-- OPTIONAL BUTTON FOR ANOTHER CALL TO ACTION -->
+						<p><a class="text-left margin-auto margin-top-20 button-border border-uvu-green" href="#">Learn More</a></p>
+					</div>
+					<!-- END OF FIRST COLUMN -->
+				</div>
+				<div class="col-xs-12 col-sm-6">
+					<!-- CODE FOR SECOND COLUMN. THIS IS AN EXAMPLE WITH FOUR STATS SEPARATED BY <hr /> -->
+					<div class="display-flex flex-column justify-between height-100">
+						<div class="fact-grid">
+							<p class="text-rajdhani text-64 text-uvu-green bold text-center">25</p>
+							<p class="text-lato text-24 margin-0 text-uvu-green bold">
+								Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
+							</p>
+						</div>
+						<div class="fact-grid">
+							<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
+							<p class="text-lato text-24 margin-0 text-clover bold">
+								Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
+							</p>
+						</div>
+						<hr class="width-100" />
+						<div class="fact-grid">
+							<p class="text-rajdhani text-64 text-uvu-green bold text-center">10</p>
+							<p class="text-lato text-24 margin-0 text-uvu-green bold">
+								Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
+							</p>
+						</div>
+						<div class="fact-grid">
+							<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
+							<p class="text-lato text-24 margin-0 text-clover bold">
+								Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
+							</p>
 						</div>
 					</div>
 					<!-- END OF SECOND COLUMN -->
