@@ -1,0 +1,41 @@
+/* ====================== Mobile and Up ========================== */
+
+/* ETHICS CARDS - CODED BY AL BAKER */
+.ethics-card {
+    display: grid;
+    grid-template-rows: 150px 1fr;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 40px 0;
+}
+.ethics-card + .ethics-card {
+    border-top: 1px solid #8E8C89;
+}
+.ethics-card div {
+    align-self: center;
+    justify-self: center;
+}
+.ethics-card .circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.ethics-card {
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: 1fr;
+    }
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	.ethics-card {
+        grid-template-columns: 270px 1fr;
+    }
+    .ethics-card .circle {
+        height: 200px;
+        width: 200px;
+    }
+}
