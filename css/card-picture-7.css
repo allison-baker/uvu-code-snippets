@@ -1,0 +1,32 @@
+/* ====================== Mobile and Up ========================== */
+
+/* CURRENTLY ON INTERNSHIPS AND ADVISING PAGES - START WITH CARD PICTURE 7 */
+@media only screen and (max-width: 767px) {
+	.card-picture-7 {
+		display: grid;
+		grid-template-columns: 100px 1fr;
+		max-height: 100px;
+	}
+	.card-picture-7 .card-picture-img {
+		height: 100px;
+		width: 100px;
+	}
+	.card-picture-7 .card-picture-title {
+		padding: 0 20px;
+		text-align: left;
+		white-space: normal;
+		align-self: center;
+	}
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.card-picture-7 .card-picture-title {
+		margin: auto 0;
+	}
+	.card-picture-7 .card-picture-img {
+		height: 194px;
+		width: 100%;
+		object-fit: cover;
+	}
+}
