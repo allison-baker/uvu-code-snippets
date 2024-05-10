@@ -5,7 +5,7 @@ h2 {
 }
 
 /* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO */
-.page-header {
+section.page-header:has(+section.full-width) {
 	margin-bottom: 0 !important;
 	border-bottom: none !important;
 }
