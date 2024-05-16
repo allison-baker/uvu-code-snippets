@@ -58,7 +58,7 @@ blockquote {
 	margin: 0;
 }
 .name-button a {
-	margin: 0;
+	margin-block-start: 0 !important;
 }
 
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */

@@ -73,15 +73,19 @@ a.button-solid + a.button-border {
 a.button-myuvu,
 a.button-myuvu-white,
 a.button-myuvu-outline {
-	padding-inline-start: 20px;
-	padding-inline-end: 20px;
-	padding-block-start: 1ex;
-	padding-block-end: 1ex;
+	padding-inline-start: 25px;
+	padding-inline-end: 25px;
+	padding-block-start: 8px;
+	padding-block-end: 8px;
 	border-radius: 100px;
 	display: block;
 	margin-block-start: 10px;
 	width: fit-content;
-	text-decoration: none;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none !important;
 }
 a.button-myuvu {
 	background-color: #275d38;
