@@ -71,7 +71,8 @@ a.button-solid + a.button-border {
 	margin-top: 0;
 }
 a.button-myuvu,
-a.button-myuvu-white {
+a.button-myuvu-white,
+a.button-myuvu-outline {
 	padding-inline-start: 20px;
 	padding-inline-end: 20px;
 	padding-block-start: 1ex;
@@ -80,6 +81,7 @@ a.button-myuvu-white {
 	display: block;
 	margin-block-start: 10px;
 	width: fit-content;
+	text-decoration: none;
 }
 a.button-myuvu {
 	background-color: #275d38;
@@ -91,14 +93,24 @@ a.button-myuvu-white {
 	color: #275d38;
 	border: 2px solid #fff;
 }
+a.button-myuvu-outline {
+	background-color: transparent;
+	color: #275d38;
+	border: 2px solid #275d38;
+}
 a.button-myuvu:hover {
-	background-color: #fff;
+	background-color: transparent;
 	border: 2px solid #275d38;
 	color: #275d38;
 }
 a.button-myuvu-white:hover {
 	background-color: #275d38;
 	border: 2px solid #fff;
+	color: #fff;
+}
+a.button-myuvu-outline:hover {
+	background-color: #275d38;
+	border: 2px solid #275d38;
 	color: #fff;
 }
 
