@@ -38,12 +38,12 @@
 /* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1200px) {
 	.half-banner {
-		justify-content: flex-end;
+		justify-content: end;
 		max-height: 330px;
 	}
 	.banner-content {
 		max-width: 600px;
-		justify-self: last baseline;
+		justify-self: end;
 	}
 	.banner-img img {
 		max-height: 330px;
