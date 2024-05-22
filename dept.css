@@ -23,9 +23,15 @@ section.page-header:has(+section.full-width) {
 	z-index: 0;
 }
 
-/* FOR PROGRAM PAGES WITH PROGRAM LEARNING OUTCOMES IN DROPDOWNS */
+/* BASIC STYLING FOR STANDARD UVU DROPDOWN */
 .accordion:not(.accordion-unstyled) {
 	padding: 10px;
+}
+.accordion-content {
+	padding-top: 10px !important;
+}
+.accordion-content td {
+	vertical-align: top !important;
 }
 
 /* Just for me to make my coding environment more accurately match how it would look in Omni */

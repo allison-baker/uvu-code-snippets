@@ -1,0 +1,51 @@
+/* ====================== Mobile and Up ========================== */
+
+/* MINIMAL DROPDOWNS - FROM UVU STUDENT AFFAIRS */
+/* ADDITIONAL STYLING FOR THE UVU ACCORDION TABLE TRANSFORM SNIPPET */
+.accordion {
+	background-color: transparent !important;
+	font-size: 1.25em;
+	font-family: Rajdhani;
+	font-weight: 400;
+	max-width: 80ch;
+	margin: 0.5em auto 10px;
+	padding: 20px 10px 10px 50px !important;
+	border-top: 1px solid var(--color-uvu-primary);
+	border-radius: 0 !important;
+}
+.accordion:first-child {
+	border-top: none;
+}
+.accordion:not(.accordion-unstyled):after {
+     display: none;
+}
+.accordion:not(.accordion-unstyled):before {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    content: "\f0da";
+    font-family: "Font Awesome 5 Solid", "Font Awesome 5 Pro";
+	font-weight: 100;
+    position: absolute;
+    left: 0;
+    margin: auto;
+    height: auto;
+    width: 30px;
+    color: var(--color-uvu-primary);
+}
+.accordion.open:not(.accordion-unstyled):before {
+	content: "\f0d7";   
+}
+.accordion-content {
+	padding: 10px !important;
+	background-color: transparent !important;
+	border-top: none !important;
+	max-width: 80ch;
+	margin: 10px auto !important;
+}
+.accordion.top {
+    border-top: none;
+}
