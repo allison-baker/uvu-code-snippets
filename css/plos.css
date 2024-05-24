@@ -1,0 +1,15 @@
+/* ====================== Mobile and Up ========================== */
+
+/* PLOS PAGE - USE CONTENT CARD WITH SHADOW, BOLD TITLE, TITLE BG COLOR UVU-GREEN */
+.card-content + .card-content {
+	margin-block-start: 30px;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+    /* WRAP ALL CONTENT CARDS IN A DIV WITH THIS CLASS */
+    .plos {
+		column-count: 2;
+		column-gap: 30px;
+	}
+}
