@@ -32,15 +32,27 @@ a.button-border.button-solid-forest::after {
 	top: 17px;
 	font-size: 14px;
 }
+a.button-border.border-uvu-green {
+	background-color: transparent;
+	color: #275d38;
+}
 a.button-border.border-uvu-green:hover {
 	background-color: #275d38;
 	color: #fff;
 	text-decoration: none;
 }
+a.button-border.border-white {
+	background-color: transparent;
+	color: #fff;
+}
 a.button-border.border-white:hover {
 	background-color: #fff;
 	color: #275d38;
 	text-decoration: none;
+}
+a.button-border.border-lime {
+	background-color: transparent;
+	color: #c5e86c;
 }
 a.button-border.border-lime:hover {
 	background-color: #c5e86c;
@@ -51,6 +63,9 @@ a.button-solid:hover {
 	background-color: transparent;
 	color: #275d38;
 	text-decoration: none;
+}
+a.button-border.button-solid-lime {
+	color: #275d38;
 }
 a.button-border.button-solid-lime:hover {
 	background-color: transparent;
@@ -131,10 +146,10 @@ a.button-myuvu-outline:hover {
 		width: fit-content;
 	}
 	a.wide-button {
-		min-width: 250px;
+		min-width: 250px !important;
 	}
 	a.width-full {
-		width: 100%;
+		width: 100% !important;
 	}
 }
 

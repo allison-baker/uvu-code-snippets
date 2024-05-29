@@ -1,6 +1,11 @@
 /* ====================== Mobile and Up ========================== */
 
 /* ICON BANNER */
+.contained {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
 .icon-banner-left {
 	display: flex;
 	flex-direction: column;

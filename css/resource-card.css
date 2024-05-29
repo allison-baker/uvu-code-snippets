@@ -1,0 +1,16 @@
+/* ====================== Mobile and Up ========================== */
+
+/* STUDENT RESOURCE PAGE CARDS - CODED BY AL BAKER */
+.card-btn-hover {
+	transition: 0.6s;
+}
+.card-btn-hover:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.card-btn-hover.card-btn-forest:hover {
+	background-color: #275d38;
+}
+.card-btn-hover.card-btn-primary:hover {
+	background-color: #00843d;
+}
