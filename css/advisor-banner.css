@@ -1,0 +1,14 @@
+/* ====================== Mobile and Up ========================== */
+
+/* ADVISOR BANNER */
+.contained {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.advisor-banner {
+    position: relative;
+    z-index: 0;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
