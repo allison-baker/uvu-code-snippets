@@ -1,0 +1,13 @@
+/* ====================== Mobile and Up ========================== */
+
+/* IF USING PROGRAM RESOURCES WITH TWO COLUMNS OF BUTTONS */
+.program-grid {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 20px;
+}
+.program-grid a {
+    margin: 0 !important;
+}
