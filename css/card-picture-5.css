@@ -6,3 +6,30 @@
 	border-color: #275d38 !important;
 	font-size: 24px !important;
 }
+
+/* OR USE CARD PICTURE CUSTOM */
+.card-picture-custom {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.card-picture-custom .card-picture-title {
+	font-family: 'Raleway', arial, sans-serif;
+	text-align: center;
+	color: #275d38;
+	font-weight: bold;
+	border-bottom: 5px solid;
+	padding: 30px 10px;
+	margin: auto 0px 0px;
+	border-color: #275d38;
+	font-size: 24px;
+}
+.card-picture-custom .card-picture-img {
+	height: 100%;
+	order: -1;
+}
+.card-picture-custom .card-picutre-content {
+	display: none;
+}
+.card-picture-custom .card-picture-button {
+	overflow: hidden;
+	height: 0;
+}
