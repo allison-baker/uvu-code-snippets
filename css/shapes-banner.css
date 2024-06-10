@@ -1,0 +1,97 @@
+/* ====================== Mobile and Up ========================== */
+
+/* HALF GREEN HALF GRAY BANNER WITH SHAPES */
+.mental-health-left::before {
+	content: '';
+	top: -220px;
+	left: 0px;
+	width: 100%;
+	transform: rotateX(180deg);
+	height: 100%;
+	position: absolute;
+	background: url(/online/images/assets/ladder.svg) no-repeat;
+}
+.mental-health-left {
+	position: relative;
+	padding: 50px 30px 60px;
+	background-color: #275d38;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mental-health-left h1 {
+    text-align: center;
+}
+.mental-health-left::after {
+	content: '';
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	right: 0;
+	z-index: 1;
+	bottom: -35px;
+	background-color: #86c6b9;
+}
+.mental-health-right {
+    padding-top: 35px;
+    background-color: #f9f9f9;
+}
+
+@media only screen and (min-width: 768px) {
+    .mental-health {
+        background: linear-gradient(90deg, #275D38 50%, #f9f9f9 20%);
+    }
+    .mental-health-left::before {
+        top: -250px;
+    	left: 50px;
+    }
+    .mental-health-left {
+        margin-bottom: 0;
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		background-color: inherit;
+    }
+    .mental-health-left h1 {
+        text-align: right;
+    }
+    .mental-health-left::after {
+        bottom: -60px;
+		right: -10px;
+    }
+    .mental-health-right {
+        background-color: inherit;
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .mental-health-left::before {
+        top: -200px;
+		left: 20px;
+    }
+    .mental-health-left::after {
+        bottom: -60px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .mental-health-left::before {
+		left: 60px;
+		top: -200px;
+    }
+    .mental-health-left::after {
+        right: -20px;
+    }
+}
+
+/* ====================== FOR REFERENCE ONLY!! DO NOT COPY INTO OMNI ========================== */
+/* TO MAKE THE SHAPES FOR THE EXAMPLE BANNER SHOW UP CORRECTLY IN GITHUB REFERENCE VERSION */
+.mental-health-left::before {
+	background: url('../images/ladder.svg') no-repeat;
+}
