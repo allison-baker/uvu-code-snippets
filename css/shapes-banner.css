@@ -1,6 +1,6 @@
 /* ====================== Mobile and Up ========================== */
 
-/* HALF GREEN HALF GRAY BANNER WITH SHAPES */
+/* HALF GREEN HALF GRAY BANNER WITH SHAPES - MODIFIED FROM UVU ONLINE */
 .mental-health-left::before {
 	content: '';
 	top: -220px;
@@ -37,12 +37,12 @@
     background-color: #f9f9f9;
 }
 
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
     .mental-health {
         background: linear-gradient(90deg, #275D38 50%, #f9f9f9 20%);
     }
     .mental-health-left::before {
-        top: -250px;
     	left: 50px;
     }
     .mental-health-left {
@@ -56,7 +56,7 @@
         text-align: right;
     }
     .mental-health-left::after {
-        bottom: -60px;
+        bottom: -40px;
 		right: -10px;
     }
     .mental-health-right {
@@ -70,20 +70,18 @@
     }
 }
 
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
     .mental-health-left::before {
         top: -200px;
 		left: 20px;
     }
-    .mental-health-left::after {
-        bottom: -60px;
-    }
 }
 
+/* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1200px) {
     .mental-health-left::before {
 		left: 60px;
-		top: -200px;
     }
     .mental-health-left::after {
         right: -20px;
