@@ -3,11 +3,11 @@
 /* HALF GREEN HALF GRAY BANNER WITH SHAPES - MODIFIED FROM UVU ONLINE */
 .mental-health-left::before {
 	content: '';
-	top: -220px;
+	top: -20px;
 	left: 0px;
-	width: 100%;
+	width: 87px;
 	transform: rotateX(180deg);
-	height: 100%;
+	height: 87px;
 	position: absolute;
 	background: url(/online/images/assets/ladder.svg) no-repeat;
 }
@@ -73,7 +73,6 @@
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
     .mental-health-left::before {
-        top: -200px;
 		left: 20px;
     }
 }
