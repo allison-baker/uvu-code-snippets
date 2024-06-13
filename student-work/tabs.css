@@ -1,0 +1,43 @@
+.student-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 30px;
+}
+.projects-tabs {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid #275d38;
+}
+.projects-tabs li {
+    margin: 0;
+}
+.projects-tabs li a {
+    display: block;
+    padding: 10px 64px;
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #275d38;
+    border-bottom: none;
+    font-weight: 600;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+}
+.projects-tabs li a.active {
+    background-color: #275d38;
+    color: white;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.student-projects {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	.student-projects {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
