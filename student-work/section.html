@@ -26,15 +26,19 @@
 	</head>
 	<body>
 		<!-- SECTION 2 -->
-		<section data-uvu-template="one-col" data-uvu-section="3" class="padding-top-40 padding-bottom-40">
+		 <!-- EXAMPLE SET UP FOR IN PAGE TAB NAVIGATION, IN USE ON OLD ENGINEERING TECHNOLOGY ET FAIR PAGE -->
+		<section data-uvu-template="one-col" data-uvu-section="3" class="padding-top-40">
+			<!-- SET SECTION TO ONE COLUMN, REMOVE BOTTOM PADDING ON SECTION -->
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12 col-target region" data-uvu-region="header">
+						<!-- PLACE TITLE IN HEADER REGION -->
 						<h2 class="text-center uppercase">More Student Work</h2>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-xs-12 col-target region" data-uvu-region="1">
+						<!-- PLACE TABS IN FIRST REGION -->
 						<ul class="projects-tabs">
 							<li><a class="active" href="#2023">2023</a></li>
 							<li><a href="#2022">2022</a></li>
@@ -47,10 +51,14 @@
 
 		<!-- SECTION 3 -->
 		<section data-uvu-template="one-col" data-uvu-section="4" class="padding-top-40 padding-bottom-40">
+			<!-- SET SECTION TO ONE COLUMN -->
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-xs-12 col-target region" data-uvu-region="header">
+						<!-- PLACE IN HEADER REGION -->
+						 <!-- MAKE SURE ID'S MATCH WHAT'S ON THE TAB NAVIGATION -->
 						<div id="2023">
+							<!-- USE TEMPLATE (ALSO IN THIS REPOSITORY) -->
 							<div
 								class="student-projects"
 								data-view-folder="/tm/mechatronics/students"
@@ -81,6 +89,8 @@
 				</div>
 			</div>
 		</section>
+		<!-- END EXAMPLE -->
+		 <!-- MAKE SURE TO ADD THE CSS FOR THE TABS TO THE SITE'S dept.css FILE -->
 		<!-- Option 1: Bootstrap Bundle with Popper -->
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
