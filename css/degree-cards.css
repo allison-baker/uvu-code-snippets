@@ -13,47 +13,35 @@
 	overflow: hidden;
 }
 .degree-card + .degree-card {
-	margin-block-start: 20px;
+	margin-block-start: 30px;
 }
 .degree-card.short-card {
 	height: 100%;
 }
-.main-degree {
+p + .degree-card {
 	margin-block-start: 40px;
 }
-.degree-card .degree-name {
-	margin: 0;
+.degree-card h2 {
 	padding-block-end: 10px;
 	border-bottom: 4px solid #eaeaea;
 }
-.degree-card .degree-name, .degree-card .degree-name a {
-	font-family: 'Rajdhani', Arial, sans-serif;
-	font-size: 20px;
-	font-weight: bold;
-	text-transform: uppercase;
-	color: #000;
-}
-.degree-card .degree-name a:hover {
+.degree-card h2 a:hover {
 	text-decoration: underline;
 }
-.degree-card .degree-img {
+.degree-card img {
 	object-fit: cover;
 	order: -1;
 	max-height: 194px;
 	grid-area: img;
 	width: 100%;
 }
-.degree-card .degree-content {
+.degree-card div {
 	padding: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	font-size: 14px;
 	grid-area: content;
-}
-.degree-card .degree-credits {
-	color: #275d38;
-	font-weight: 500;
 }
 
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
@@ -62,7 +50,7 @@
 		display: grid;
 		grid-template-areas: 'img content';
 	}
-	.degree-card .degree-img {
+	.degree-card img {
 		object-fit: cover;
 		max-height: none;
 		height: 100%;
@@ -70,13 +58,13 @@
 	.short-card {
 		grid-template-columns: 200px 1fr;
 	}
-	.short-card .degree-img {
+	.short-card img {
 		max-width: 200px;
 	}
 	.large-card {
 		grid-template-columns: 250px 1fr;
 	}
-	.large-card .degree-img {
+	.large-card img {
 		max-width: 250px;
 	}
 }

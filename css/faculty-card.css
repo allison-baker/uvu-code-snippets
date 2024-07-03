@@ -41,21 +41,10 @@ blockquote {
 	border-radius: 50%;
 	background-color: #4ba23f;
 }
-.faculty-card h1 {
-	color: #000;
-	margin-top: 0;
-	text-transform: uppercase;
-}
 .name-button {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
-}
-.name-button h3 {
-	color: #4ba23f;
-	font-style: italic;
-	font-weight: 600;
-	margin: 0;
 }
 .name-button a {
 	margin-block-start: 0 !important;
