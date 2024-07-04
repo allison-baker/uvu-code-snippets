@@ -2,24 +2,24 @@
 /* DESIGNED BY THE CET WEB TEAM, CODED BY AL BAKER */
 
 /* TAB NAVIGATION STYLING - CURRENTLY IN USE ON THE MECHATRONICS STUDENT WORK PAGE */
-.student-projects {
+div.student-projects {
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	gap: 30px;
 }
-.projects-tabs {
+ul.tabs {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
 	border-bottom: 3px solid #275d38;
 }
-.projects-tabs li {
+ul.tabs li {
 	margin: 0;
 	width: 25%;
 	max-width: 200px;
 }
-.projects-tabs li a {
+ul.tabs li a.anchorTab {
 	display: block;
 	padding: 10px;
 	width: 100%;
@@ -32,11 +32,11 @@
 	font-size: 18px;
 	transition: 0.6s;
 }
-.projects-tabs li a.active {
+ul.tabs li a.anchorTab.active {
 	background-color: #275d38;
 	color: white;
 }
-.projects-tabs li a:hover {
+ul.tabs li a.anchorTab:hover {
 	text-decoration: none;
 	background-color: #dcdcdd;
 	color: #275d38;
@@ -44,14 +44,14 @@
 
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
-	.student-projects {
+	div.student-projects {
 		grid-template-columns: 1fr 1fr;
 	}
 }
 
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
-	.student-projects {
+	div.student-projects {
 		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
