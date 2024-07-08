@@ -18,15 +18,33 @@
 .degree-card.short-card {
 	height: 100%;
 }
-p + .degree-card {
+p + .degree-card,
+a + .degree-card,
+.main-degree {
 	margin-block-start: 40px;
 }
-.degree-card h2 {
+.degree-card .degree-name {
+	margin: 0;
 	padding-block-end: 10px;
 	border-bottom: 4px solid #eaeaea;
 }
-.degree-card h2 a:hover {
+.degree-card .degree-name,
+.degree-card .degree-name a {
+	font-family: 'Rajdhani', Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #000;
+}
+.degree-card .degree-name a:hover {
 	text-decoration: underline;
+}
+.degree-card .degree-credits {
+	color: #275d38;
+	font-weight: 500;
+	font-family: 'Rajdhani', Arial, sans-serif;
+	font-size: 18px;
+	margin: 20px 0 10px 0;
 }
 .degree-card img {
 	object-fit: cover;

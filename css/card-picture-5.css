@@ -1,13 +1,6 @@
 /* ====================== Mobile and Up ========================== */
 
-/* FOR DEPARTMENTS WITH 3 OR 6 PROGRAMS - START WITH CARD-PICTURE-5 COMPONENT */
-.card-picture-5 .card-picture-title {
-	color: #275d38 !important;
-	border-color: #275d38 !important;
-	font-size: 24px !important;
-}
-
-/* OR USE CARD PICTURE CUSTOM */
+/* START WITH CARD PICTURE CUSTOM */
 .card-picture-custom {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
