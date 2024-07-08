@@ -44,6 +44,8 @@
 	display: flex;
 	align-content: space-between;
 	flex-wrap: wrap;
+	padding: 20px;
+	overflow: hidden;
 }
 .card-content h3 {
 	margin-block-start: 0;
@@ -69,6 +71,7 @@
 	padding: 15px 0;
 }
 .card-list-label p {
+	font-family: 'Rajdhani', Arial, sans-serif;
 	font-size: 2em;
 	text-align: center;
 	font-weight: 900;
