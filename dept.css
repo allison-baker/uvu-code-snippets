@@ -6,8 +6,8 @@ h2 {
 
 /* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO */
 section.page-header:has(+section.full-width) {
-	margin-bottom: 0 !important;
-	border-bottom: none !important;
+	margin-bottom: 0;
+	border-bottom: none;
 }
 
 /* ADD OVERLAY TO HERO IMAGES */
@@ -28,10 +28,10 @@ section.page-header:has(+section.full-width) {
 	padding: 10px;
 }
 .accordion-content {
-	padding-top: 10px !important;
+	padding-top: 10px;
 }
 .accordion-content td {
-	vertical-align: top !important;
+	vertical-align: top;
 }
 
 /* REFERENCE CLASSES FOR ME TO MAKE THESE EXAMPLES IN GITHUB APPEAR MORE ACCURATE TO HOW IT SHOWS UP IN OMNI */
