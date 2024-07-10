@@ -43,6 +43,9 @@ section.page-header:has(+section.full-width) {
 .text-64 {
 	font-size: 64px;
 }
+.justify-between {
+	justify-content: space-between;
+}
 main {
 	max-width: 1200px;
 	margin: 0 auto;

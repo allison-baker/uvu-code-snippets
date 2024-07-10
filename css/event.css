@@ -2,23 +2,23 @@
 
 /* EVENT LIST ITEM - START WITH EVENT LIST ITEM 1 */
 .event-item .event-item-container {
-	box-shadow: none !important;
-	border: none !important;
+	box-shadow: none;
+	border: none;
 }
 .event-item .event-frame {
-	border: none !important;
+	border: none;
 }
 .event-item .poster {
-	border: none !important;
+	border: none;
 }
 .event-item .event-details {
 	border-left: 5px solid #275d38;
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 .event-item .event-title {
-	text-transform: none !important;
-	margin-bottom: 5px !important;
+	text-transform: none;
+	margin-bottom: 5px;
 }
 .event-item .event-time {
 	display: none;
