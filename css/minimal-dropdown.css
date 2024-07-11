@@ -40,11 +40,11 @@
 	content: "\f0d7";   
 }
 .accordion-content {
-	padding: 10px !important;
-	background-color: transparent !important;
-	border-top: none !important;
+	padding: 10px;
+	background-color: transparent;
+	border-top: none;
 	max-width: 80ch;
-	margin: 10px auto !important;
+	margin: 10px auto;
 }
 .accordion.top {
     border-top: none;
