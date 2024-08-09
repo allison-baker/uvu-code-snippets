@@ -1,0 +1,26 @@
+<div class="row equal-height flex-row padding-bottom-15">
+	{{#if items}}
+        {{#each items}}
+            <div class="col-xs-12 col-sm-6 col-md-3 margin-top-10 margin-bottom-10">
+                <div class="story-card bg-white box-shadow display-flex flex-column height-100">
+                    <div class="story-img-custom">
+                        <img src="{{image.src}}" alt="{{image.alt}}"/>
+                    </div>
+                    <div class="story-card-title">
+                        <h3 class="story-card-title uppercase border-left-10 border-uvu-green text-uvu-green padding-left-20 padding-right-20 text-center">
+                            <span class="text-lato text-16">{{#if short-title}}{{short-title}}{{else}}{{title}}{{/if}}</span>
+                        </h3>
+                    </div>
+                    <div class="story-card-description text-lato text-15 text-center border-top-1 border-grey-dark-l2 padding-top-20 padding-bottom-20 margin-left-20 margin-right-20 text-grey-dark-d1">
+                        {{description}}
+                    </div>
+                    <div class="story-card-link padding-20 border-top-1 border-grey-dark-l2 margin-left-20 margin-right-20">
+                        <p class="text-lato text-uvu-green uppercase">
+                            <a href="{{link}}" class="text-lato">Read Full Article</a>
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        {{/each}}
+	{{/if}}
+</div>
