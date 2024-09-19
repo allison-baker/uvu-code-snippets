@@ -4,8 +4,16 @@ h2 {
 	font-weight: 600;
 }
 
-/* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO */
-section.page-header:has(+section.full-width) {
+/* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO - WORKING SOLUTION */
+.fullbleed:has(+ [class^='bg-']) {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+/* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO - CURRENT SOLUTION */
+.fullbleed:has(+ section.bg-grey),
+.fullbleed:has(+ section.bg-uvu-green),
+.fullbleed:has(+ section.bg-grey-xlight) {
 	margin-bottom: 0;
 	border-bottom: none;
 }
