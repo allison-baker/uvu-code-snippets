@@ -1,4 +1,4 @@
-// FOR USE WITH TESTIMONIAL SLIDER
+// FOR USE SLIDER
 $(document).ready(function () {
     uvu.import('slider', '.responsive-slider', function () {
         $('.responsive-slider ul').slick({
@@ -31,8 +31,6 @@ $(document).ready(function () {
                         slidesToScroll: 1
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick" instead of a settings object
             ]
         });
     });
