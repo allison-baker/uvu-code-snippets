@@ -1,7 +1,7 @@
 <section class="padding-top-40 padding-bottom-40 border-top-2 border-uvu-green">
 	<div class="row">
 		<div class="post-details col-sm-12">
-			<div class="blog" data-blog-preset="post-meta" data-blog-template-main="/cet/mce/capstone/_extra/templates/cta.html">&nbsp;</div>
+			<div class="blog" data-blog-preset="post-meta" data-blog-template-main="/cet/ece/student-work/_extra/templates/cta.html">&nbsp;</div>
 		</div>
         
 		<!-- disqus output -->

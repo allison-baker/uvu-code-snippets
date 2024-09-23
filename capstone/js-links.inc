@@ -1,1 +1,1 @@
-<script src='/cet/mce/capstone/_extra/blog-config.js'></script>
+<script src='/cet/mce/student-work/_extra/blog-config.js'></script>
