@@ -1,0 +1,12 @@
+<h2 class="section-title">Recent ECE Projects</h2>
+<ul class="recent-list">
+{{#if items}}
+	{{#each items}}
+		<li>
+			<a href="{{{link}}}">{{{title}}}</a>
+		</li>
+	{{/each}}
+{{else}}
+	<li>No recent posts</li>
+{{/if}}
+</ul>
