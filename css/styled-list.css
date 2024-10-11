@@ -5,10 +5,10 @@ ol.styled-list {
 	padding-inline-start: 65px;
 	padding-top: 10px;
 }
-ol.styled-list li + li {
+ol.styled-list > li + li {
 	margin-block-start: 30px;
 }
-ol.styled-list>li::before {
+ol.styled-list > li::before {
 	font-size: 2em;
 	content: counter(orderedList) '';
 	left: -65px;
