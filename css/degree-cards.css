@@ -20,6 +20,7 @@
 }
 p + .degree-card,
 a + .degree-card,
+ul + .degree-card,
 .main-degree {
 	margin-block-start: 40px;
 }
