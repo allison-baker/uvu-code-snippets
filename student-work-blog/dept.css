@@ -1,0 +1,81 @@
+/* ====================== Mobile and Up ========================== */
+
+/* CAPSTONE CARDS */
+.story-card-title h3 {
+	display: flex;
+	justify-content: center;
+	margin: 20px 0 20px 0;
+}
+.story-img-custom img {
+	object-position: 50% 40%;
+	height: 255px;
+	object-fit: cover;
+	width: 100%;
+}
+.capstone-slider .slick-slide {
+	padding-bottom: 15px;
+}
+.capstone-slider ul.slick-dots {
+	bottom: -20px;
+}
+
+/* CAPSTONE DROPDOWNS - MODIFIED MINIMAL DROPDOWN COMPONENT. WRAP IN DIV WITH CLASS .capstone-dropdown */
+.capstone-dropdown .accordion {
+	background-color: transparent !important;
+	font-size: 1.25em;
+	font-family: Rajdhani;
+	font-weight: 400;
+	margin: 0.5em auto 10px;
+	padding: 20px 10px 10px 50px !important;
+	border-top: 1px solid var(--color-uvu-primary);
+	border-radius: 0 !important;
+}
+.capstone-dropdown .accordion:first-child {
+	border-top: none;
+}
+.capstone-dropdown .accordion:not(.accordion-unstyled):after {
+	display: none;
+}
+.capstone-dropdown .accordion:not(.accordion-unstyled):before {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+	content: '\f0da';
+	font-family: 'Font Awesome 5 Solid', 'Font Awesome 5 Pro';
+	font-weight: 100;
+	position: absolute;
+	left: 0;
+	margin: auto;
+	height: auto;
+	width: 30px;
+	color: var(--color-uvu-primary);
+}
+.capstone-dropdown .accordion.open:not(.accordion-unstyled):before {
+	content: '\f0d7';
+}
+.capstone-dropdown .accordion-content {
+	padding: 15px;
+	background-color: transparent;
+	border-top: none;
+	margin: 10px auto;
+}
+.capstone-dropdown .accordion.top {
+	border-top: none;
+}
+
+/* IMAGE SLIDER ON INDIVIDUAL POSTS */
+.slick-slide {
+	padding: 0 15px;
+}
+.slick-slide.slick-active:not(.slick-current) {
+	opacity: 1;
+}
+.slick-slide.slick-active:not(.slick-center):not(.slick-current):hover {
+	opacity: 1;
+}
+ul.slick-dots {
+	bottom: -40px;
+}

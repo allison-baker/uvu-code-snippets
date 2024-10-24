@@ -48,4 +48,7 @@ Currently in use on [AET](https://uvu.edu/auto/aet/student-work/) and [Mechatron
 	</div>
 </div>
 ```
+
+## Contact Me
+
 The tab layout should now be functional. Reach out to Al Baker ([baker.allison.m@gmail.com](mailto:baker.allison.m@gmail.com)) if you have any issues.
