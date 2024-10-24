@@ -39,33 +39,3 @@ section[class*='bg-']:has([data-directory-style='styleAdvisor2']) {
 .accordion-content td {
 	vertical-align: top;
 }
-
-/* REFERENCE CLASSES FOR ME TO MAKE THESE EXAMPLES IN GITHUB APPEAR MORE ACCURATE TO HOW IT SHOWS UP IN OMNI */
-.contained {
-	max-width: 1200px;
-	margin-right: auto;
-	margin-left: auto;
-}
-.text-64 {
-	font-size: 64px;
-}
-.justify-between {
-	justify-content: space-between;
-}
-main {
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 15px;
-}
-
-p {
-	margin-bottom: 10px;
-}
-
-blockquote {
-	border-width: 7px;
-    margin: 20px 0px;
-	font-size: 17.5px;
-	padding: 0 20px;
-    border-left: 5px solid #275d38;
-}

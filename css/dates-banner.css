@@ -1,0 +1,94 @@
+/* ====================== Mobile and Up ========================== */
+/* CODED BY AL BAKER, BEN LINTON, AND CESAR ESPINOZA FOR USE ON CET PAGES */
+
+/* FOR THE ONE AND TWO DATE TABLE LAYOUT VERSIONS */
+.text-55 {
+	font-size: 55px;
+}
+.deadlines {
+    text-align: center;
+    padding: 20px;
+}
+.deadlines-btn {
+    padding: 20px;
+}
+
+/* FOR THE THREE DATES FLEX LAYOUT VERSION */
+div.application-banner {
+	display: flex;
+	flex-direction: column;
+}
+div.application-banner-inner div {
+	padding: 20px;
+}
+p.deadlines {
+	text-align: center;
+	font-size: 28px;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	/* ONE AND TWO DATE TABLE LAYOUT */
+    .deadlines-btn {
+		justify-content: center;
+	}
+
+    /* THREE DATES FLEX LAYOUT */
+    div.application-banner {
+		align-items: center;
+	}
+	div.application-banner-inner {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		justify-content: space-evenly;
+	}
+}
+
+/* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 992px) {
+	/* ONE AND TWO DATE TABLE LAYOUT */
+    .border-left {
+		border-left: 1px solid #00843d;
+	}
+	.border-right {
+		border-right: 1px solid #00843d;
+	}
+	.deadlines {
+		text-align: right;
+		padding: 10px 30px 10px 10px;
+	}
+	.dates-banner-row {
+		flex-direction: row;
+	}
+	.deadlines-btn {
+		padding: 10px 10px 10px 30px;
+		justify-content: normal;
+	}
+
+    /* THREE DATES FLEX LAYOUT */
+    div.application-banner {
+		flex-direction: row;
+		gap: 30px;
+	}
+	div.application-banner-inner {
+		justify-content: space-around;
+	}
+	div.application-banner-inner div {
+		flex-basis: 1/3;
+		padding: 10px 30px;
+	}
+    .border-left {
+		border-left: 1px solid #00843d;
+	}
+	.border-right {
+		border-right: 1px solid #00843d;
+	}
+	p.deadlines {
+		text-align: right;
+		font-size: 24px;
+	}
+	a.button-border.no-margin {
+		margin: 0;
+	}
+}
