@@ -1,10 +1,10 @@
 $(function () {
     uvu.import('data-view', '.student-projects', function () {
         $('.student-projects').dataview({
-            folder: '/tm/mechatronics/students',
+            folder: '/college-name/dept-name/program-name/student-work',
             limit: 0,
             template: {
-                main: "/tm/mechatronics/students/_extra/template.html"
+                main: "/college-name/dept-name/program-name/student-work/_extra/template.html"
             }
         });
     });
