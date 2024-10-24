@@ -1,19 +1,9 @@
 /* ====================== Mobile and Up ========================== */
+
+/* COMMON CSS THAT IS USED ON ALL OR ALMOST ALL CET WEB PAGES */
 h1,
 h2 {
 	font-weight: 600;
-}
-
-/* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO */
-.fullbleed:has(+ [class*='bg-']) {
-	margin-bottom: 0;
-	border-bottom: none;
-}
-
-/* FOR BANNERS WITH AN ADVISOR CARD */
-section[class*='bg-']:has([data-directory-style='styleAdvisor2']) {
-	position: relative;
-	z-index: 0;
 }
 
 /* ADD OVERLAY TO HERO IMAGES */
@@ -29,9 +19,21 @@ section[class*='bg-']:has([data-directory-style='styleAdvisor2']) {
 	z-index: 0;
 }
 
+/* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO */
+.fullbleed:has(+ [class*='bg-']) {
+	margin-bottom: 0;
+	border-bottom: none;
+}
+
+/* FOR BANNERS WITH AN ADVISOR CARD */
+section[class*='bg-']:has([data-directory-style='styleAdvisor2']) {
+	position: relative;
+	z-index: 0;
+}
+
 /* BASIC STYLING FOR STANDARD UVU DROPDOWN */
 .accordion:not(.accordion-unstyled) {
-	padding: 10px;
+	padding: 10px 40px 10px 10px;
 }
 .accordion-content {
 	padding-top: 10px;
