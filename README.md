@@ -29,6 +29,11 @@ UVU uses [Modern Campus CMS](https://moderncampus.com/products/web-content-manag
 - The Figma file with our team's design can be viewed [here](https://www.figma.com/design/YPPwrvoP3BhovcP3Aw26Sj/CET-Web-Strategy?node-id=3957-5145&t=uD8KNbutgbmjNoQl-1).
 - The UVU Design System Figma file can be viewd [here](https://www.figma.com/design/bsAB4aWCBM5w8MMimoOZy6/UVU-Design-System?node-id=179-103&t=vVa4OLSlghMzxhLB-1). Contact Emma Lam (below) for questions about this design system or to request access.
 
+### UVU Branding Guidelines
+
+- Browse the standards for fonts, colors, icons, patterns and more on the [UVU Marketing](https://www.uvu.edu/marketing/create/) page. Includes downloads of the icon library, patterns, and graphic design templates.
+- Browse photos from the UVU Photo team on [PhotoShelter](https://uvumarketing.photoshelter.com/index).
+
 ## Our Team
 
 If you have any questions, you can reach me (Al Baker, CET MarCom Junior Marketing/Design Lead & Student Developer) on [LinkedIn](https://www.linkedin.com/in/almarieb/) or at [baker.allison.m@gmail.com](mailto:baker.allison.m@gmail.com).
