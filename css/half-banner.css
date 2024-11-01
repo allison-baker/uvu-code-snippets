@@ -1,14 +1,39 @@
 /* ====================== Mobile and Up ========================== */
 
 /* HALF IMAGE HALF CONTENT BANNER - CODED BY AL BAKER */
+
+/* DEFAULT VERSION */
 .half-banner {
 	margin-right: -15px;
 	margin-left: -15px;
 }
-.banner-content {
+.half-banner .banner-content {
 	padding: 40px 15px;
 }
-.banner-img img {
+.half-banner .banner-img img {
+	max-height: 300px;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+.contained {
+	max-width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ONLY FOR LARGE TITLE AND SHAPES VERSION */
+.text-64 {
+	font-size: 64px;
+}
+.shapes-banner {
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.shapes-banner .banner-content {
+	padding: 40px 15px;
+}
+.shapes-banner .banner-img img {
 	max-height: 300px;
 	height: 100%;
 	width: 100%;
@@ -22,30 +47,86 @@
 
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
+	/* DEFAULT VERSION */
 	.half-banner {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		max-height: 375px;
+		max-height: 375px; /* Will need to Chrome inspect the page and see what the max-height should be */
 	}
-	.banner-img {
+	.half-banner .banner-img {
 		height: 100%;
 	}
-	.banner-img img {
-		max-height: 375px;
+	.half-banner .banner-img img {
+		max-height: 375px; /* Will need to Chrome inspect the page and see what the max-height should be */
+	}
+
+	/* LARGE TITLE AND SHAPES VERSION */
+	.shapes-banner {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-height: 375px; /* Will need to Chrome inspect the page and see what the max-height should be */
+	}
+	.shapes-banner .banner-img {
+		height: 100%;
+	}
+	.shapes-banner .banner-img img {
+		max-height: 375px; /* Will need to Chrome inspect the page and see what the max-height should be */
 	}
 }
 
 /* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1200px) {
+	/* DEFAULT VERSION */
 	.half-banner {
 		justify-content: end;
-		max-height: 350px;
+		max-height: 350px; /* Will need to Chrome inspect the page and see what the max-height should be */
 	}
-	.banner-content {
+	.half-banner .banner-content {
 		max-width: 600px;
 		justify-self: end;
 	}
-	.banner-img img {
-		max-height: 350px;
+	.half-banner .banner-img img {
+		max-height: 350px; /* Will need to Chrome inspect the page and see what the max-height should be */
+	}
+
+	/* LARGE TITLE AND SHAPES VERSION */
+	.shapes-banner {
+		justify-content: end;
+		max-height: 350px; /* Will need to Chrome inspect the page and see what the max-height should be */
+		position: relative;
+	}
+	.shapes-banner::before {
+		position: absolute;
+		content: '';
+		background: url('/images/banner-shapes.svg');
+		width: 125px;
+		height: 111px;
+		left: 0;
+		top: -50px;
+	}
+	.shapes-banner .banner-content {
+		max-width: 600px;
+		justify-self: end;
+	}
+	.shapes-banner .banner-img img {
+		max-height: 350px; /* Will need to Chrome inspect the page and see what the max-height should be */
+	}
+}
+
+/* ====================== Wide Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
+@media only screen and (min-width: 1500px) {
+	/* LARGE TITLE AND SHAPES VERSION */
+	.shapes-banner::before {
+		top: -30px;
+		left: 40px;
+	}
+}
+
+/* ====================== Extra-Wide Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
+@media only screen and (min-width: 1700px) {
+	/* LARGE TITLE AND SHAPES VERSION */
+	.shapes-banner::before {
+		top: -20px;
+		left: 125px;
 	}
 }
