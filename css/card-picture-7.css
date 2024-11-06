@@ -37,6 +37,7 @@
 	content: '\f544';
 }
 
+/* CUSTOM MEDIA QUERY TO CONTROL STYLES BELOW TABLET WIDTH WITHOUT AFFECTING LARGER SCREENS */
 @media only screen and (max-width: 767px) {
 	.card-picture-7 {
 		display: grid;
