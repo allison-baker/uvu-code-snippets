@@ -1,108 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+		<meta name="color-scheme" content="only light" />
 
-		<!-- CSS -->
+		<!-- GLOBAL UVU CSS -->
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/global.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/component.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/elements/elements.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers/helpers.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="https://uvu.edu/_common/css/wrapper/wrapper.css" />
+
+		<!-- GOOGLE FONTS AND FONTAWESOME V6 -->
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Raleway:400,500,600,700,800,900|Lato:400,500,600,700,800,900|Montserrat:400,500,600,700,800,900"
 			rel="stylesheet"
-			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-			crossorigin="anonymous"
 		/>
 		<script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="../common.css" rel="stylesheet" />
-		<link href="../wrapper.css" rel="stylesheet" />
-		<link href="../dept.css" rel="stylesheet" />
-		<link href="../css/global/buttons.css" rel="stylesheet" />
+
+		<!-- GLOBAL UVU JAVASCRIPT -->
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/jquery.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/loadjs.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/config.js"></script>
+
+		<!-- GLOBAL CET CSS -->
+		<link type="text/css" rel="stylesheet" href="/css/global/advisor-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/buttons.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/degree-cards.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/faculty-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/links-list.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/news.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/resources.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/dept.css" />
+
+		<!-- CSS FOR THIS COMPONENT -->
 		<link href="../css/icon-banner.css" rel="stylesheet" />
-		<title>Document</title>
+
+		<title>Icon Banner</title>
 	</head>
 	<body>
-		<!-- CODED BY AL BAKER -->
-		<!-- MAKE SURE TO BUT ICON BANNER CLASS ON FULL WIDTH SECTION IF YOU WANT APFY SHAPES
-			USE APPROPRIATE ICONS FROM UVU ICON LIBRARY. BRIGHT GREEN ICONS PAIR WELL WITH UVU GREEN/FOREST BUTTONS AND BG-GRAY -->
-		<section class="icon-banner bg-gray padding-top-40 padding-bottom-40">
-			<!-- BANNER WITH LIST ON RIGHT SIDE, BUTTON IN MAIN CONTENT -->
-			<div class="contained row">
-				<div class="col-xs-12 col-sm-8 icon-banner-left">
-					<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
-					<div>
-						<h2 class="uppercase text-uvu-green text-36 margin-top-0">Banner Title</h2>
-						<p>
-							Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-							fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
-						</p>
-						<a class="button-border button-solid-forest" href="#">Call to Action</a>
+		<!-- CODED BY AL BAKER FOR USE ON CET PAGES -->
+		<!-- IF YOU WANT APFY SHAPES, PUT .icon-banner CLASS ON SECTION -->
+		<main id="content-wrap" class="content-wrap">
+			<!-- ICON, BANNER TITLE, SHORT DESCRIPTION, AND LINKS -->
+			<section class="padding-top-40 padding-bottom-40 bg-grey">
+				<!-- SET SECTION TO TWO COLUMN BIG LEFT, PUT BG COLOR CLASS ON SECTION -->
+				<div class="container-fluid">
+					<div class="row equal-height">
+						<div class="col-xs-12 col-sm-8 col-target region">
+							<!-- COPY INTO BIG LEFT REGION -->
+							<div class="icon-banner-left">
+								<!-- USE APPROPRIATE ICONS FROM UVU ICON LIBRARY. BRIGHT GREEN ICONS PAIR WELL WITH UVU GREEN/FOREST BUTTONS AND BG-GRAY -->
+								<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
+								<div>
+									<h2 class="uppercase text-uvu-green text-36 margin-top-0">Banner Title</h2>
+									<p>
+										Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
+										fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+									</p>
+								</div>
+							</div>
+							<!-- END REGION -->
+						</div>
+						<div class="col-xs-12 col-sm-4 col-target region">
+							<!-- COPY INTO SMALL RIGHT REGION -->
+							<div class="height-100 display-flex flex-column justify-content-center align-items-center">
+								<a class="button-border border-uvu-green wide-button" href="#">Link 1</a>
+								<a class="button-border border-uvu-green wide-button" href="#">Link 2</a>
+								<a class="button-solid wide-button" href="#">Link 3</a>
+							</div>
+							<!-- END REGION -->
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-4 col-target region display-flex justify-content-center">
-					<table style="margin-left: auto; margin-right: auto">
-						<tbody>
-							<tr>
-								<td style="padding: 0px 10px">
-									<p class="text-36 text-uvu-green text-rajdhani bold text-center">1</p>
-								</td>
-								<td style="padding: 0px 10px">
-									<p class="text-24 text-rajdhani text-uvu-green">Do This First</p>
-								</td>
-							</tr>
-							<tr>
-								<td style="padding: 0px 10px">
-									<p class="text-36 text-uvu-green text-rajdhani bold text-center">2</p>
-								</td>
-								<td style="padding: 0px 10px">
-									<p class="text-24 text-rajdhani text-uvu-green">Then Do This</p>
-								</td>
-							</tr>
-							<tr>
-								<td style="padding: 0px 10px">
-									<p class="text-36 text-uvu-green text-rajdhani bold text-center">3</p>
-								</td>
-								<td style="padding: 0px 10px">
-									<p class="text-24 text-rajdhani text-uvu-green">Lastly, Do This</p>
-								</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-			<!-- END LIST BANNER -->
-		</section>
+			</section>
 
-		<section class="icon-banner bg-gray padding-top-40 padding-bottom-40 margin-top-40">
-			<!-- THREE BUTTONS ON RIGHT SIDE INSTEAD OF LIST, NO BUTTON IN MAIN CONTENT -->
-			<div class="contained row">
-				<div class="col-xs-12 col-sm-8 col-target region icon-banner-left">
-					<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
-					<div>
-						<h2 class="uppercase text-36">Banner Title</h2>
-						<p>
-							Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
-							fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
-						</p>
+			<!-- ICON, BANNER TITLE, SHORT DESCRIPTION, CALL TO ACTION, AND LIST -->
+			<section class="padding-top-40 padding-bottom-40 bg-grey">
+				<!-- SET SECTION TO TWO COLUMN BIG LEFT, PUT BG COLOR CLASS ON SECTION -->
+				<div class="container-fluid">
+					<div class="row equal-height">
+						<div class="col-xs-12 col-sm-8 col-target region">
+							<!-- COPY INTO FIRST REGION -->
+							<div class="icon-banner-left">
+								<!-- USE APPROPRIATE ICONS FROM UVU ICON LIBRARY. BRIGHT GREEN ICONS PAIR WELL WITH UVU GREEN/FOREST BUTTONS AND BG-GRAY -->
+								<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
+								<div>
+									<h2 class="uppercase text-uvu-green text-36 margin-top-0">Banner Title</h2>
+									<p>
+										Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
+										fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+									</p>
+									<a class="button-border button-solid-forest" href="#">Call to Action</a>
+								</div>
+							</div>
+							<!-- END FIRST REGION -->
+						</div>
+						<div class="col-xs-12 col-sm-4 col-target region">
+							<!-- COPY INTO SECOND REGION -->
+							<div class="height-100 display-flex align-items-center">
+								<table style="margin-left: auto; margin-right: auto">
+									<tbody>
+										<tr>
+											<td style="padding: 0px 10px">
+												<p class="text-36 text-uvu-green text-rajdhani bold text-center">1</p>
+											</td>
+											<td style="padding: 0px 10px">
+												<p class="text-24 text-rajdhani text-uvu-green">Do This First</p>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding: 0px 10px">
+												<p class="text-36 text-uvu-green text-rajdhani bold text-center">2</p>
+											</td>
+											<td style="padding: 0px 10px">
+												<p class="text-24 text-rajdhani text-uvu-green">Then Do This</p>
+											</td>
+										</tr>
+										<tr>
+											<td style="padding: 0px 10px">
+												<p class="text-36 text-uvu-green text-rajdhani bold text-center">3</p>
+											</td>
+											<td style="padding: 0px 10px">
+												<p class="text-24 text-rajdhani text-uvu-green">Lastly, Do This</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<!-- END SECOND REGION -->
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-4 display-flex flex-column align-items-center col-target region">
-					<a class="button-border border-uvu-green wide-button" href="#">Link 1</a>
-					<a class="button-border border-uvu-green wide-button" href="#">Link 2</a>
-					<a class="button-solid wide-button" href="#">Link 3</a>
-				</div>
-			</div>
-			<!-- END BUTTON BANNER -->
-		</section>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-			crossorigin="anonymous"
-		></script>
+			</section>
+		</main>
 	</body>
 </html>
