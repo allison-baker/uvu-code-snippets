@@ -1,131 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+		<meta name="color-scheme" content="only light" />
 
-		<!-- CSS -->
+		<!-- GLOBAL UVU CSS -->
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/global.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/component.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/elements/elements.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers/helpers.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="https://uvu.edu/_common/css/wrapper/wrapper.css" />
+
+		<!-- GOOGLE FONTS AND FONTAWESOME V6 -->
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Raleway:400,500,600,700,800,900|Lato:400,500,600,700,800,900|Montserrat:400,500,600,700,800,900"
 			rel="stylesheet"
-			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-			crossorigin="anonymous"
 		/>
 		<script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="../common.css" rel="stylesheet" />
-		<link href="../wrapper.css" rel="stylesheet" />
-		<link href="../dept.css" rel="stylesheet" />
-		<link href="../css/global/buttons.css" rel="stylesheet" />
+
+		<!-- GLOBAL UVU JAVASCRIPT -->
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/jquery.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/loadjs.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/config.js"></script>
+
+		<!-- GLOBAL CET CSS -->
+		<link type="text/css" rel="stylesheet" href="/css/global/advisor-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/buttons.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/degree-cards.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/faculty-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/links-list.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/news.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/resources.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/dept.css" />
+
+		<!-- CSS FOR THIS COMPONENT -->
 		<link href="../css/salaries-section.css" rel="stylesheet" />
 
 		<title>Salaries Section</title>
 	</head>
 	<body>
-		<main>
-			<!-- ORIGINALLY FROM OLD WOODBURY PROGRAM PAGES, SPECIFICALLY ACCOUNTING. MODIFIED BY AL BAKER.
-				USE APPROPRIATE ICONS FROM UVU ICON LIBRARY. BRIGHT GREEN ICONS PAIR WELL WITH UVU GREEN OR BLACK TEXT -->
-			<section class="row padding-top-40 padding-bottom-40">
-				<!-- SET SECTION TO TWO COLUMNS -->
-				<div class="col-xs-12 col-sm-6">
-					<!-- CODE FOR FIRST COLUMN. USE AS BIG SHOUTOUT FOR A MEDIAN SALARY/OTHER IMPRESSIVE NUMBER -->
-					<div class="text-center">
-						<img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" />
-						<p class="text-rajdhani text-uvu-green text-96 bold">$164,070</p>
-						<p class="text-lato text-24 bold">Median Salary [INSERT JOB TITLE]</p>
-						<p class="text-lato italic text-18">
-							(Based on
-							<a href="#" target="_blank" rel="noopener">[SOURCE LINK]</a>)
-						</p>
+		<!-- ORIGINALLY FROM OLD WOODBURY PROGRAM PAGES, SPECIFICALLY ACCOUNTING. MODIFIED BY AL BAKER.
+			USE APPROPRIATE ICONS FROM UVU ICON LIBRARY. BRIGHT GREEN ICONS PAIR WELL WITH UVU GREEN OR BLACK TEXT -->
+		<main id="content-wrap" class="content-wrap">
+			<!-- LARGE STAT W/ OPTIONAL BUTTON, THREE TO FOUR SMALLER STATS -->
+			<section class="padding-top-40 padding-bottom-40">
+				<!-- SET SECTION TO TWO COLUMN -->
+				<div class="container-fluid">
+					<div class="row equal-height">
+						<div class="col-xs-12 col-sm-6 col-target region">
+							<!-- CODE FOR FIRST COLUMN. USE AS BIG SHOUTOUT FOR A MEDIAN SALARY/OTHER IMPRESSIVE NUMBER -->
+							<div class="height-100 text-center">
+								<img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" />
+								<p class="text-rajdhani text-uvu-green text-96 bold">$164,070</p>
+								<p class="text-lato text-24 bold">Median Salary [INSERT JOB TITLE]</p>
+								<p class="text-lato italic text-18">
+									(Based on
+									<a href="#" target="_blank" rel="noopener">[SOURCE LINK]</a>)
+								</p>
+							</div>
+							<!-- END OF FIRST COLUMN -->
+						</div>
+						<div class="col-xs-12 col-sm-6 col-target region">
+							<!-- CODE FOR THE SECOND COLUMN. WORKS WITH THREE STATS, USE .justify-around OR .justify-evenly CLASS IF USING TWO STATS -->
+							<div class="display-flex flex-column justify-between height-100">
+								<div class="row padding-top-10 display-flex flex-row align-items-center">
+									<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
+									<div class="col-sm-9">
+										<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
+									</div>
+								</div>
+								<div class="row padding-top-10 display-flex flex-row align-items-center">
+									<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
+									<div class="col-sm-9">
+										<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
+									</div>
+								</div>
+								<div class="row padding-top-10 display-flex flex-row align-items-center">
+									<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
+									<div class="col-sm-9">
+										<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
+									</div>
+								</div>
+							</div>
+							<!-- END OF SECOND COLUMN -->
+						</div>
 					</div>
-					<!-- END OF FIRST COLUMN -->
-				</div>
-				<div class="col-xs-12 col-sm-6">
-					<!-- CODE FOR THE SECOND COLUMN. WORKS WITH THREE STATS, USE .justify-around OR .justify-evenly CLASS IF USING TWO STATS -->
-					<div class="display-flex flex-column justify-between height-100">
-						<div class="row padding-top-10 display-flex flex-row align-items-center">
-							<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
-							<div class="col-sm-9">
-								<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
-							</div>
-						</div>
-						<div class="row padding-top-10 display-flex flex-row align-items-center">
-							<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
-							<div class="col-sm-9">
-								<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
-							</div>
-						</div>
-						<div class="row padding-top-10 display-flex flex-row align-items-center">
-							<div class="col-sm-3"><img src="https://placehold.co/200x200/" alt="icon" width="200" height="200" /></div>
-							<div class="col-sm-9">
-								<p class="text-lato text-24 margin-0">Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.</p>
-							</div>
-						</div>
-					</div>
-					<!-- END OF SECOND COLUMN -->
 				</div>
 			</section>
 
-			<!-- MODIFIED BANNER TO USE CSS GRID - CODED BY AL BAKER -->
+			<!-- MODIFIED VERSION USING CSS GRID -->
 			<!-- FOR DEPARTMENTS THAT WANT FOUR STATS, A MIX BETWEEN ICONS AND LARGE NUMBERS IN THE SMALL COLUMN,
 				AND OTHER MODIFICATIONS. CAN ALSO HAVE A <hr /> TO BREAK UP SMALL STAT COLUMN -->
-			<!-- SET SECTION TO TWO COLUMN -->
-			<section class="row padding-top-40 padding-bottom-40">
-				<div class="col-xs-12 col-sm-6">
-					<!-- CODE FOR FIRST COLUMN. USE AS BIG SHOUTOUT FOR A MEDIAN SALARY/OTHER IMPRESSIVE NUMBER -->
-					<div class="height-100 display-flex flex-column align-items-center justify-evenly">
-						<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
-						<p class="text-rajdhani text-uvu-green text-96 bold">$164,070</p>
-						<p class="text-lato text-24 bold text-center">Median Salary [INSERT JOB TITLE]</p>
-						<p class="text-lato italic text-18 text-center">(Based on <a href="#" target="_blank" rel="noopener">[SOURCE LINK]</a>)</p>
-						<!-- OPTIONAL BUTTON FOR ANOTHER CALL TO ACTION -->
-						<p><a class="text-left margin-auto margin-top-20 button-border border-uvu-green" href="#">Learn More</a></p>
+			<section class="padding-top-40 padding-bottom-40">
+				<!-- SET SECTION TO TWO COLUMN -->
+				<div class="container-fluid">
+					<div class="row equal-height">
+						<div class="col-xs-12 col-sm-6 col-target region">
+							<!-- CODE FOR FIRST COLUMN. USE AS BIG SHOUTOUT FOR A MEDIAN SALARY/OTHER IMPRESSIVE NUMBER -->
+							<div class="height-100 display-flex flex-column align-items-center justify-evenly">
+								<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
+								<p class="text-rajdhani text-uvu-green text-96 bold">$164,070</p>
+								<p class="text-lato text-24 bold text-center">Median Salary [INSERT JOB TITLE]</p>
+								<p class="text-lato italic text-18 text-center">(Based on <a href="#" target="_blank" rel="noopener">[SOURCE LINK]</a>)</p>
+								<!-- OPTIONAL BUTTON FOR ANOTHER CALL TO ACTION -->
+								<p><a class="text-left margin-auto margin-top-20 button-border border-uvu-green" href="#">Learn More</a></p>
+							</div>
+							<!-- END OF FIRST COLUMN -->
+						</div>
+						<div class="col-xs-12 col-sm-6 col-target region">
+							<!-- CODE FOR SECOND COLUMN. THIS IS AN EXAMPLE WITH FOUR STATS SEPARATED BY <hr /> -->
+							<div class="display-flex flex-column justify-between height-100">
+								<div class="fact-grid">
+									<p class="text-rajdhani text-64 text-uvu-green bold text-center">25</p>
+									<p class="text-lato text-24 margin-0 text-uvu-green bold">
+										Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
+									</p>
+								</div>
+								<div class="fact-grid">
+									<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
+									<p class="text-lato text-24 margin-0 text-clover bold">
+										Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
+									</p>
+								</div>
+								<hr class="width-100" />
+								<div class="fact-grid">
+									<p class="text-rajdhani text-64 text-uvu-green bold text-center">10</p>
+									<p class="text-lato text-24 margin-0 text-uvu-green bold">
+										Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
+									</p>
+								</div>
+								<div class="fact-grid">
+									<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
+									<p class="text-lato text-24 margin-0 text-clover bold">
+										Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
+									</p>
+								</div>
+							</div>
+							<!-- END OF SECOND COLUMN -->
+						</div>
 					</div>
-					<!-- END OF FIRST COLUMN -->
-				</div>
-				<div class="col-xs-12 col-sm-6">
-					<!-- CODE FOR SECOND COLUMN. THIS IS AN EXAMPLE WITH FOUR STATS SEPARATED BY <hr /> -->
-					<div class="display-flex flex-column justify-between height-100">
-						<div class="fact-grid">
-							<p class="text-rajdhani text-64 text-uvu-green bold text-center">25</p>
-							<p class="text-lato text-24 margin-0 text-uvu-green bold">
-								Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
-							</p>
-						</div>
-						<div class="fact-grid">
-							<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
-							<p class="text-lato text-24 margin-0 text-clover bold">
-								Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
-							</p>
-						</div>
-						<hr class="width-100" />
-						<div class="fact-grid">
-							<p class="text-rajdhani text-64 text-uvu-green bold text-center">10</p>
-							<p class="text-lato text-24 margin-0 text-uvu-green bold">
-								Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
-							</p>
-						</div>
-						<div class="fact-grid">
-							<img src="https://placehold.co/200x200" alt="icon" width="200" height="200" />
-							<p class="text-lato text-24 margin-0 text-clover bold">
-								Lorem ipsum dolor sit amet consectetur. Scelerisque nullam elementum vitae feugiat.
-							</p>
-						</div>
-					</div>
-					<!-- END OF SECOND COLUMN -->
 				</div>
 			</section>
 		</main>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-			crossorigin="anonymous"
-		></script>
 	</body>
 </html>

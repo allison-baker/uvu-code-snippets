@@ -1,132 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+		<meta name="color-scheme" content="only light" />
 
-		<!-- CSS -->
+		<!-- GLOBAL UVU CSS -->
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/global.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/component.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/elements/elements.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers/helpers.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="https://uvu.edu/_common/css/wrapper/wrapper.css" />
+
+		<!-- GOOGLE FONTS AND FONTAWESOME V6 -->
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Raleway:400,500,600,700,800,900|Lato:400,500,600,700,800,900|Montserrat:400,500,600,700,800,900"
 			rel="stylesheet"
-			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-			crossorigin="anonymous"
 		/>
 		<script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="../common.css" rel="stylesheet" />
-		<link href="../wrapper.css" rel="stylesheet" />
-		<link href="../dept.css" rel="stylesheet" />
+
+		<!-- GLOBAL UVU JAVASCRIPT -->
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/jquery.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/loadjs.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/config.js"></script>
+
+		<!-- GLOBAL CET CSS -->
+		<link type="text/css" rel="stylesheet" href="/css/global/advisor-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/buttons.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/degree-cards.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/faculty-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/links-list.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/news.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/resources.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/dept.css" />
+
+		<!-- CSS FOR THIS COMPONENT -->
 		<link href="../css/scroll-cards.css" rel="stylesheet" />
 
 		<title>Scroll Cards</title>
 	</head>
 	<body>
 		<!-- FROM NEW UVU ADMISSIONS PAGE -->
-		<section class="padding-top-40 padding-bottom-40">
-			<!-- SET SECTION TO FULL WIDTH ONE COLUMN, COPY ALL BELOW CODE INTO ONE REGION -->
-			<div class="row equal-height flex-row">
-				<div class="col-xs-12 col-sm-4 col-target region">
-					<div class="card-list-label">
-						<p>Hundreds of Jobs <span class="sub">in Many Industries</span></p>
+		<main id="content-wrap" class="content-wrap">
+			<section class="padding-top-40 padding-bottom-40">
+				<!-- SET SECTION TO ONE COLUMN -->
+				<div>
+					<!-- REMOVE .container-fluid TO MAKE FULL WIDTH -->
+					<div class="row">
+						<div class="col-xs-12 col-target region">
+							<!-- COPY BELOW CODE INTO ONE REGION -->
+							<div class="row equal-height flex-row">
+								<div class="col-xs-12 col-sm-4 col-target region">
+									<div class="card-list-label">
+										<p>Hundreds of Jobs <span class="sub">in Many Industries</span></p>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-8 col-target region card-list-holder">
+									<div class="scroll-container">
+										<ol class="card-list scroll-container-inner">
+											<li class="card one">
+												<div class="card-content">
+													<div class="main-content">
+														<h3>Card Title</h3>
+														<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+													</div>
+													<div class="link">
+														<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
+													</div>
+												</div>
+											</li>
+											<li class="card two">
+												<div class="card-content">
+													<div class="main-content">
+														<h3>Card Title</h3>
+														<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+													</div>
+													<div class="link">
+														<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
+													</div>
+												</div>
+											</li>
+											<li class="card three">
+												<div class="card-content">
+													<div class="main-content">
+														<h3>Card Title</h3>
+														<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+													</div>
+													<div class="link">
+														<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
+													</div>
+												</div>
+											</li>
+											<li class="card four">
+												<div class="card-content">
+													<div class="main-content">
+														<h3>Card Title</h3>
+														<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+													</div>
+													<div class="link">
+														<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
+													</div>
+												</div>
+											</li>
+											<li class="card five">
+												<div class="card-content">
+													<div class="main-content">
+														<h3>Card Title</h3>
+														<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+													</div>
+													<div class="link">
+														<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
+													</div>
+												</div>
+											</li>
+											<li class="card six">
+												<div class="card-content">
+													<div class="main-content">
+														<h3>Card Title</h3>
+														<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+													</div>
+													<div class="link">
+														<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
+													</div>
+												</div>
+											</li>
+											<li class="card seven">
+												<div class="card-content">
+													<div class="main-content">
+														<h3>Card Title</h3>
+														<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+													</div>
+													<div class="link">
+														<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
+													</div>
+												</div>
+											</li>
+											<!-- TO ADD MORE CARDS, JUST COPY ONE OF THE li ELEMENTS AND CHANGE THE NUMBER IN THE CLASS LIST -->
+										</ol>
+									</div>
+								</div>
+							</div>
+							<!-- END CARDS -->
+						</div>
 					</div>
 				</div>
-				<div class="col-xs-12 col-sm-8 col-target region card-list-holder">
-					<div class="scroll-container">
-						<ol class="card-list scroll-container-inner">
-							<li class="card one">
-								<div class="card-content">
-									<div class="main-content">
-										<h3>Card Title</h3>
-										<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-									</div>
-									<div class="link">
-										<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
-									</div>
-								</div>
-							</li>
-							<li class="card two">
-								<div class="card-content">
-									<div class="main-content">
-										<h3>Card Title</h3>
-										<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-									</div>
-									<div class="link">
-										<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
-									</div>
-								</div>
-							</li>
-							<li class="card three">
-								<div class="card-content">
-									<div class="main-content">
-										<h3>Card Title</h3>
-										<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-									</div>
-									<div class="link">
-										<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
-									</div>
-								</div>
-							</li>
-							<li class="card four">
-								<div class="card-content">
-									<div class="main-content">
-										<h3>Card Title</h3>
-										<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-									</div>
-									<div class="link">
-										<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
-									</div>
-								</div>
-							</li>
-							<li class="card five">
-								<div class="card-content">
-									<div class="main-content">
-										<h3>Card Title</h3>
-										<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-									</div>
-									<div class="link">
-										<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
-									</div>
-								</div>
-							</li>
-							<li class="card six">
-								<div class="card-content">
-									<div class="main-content">
-										<h3>Card Title</h3>
-										<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-									</div>
-									<div class="link">
-										<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
-									</div>
-								</div>
-							</li>
-							<li class="card seven">
-								<div class="card-content">
-									<div class="main-content">
-										<h3>Card Title</h3>
-										<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
-									</div>
-									<div class="link">
-										<p><a href="#" target="_blank" rel="noopener">Call to Action</a></p>
-									</div>
-								</div>
-							</li>
-							<!-- TO ADD MORE CARDS, JUST COPY ONE OF THE li ELEMENTS AND CHANGE THE NUMBER IN THE CLASS LIST -->
-						</ol>
-					</div>
-				</div>
-			</div>
-			<!-- END OF SCROLL CARDS -->
-		</section>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-			crossorigin="anonymous"
-		></script>
+			</section>
+		</main>
 	</body>
 </html>

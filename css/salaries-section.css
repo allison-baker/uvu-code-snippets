@@ -1,6 +1,9 @@
 /* ====================== Mobile and Up ========================== */
 
 /* SALARIES/DEPARTMENT STATISTICS SECTION - MODIFIED BY AL BAKER FROM THE OLD WOODBURY PAGES */
+.text-64 {
+	font-size: 64px;
+}
 .justify-between {
 	justify-content: space-between;
 }

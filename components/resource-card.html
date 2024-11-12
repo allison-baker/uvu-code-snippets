@@ -1,179 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+		<meta name="color-scheme" content="only light" />
 
-		<!-- CSS -->
+		<!-- GLOBAL UVU CSS -->
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/global.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/component.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/elements/elements.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers/helpers.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="https://uvu.edu/_common/css/wrapper/wrapper.css" />
+
+		<!-- GOOGLE FONTS AND FONTAWESOME V6 -->
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Raleway:400,500,600,700,800,900|Lato:400,500,600,700,800,900|Montserrat:400,500,600,700,800,900"
 			rel="stylesheet"
-			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-			crossorigin="anonymous"
 		/>
 		<script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="../common.css" rel="stylesheet" />
-		<link href="../wrapper.css" rel="stylesheet" />
-		<link href="../dept.css" rel="stylesheet" />
+
+		<!-- GLOBAL UVU JAVASCRIPT -->
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/jquery.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/loadjs.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/config.js"></script>
+
+		<!-- GLOBAL CET CSS -->
+		<link type="text/css" rel="stylesheet" href="/css/global/advisor-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/buttons.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/degree-cards.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/faculty-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/links-list.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/news.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/resources.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/dept.css" />
+
+		<!-- CSS FOR THIS COMPONENT -->
 		<link href="../css/resource-card.css" rel="stylesheet" />
 
 		<title>Student Resource Page Cards</title>
 	</head>
 	<body>
-		<main>
-			<!-- CODED BY AL BAKER FOR USE ON CET DEPARTMENT LEVEL STUDENT RESOURCE PAGES -->
-			<section>
-				<!-- SET SECTION TO ONE COLUMN, PUT WHOLE CHUNK OF CODE IN ONE REGION -->
-				<!-- LAYOUT FOR 4 OR 8 CARDS, ACCENT COLOR FOREST GREEN, NO DESCRIPTION TEXT. FOR DEPARTMENT RESOURCES -->
-				<div class="row equal-height">
-					<div class="col-xs-12 col-sm-6 col-md-3 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-users fa-4x text-forest" aria-hidden="true"></i>
-								<p class="text-rajdhani text-28 margin-top-20 text-forest uppercase bold">Card Title</p>
+		<!-- CODED BY AL BAKER FOR USE ON CET DEPARTMENT LEVEL STUDENT RESOURCE PAGES -->
+		<main id="content-wrap" class="content-wrap">
+			<!-- SET SECTION TO ONE COLUMN -->
+			<section class="padding-top-40 padding-bottom-40">
+				<!-- NOTE THAT NONE OF THESE ICONS WILL SHOW ON THE DEMO AS UVU USES FONTAWESOME V5 AND MY PERSONAL ACCOUNT IS V6 -->
+				<div class="container-fluid">
+					<div class="row">
+						<!-- COPY WHOLE LAYOUT INTO ONE REGION -->
+						<div class="col-xs-12 col-target region">
+							<!-- LAYOUT FOR 4 OR 8 CARDS, ACCENT COLOR FOREST GREEN, NO DESCRIPTION TEXT. FOR DEPARTMENT RESOURCES -->
+							<div class="row equal-height">
+								<div class="col-xs-12 col-sm-6 col-md-3 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-users fa-4x text-forest" aria-hidden="true"></i>
+											<p class="text-rajdhani text-28 margin-top-20 text-forest uppercase bold">Card Title</p>
+										</div>
+										<a class="display-block bg-forest text-white text-center padding-10 width-100 card-btn-hover card-btn-forest" href="#">
+											Call to Action
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-users fa-4x text-forest" aria-hidden="true"></i>
+											<p class="text-rajdhani text-28 margin-top-20 text-forest uppercase bold">Card Title</p>
+										</div>
+										<a class="display-block bg-forest text-white text-center padding-10 width-100 card-btn-hover card-btn-forest" href="#">
+											Call to Action
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-users fa-4x text-forest" aria-hidden="true"></i>
+											<p class="text-rajdhani text-28 margin-top-20 text-forest uppercase bold">Card Title</p>
+										</div>
+										<a class="display-block bg-forest text-white text-center padding-10 width-100 card-btn-hover card-btn-forest" href="#">
+											Call to Action
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-3 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-users fa-4x text-forest" aria-hidden="true"></i>
+											<p class="text-rajdhani text-28 margin-top-20 text-forest uppercase bold">Card Title</p>
+										</div>
+										<a class="display-block bg-forest text-white text-center padding-10 width-100 card-btn-hover card-btn-forest" href="#">
+											Call to Action
+										</a>
+									</div>
+								</div>
 							</div>
-							<a class="display-block bg-forest text-white text-center padding-10 width-100 card-btn-hover card-btn-forest" href="#">
-								Call to Action
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-users fa-4x text-forest" aria-hidden="true"></i>
-								<p class="text-rajdhani text-28 margin-top-20 text-forest uppercase bold">Card Title</p>
-							</div>
-							<a class="display-block bg-forest text-white text-center padding-10 width-100 card-btn-hover card-btn-forest" href="#">
-								Call to Action
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-users fa-4x text-forest" aria-hidden="true"></i>
-								<p class="text-rajdhani text-28 margin-top-20 text-forest uppercase bold">Card Title</p>
-							</div>
-							<a class="display-block bg-forest text-white text-center padding-10 width-100 card-btn-hover card-btn-forest" href="#">
-								Call to Action
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-3 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-users fa-4x text-forest" aria-hidden="true"></i>
-								<p class="text-rajdhani text-28 margin-top-20 text-forest uppercase bold">Card Title</p>
-							</div>
-							<a class="display-block bg-forest text-white text-center padding-10 width-100 card-btn-hover card-btn-forest" href="#">
-								Call to Action
-							</a>
+							<!-- END LAYOUT -->
 						</div>
 					</div>
 				</div>
-				<!-- END LAYOUT -->
+			</section>
 
 				<!-- LAYOUT FOR 3 OR 6 CARDS, HIGHLIGHT COLOR UVU PRIMARY GREEN, WITH DESCRIPTION TEXT. FOR UNIVERSITY RESOURCES -->
-				<div class="row equal-height">
-					<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-calendar-alt fa-4x text-uvu-green" aria-hidden="true"></i>
-								<h3 class="text-28 text-uvu-green uppercase bold">Academic Calendar</h3>
-								<p class="text-left">
-									View important dates for admissions, registration, holidays, finals, and more. Office hours are 8 a.m.-5 p.m. from Monday-Friday.
-								</p>
+			<section class="padding-top-40 padding-bottom-40">
+				<!-- SET SECTION TO ONE COLUMN -->
+				<div class="container-fluid">
+					<!-- NOTE THAT NONE OF THESE ICONS WILL SHOW ON THE DEMO AS UVU USES FONTAWESOME V5 AND MY PERSONAL ACCOUNT IS V6 -->
+					<div class="row">
+						<!-- COPY WHOLE LAYOUT INTO ONE REGION -->
+						<div class="col-xs-12 col-target region">
+							<!-- START UNIVERSITY RESOURCES LAYOUT -->
+							<div class="row equal-height">
+								<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-calendar-alt fa-4x text-uvu-green" aria-hidden="true"></i>
+											<h3 class="text-28 text-uvu-green uppercase bold">Academic Calendar</h3>
+											<p class="text-left">
+												View important dates for admissions, registration, holidays, finals, and more. Office hours are 8 a.m.-5 p.m. from Monday-Friday.
+											</p>
+										</div>
+										<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:392718}}" target="_blank" rel="noopener">
+											View Schedule
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-people-arrows fa-4x text-uvu-green" aria-hidden="true"></i>
+											<h3 class="text-28 text-uvu-green uppercase bold">Academic Tutoring</h3>
+											<p class="text-left">
+												Enhance your study habits, boost test scores, and achieve your educational goals. Available online or in-person.
+											</p>
+										</div>
+										<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:4867911}}" target="_blank" rel="noopener">
+											View Tutoring
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-info-circle fa-4x text-uvu-green" aria-hidden="true"></i>
+											<h3 class="text-28 text-uvu-green uppercase bold">Accessibility Services</h3>
+											<p class="text-left">
+												We provide accommodations for students and visitors with disabilities, including temporary conditions and pregnancy accommodations.
+											</p>
+										</div>
+										<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:3612831}}" target="_blank" rel="noopener">
+											View Services
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-mouse-pointer fa-4x text-uvu-green" aria-hidden="true"></i>
+											<h3 class="text-28 text-uvu-green uppercase bold">Course Catalog</h3>
+											<p class="text-left">
+												Not sure what classes are needed, or want to compare degrees? Look at the catalog for the most up-to-date information.
+											</p>
+										</div>
+										<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="https://catalog.uvu.edu/" target="_blank" rel="noopener">
+											View Catalog
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-browser fa-4x text-uvu-green" aria-hidden="true"></i>
+											<h3 class="text-28 text-uvu-green uppercase bold">Registration</h3>
+											<p class="text-left">
+												Find registration deadlines and learn how to add, drop, and audit classes through various online tutorials.
+											</p>
+										</div>
+										<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:388629}}" target="_blank" rel="noopener">
+											View Registration
+										</a>
+									</div>
+								</div>
+								<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
+									<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
+										<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
+											<i class="fal fa-money-bill-alt fa-4x text-uvu-green" aria-hidden="true"></i>
+											<h3 class="text-28 text-uvu-green uppercase bold">Financial Aid &amp; Scholarships</h3>
+											<p class="text-left">
+												The Financial Aid &amp; Scholarships office is available by walk-in and appointment. Click the link below for more information.
+											</p>
+										</div>
+										<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:389435}}" target="_blank" rel="noopener">
+											View Financial Aid
+										</a>
+									</div>
+								</div>
 							</div>
-							<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:392718}}" target="_blank" rel="noopener">
-								View Schedule
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-people-arrows fa-4x text-uvu-green" aria-hidden="true"></i>
-								<h3 class="text-28 text-uvu-green uppercase bold">Academic Tutoring</h3>
-								<p class="text-left">
-									Enhance your study habits, boost test scores, and achieve your educational goals. Available online or in-person.
-								</p>
-							</div>
-							<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:4867911}}" target="_blank" rel="noopener">
-								View Tutoring
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-info-circle fa-4x text-uvu-green" aria-hidden="true"></i>
-								<h3 class="text-28 text-uvu-green uppercase bold">Accessibility Services</h3>
-								<p class="text-left">
-									We provide accommodations for students and visitors with disabilities, including temporary conditions and pregnancy accommodations.
-								</p>
-							</div>
-							<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:3612831}}" target="_blank" rel="noopener">
-								View Services
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-mouse-pointer fa-4x text-uvu-green" aria-hidden="true"></i>
-								<h3 class="text-28 text-uvu-green uppercase bold">Course Catalog</h3>
-								<p class="text-left">
-									Not sure what classes are needed, or want to compare degrees? Look at the catalog for the most up-to-date information.
-								</p>
-							</div>
-							<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="https://catalog.uvu.edu/" target="_blank" rel="noopener">
-								View Catalog
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-browser fa-4x text-uvu-green" aria-hidden="true"></i>
-								<h3 class="text-28 text-uvu-green uppercase bold">Registration</h3>
-								<p class="text-left">
-									Find registration deadlines and learn how to add, drop, and audit classes through various online tutorials.
-								</p>
-							</div>
-							<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:388629}}" target="_blank" rel="noopener">
-								View Registration
-							</a>
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-6 col-md-4 col-target region">
-						<div class="box-shadow bg-white clickable display-flex flex-column align-items-center height-100">
-							<div class="padding-top-20 padding-right-20 padding-left-20 padding-bottom-5 text-center flex-grow">
-								<i class="fal fa-money-bill-alt fa-4x text-uvu-green" aria-hidden="true"></i>
-								<h3 class="text-28 text-uvu-green uppercase bold">Financial Aid &amp; Scholarships</h3>
-								<p class="text-left">
-									The Financial Aid &amp; Scholarships office is available by walk-in and appointment. Click the link below for more information.
-								</p>
-							</div>
-							<a class="display-block bg-uvu-green text-white text-center padding-10 width-100 card-btn-hover card-btn-primary" href="{{d:389435}}" target="_blank" rel="noopener">
-								View Financial Aid
-							</a>
+							<!-- END LAYOUT -->
 						</div>
 					</div>
 				</div>
-				<!-- END LAYOUT -->
 			</section>
 		</main>
-		<!-- Option 1: Bootstrap Bundle with Popper -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
-			crossorigin="anonymous"
-		></script>
 	</body>
 </html>

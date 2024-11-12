@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes" />
+		<meta name="color-scheme" content="only light" />
 
-		<!-- CSS -->
+		<!-- GLOBAL UVU CSS -->
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/global.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/component.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/elements/elements.css" type="text/css" />
+		<link rel="stylesheet" href="https://uvu.edu/_common/css/helpers/helpers.css" type="text/css" />
+		<link type="text/css" rel="stylesheet" href="https://uvu.edu/_common/css/wrapper/wrapper.css" />
+
+		<!-- GOOGLE FONTS AND FONTAWESOME V6 -->
 		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+			href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700|Raleway:400,500,600,700,800,900|Lato:400,500,600,700,800,900|Montserrat:400,500,600,700,800,900"
 			rel="stylesheet"
-			integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
-			crossorigin="anonymous"
 		/>
 		<script src="https://kit.fontawesome.com/369097350a.js" crossorigin="anonymous"></script>
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Rajdhani:wght@300;400;500;600;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link href="../common.css" rel="stylesheet" />
-		<link href="../wrapper.css" rel="stylesheet" />
-		<link href="../dept.css" rel="stylesheet" />
+
+		<!-- GLOBAL UVU JAVASCRIPT -->
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/jquery.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/loadjs.min.js"></script>
+		<script language="JavaScript" type="text/javascript" src="https://uvu.edu/_common/js/config.js"></script>
+
+		<!-- GLOBAL CET CSS -->
+		<link type="text/css" rel="stylesheet" href="/css/global/advisor-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/buttons.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/degree-cards.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/faculty-card.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/links-list.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/news.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/resources.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/dept.css" />
 
 		<title>Social Media Banner</title>
 	</head>
 	<body>
 		<!-- CODED BY AL BAKER FOR USE ON ALL CET PAGES -->
-		<section class="row padding-top-40 padding-bottom-40">
-			<!-- SET SECTION TO FULL WIDTH ONE COLUMN AND COPY SOCIAL LINKS INTO ONE REGION -->
-			<div class="col-xs-12 col-target region">
-				<!-- START SOCIAL MEDIA SECTION -->
-				<div class="row border-top-2 border-uvu-green">
-					<h2 class="bold text-center margin-bottom-20 margin-top-65 text-24">Get Involved With [DEPT NAME] on Social Media</h2>
-					<div class="display-flex justify-content-center align-items-center flex-wrap margin-bottom-40">
-						<a class="display-block" href="#" target="_blank" rel="noopener">
-							<p class="fab fa-facebook fa-xl text-48 text-uvu-green" aria-hidden="true">&nbsp;</p>
-						</a>
-						<a class="display-block" href="#" target="_blank" rel="noopener">
-							<p class="fab fa-instagram fa-xl text-48 margin-left-15 text-uvu-green" aria-hidden="true">&nbsp;</p>
-						</a>
-						<a class="display-block" href="#" target="_blank" rel="noopener">
-							<p class="fab fa-twitter fa-xl text-48 margin-left-15 text-uvu-green" aria-hidden="true">&nbsp;</p>
-						</a>
-						<a class="display-block" href="#" target="_blank" rel="noopener">
-							<p class="fab fa-youtube fa-xl text-48 margin-left-15 text-uvu-green" aria-hidden="true">&nbsp;</p>
-						</a>
-						<a class="display-block" href="#" target="_blank" rel="noopener">
-							<p class="fab fa-linkedin-in fa-xl text-48 margin-left-15 text-uvu-green" aria-hidden="true">&nbsp;</p>
-						</a>
+		<main id="content-wrap" class="content-wrap">
+			<section class="padding-top-40 padding-bottom-40 border-top-2 border-uvu-green">
+				<!-- SET SECTION TO ONE COLUMN, PUT BORDER CLASSES ON SECTION -->
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 col-target region">
+							<!-- COPY INTO ONE REGION -->
+							<h2 class="bold text-center margin-bottom-20 text-24">Get Involved With [DEPT NAME] on Social Media</h2>
+							<div class="display-flex justify-content-center align-items-center flex-wrap">
+								<a class="display-block" href="#" target="_blank" rel="noopener">
+									<p class="fab fa-facebook fa-xl text-48 text-uvu-green" aria-hidden="true">&nbsp;</p>
+								</a>
+								<a class="display-block" href="#" target="_blank" rel="noopener">
+									<p class="fab fa-instagram fa-xl text-48 margin-left-15 text-uvu-green" aria-hidden="true">&nbsp;</p>
+								</a>
+								<a class="display-block" href="#" target="_blank" rel="noopener">
+									<p class="fab fa-twitter fa-xl text-48 margin-left-15 text-uvu-green" aria-hidden="true">&nbsp;</p>
+								</a>
+								<a class="display-block" href="#" target="_blank" rel="noopener">
+									<p class="fab fa-youtube fa-xl text-48 margin-left-15 text-uvu-green" aria-hidden="true">&nbsp;</p>
+								</a>
+								<a class="display-block" href="#" target="_blank" rel="noopener">
+									<p class="fab fa-linkedin-in fa-xl text-48 margin-left-15 text-uvu-green" aria-hidden="true">&nbsp;</p>
+								</a>
+							</div>
+							<!-- END SOCIAL MEDIA SECTION -->
+						</div>
 					</div>
 				</div>
-				<!-- END SOCIAL MEDIA SECTION -->
-			</div>
-		</section>		
+			</section>		
+		</main>
 	</body>
 </html>

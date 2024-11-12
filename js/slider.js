@@ -1,7 +1,7 @@
 // FOR USE SLIDER
 $(document).ready(function () {
     uvu.import('slider', '.responsive-slider', function () {
-        $('.responsive-slider ul').slick({
+        $('.responsive-slider div.slick-items').slick({
             dots: true,
             infinite: true,
             slidesToShow: 4,

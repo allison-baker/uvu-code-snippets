@@ -23,7 +23,7 @@ ul.slick-dots {
 .testimonial-card.card-multicontent .card-content-container-2 {
 	padding: 17px;
 }
-.slick-track > li.slick-slide {
+.slick-track > div.slick-slide {
 	height: 440px;
 }
 .testimonial-card .card-content-container-1 {
@@ -40,7 +40,7 @@ ul.slick-dots {
 
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
-	.slick-track > li.slick-slide {
+	.slick-track > div.slick-slide {
 		height: 400px;
 	}
 	.testimonial-card .card-content-container-1 {
@@ -53,7 +53,7 @@ ul.slick-dots {
 
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
-	.slick-track > li.slick-slide {
+	.slick-track > div.slick-slide {
 		height: 435px;
 	}
 	.testimonial-card .card-content-container-1 {
@@ -66,7 +66,7 @@ ul.slick-dots {
 
 /* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
 @media only screen and (min-width: 1200px) {
-	.slick-track > li.slick-slide {
+	.slick-track > div.slick-slide {
 		height: 450px;
 	}
 	.testimonial-card .card-content-container-1 {

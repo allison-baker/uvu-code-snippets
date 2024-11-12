@@ -8,16 +8,16 @@ div.program-list {
 	flex-direction: column;
 	gap: 20px;
 }
-div.program-list div {
+div.program-list div.program-card {
 	min-height: 130px;
 	display: grid;
 	grid-template-rows: 200px 1fr;
 	align-items: center;
 }
-div.program-list div section {
+div.program-list div.program-card div {
 	padding: 15px;
 }
-div.program-list div section a:hover {
+div.program-list div.program-card div a:hover {
 	text-decoration: underline;
 }
 div.program-list img {
@@ -28,7 +28,7 @@ div.program-list img {
 
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
-	div.program-list div {
+	div.program-list div.program-card {
 		grid-template-rows: auto;
 		grid-template-columns: 130px 1fr;
 	}
