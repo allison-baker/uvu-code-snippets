@@ -1,0 +1,34 @@
+/* ====================== Mobile and Up ========================== */
+
+/* TWO PROGRAM CARD - CODED BY AL BAKER AND BEN LINTON FOR USE ON ALL CET PAGES */
+.two-program-card {
+    border-radius: 0;
+    height: 100%;
+}
+.two-program-card .inner-content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.two-program-card .card-title {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #275d38;
+    margin: 0;
+}
+.two-program-card .button-solid {
+    margin: 0;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+    .two-program-card .inner-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

@@ -1,6 +1,19 @@
 /* ====================== Mobile and Up ========================== */
 
+.video div {
+	margin: 0 auto;
+}
+
 /* VIDEO BANNER WITH APFY SHAPES - CODED BY AL BAKER */
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.video-content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
 	.video-content {
@@ -8,7 +21,7 @@
 	}
 	.video-content::after {
 		content: '';
-		background: url('/images/ZigZag.svg');
+		background: url('/images/zig-zag.svg');
 		height: 50px;
 		width: 50px;
 		position: absolute;
@@ -25,7 +38,7 @@
 	}
 	.video-banner::before {
 		content: '';
-		background: url('/images/LinedCircle.svg');
+		background: url('/images/lined-circle.svg');
 		height: 200px;
 		width: 200px;
 		position: absolute;

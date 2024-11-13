@@ -1,29 +1,41 @@
 /* ====================== Mobile and Up ========================== */
 
 /* HOME PAGE BANNER - MODIFIED BY AL BAKER FROM OLD WOODBURY HOME PAGE */
-.degree-section {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	flex-direction: row;
+
+/* HIDE BANNER ON MOBILE */
+.no-mobile {
+	display: none;
 }
-.degree-container {
-	padding-left: 20px;
-	padding-right: 20px;
-	margin-bottom: 20px;
-	margin-top: 20px;
-	text-align: center;
-	min-width: 250px;
-}
-.degree-container span {
-	display: block;
-	margin-top: -20px;
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+	.no-mobile {
+		display: block;
+	}
+	.degree-section {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-direction: row;
+	}
+	.degree-container {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+		text-align: center;
+		min-width: 250px;
+	}
+	.degree-container span {
+		display: block;
+		margin-top: -20px;
+	}
 }
 
 /* ====================== Landscape Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 992px) {
-    .degree-section {
+	.degree-section {
 		flex-wrap: nowrap;
 	}
 	.degree-container {
