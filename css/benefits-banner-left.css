@@ -1,0 +1,9 @@
+/* ====================== Mobile and Up ========================== */
+
+/* CODED BY AL BAKER FOR USE ON CET PAGES */
+/* SALARIES BANNER */
+.short-border {
+	max-width: 235px; /* ADJUST WIDTH TO MATCH TEXT */
+	width: 100%;
+	margin-inline-start: 0px;
+}

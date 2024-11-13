@@ -1,7 +1,7 @@
 /* ====================== Mobile and Up ========================== */
 
-/* ADVISOR CARD - START WITH UVU ADVISOR CARD 2 */
-/* MODIFIED BY AL BAKER, ORIGINALLY FROM UVU ONLINE */
+/* MODIFIED FROM THE OLD UVU ONLINE BY AL BAKER */
+/* ADVISOR CARD - START WITH OMNI COMPONENT ADVISOR CARD 2 */
 .card-advisor-2 {
 	box-shadow: 0px 1px 6px rgb(0 0 0 / 5%) !important;
 	flex-direction: column;
@@ -16,7 +16,7 @@
 	height: 100px;
 	z-index: -1;
 	position: absolute;
-	background: url(/cet/images/rectangle-stripes.png) no-repeat;
+	background: url(/images/rectangle-stripes.png) no-repeat; /* CHANGE TO YOUR IMAGE PATH */
 	background-size: 300px;
 }
 .card-advisor-2-img {
@@ -66,9 +66,7 @@
 
 /* IF CARD IS IN A BANNER WITH A BACKGROUND COLOR, THE SECTION WITH THE BACKGROUND COLOR NEEDS 
 	POSITION RELATIVE AND Z-INDEX 0 FOR THE ADVISOR CARD SHAPES TO SHOW UP */
-section.bg-gray:has(.card-advisor-2),
-section.bg-gray-xlight:has(.card-advisor-2),
-section.bg-uvu-green:has(.card-advisor-2) {
+section[class*='bg-']:has([data-directory-style='styleAdvisor2']) {
 	position: relative;
 	z-index: 0;
 }
@@ -151,10 +149,4 @@ section.bg-uvu-green:has(.card-advisor-2) {
 	.card-advisor-2-content {
 		padding: 30px 20px 30px 210px !important;
 	}
-}
-
-/* ====================== FOR REFERENCE ONLY!! DO NOT COPY INTO OMNI ========================== */
-/* TO MAKE THE SHAPES FOR THE EXAMPLE CARD SHOW UP CORRECTLY IN GITHUB REFERENCE VERSION */
-.card-advisor-2:after {
-	background: url('../images/rectangle-stripes.png') no-repeat;
 }

@@ -1,0 +1,49 @@
+/* ====================== Mobile and Up ========================== */
+
+/* CODED BY AL BAKER AND BEN LINTON FOR USE ON CET LANDING PAGE */
+/* DEGREE MATCH BANNER */
+.degree-label {
+	align-self: center;
+	padding-left: 5%;
+	text-align: left;
+	text-transform: uppercase;
+	font-size: 22px;
+}
+.degree-num-container {
+	display: flex;
+	justify-content: flex-start;
+	text-align: center;
+	font-family: 'Rajdhani', sans-serif;
+	color: #275d38;
+	font-weight: bold;
+	padding: 10px;
+}
+
+/* ====================== Desktop Only (Overrides Mobile and Tablet Styles) ========================== */
+@media only screen and (min-width: 1200px) {
+	.degree-match {
+		position: relative;
+	}
+	.degree-match::after {
+		content: '';
+		bottom: 0;
+		right: 0px;
+		width: 160px;
+		height: 375px;
+		position: absolute;
+		background: url('../../images/degree_banner_shapes_right.svg') no-repeat; /* CHANGE TO YOUR IMAGE PATH */
+	}
+}
+
+/* ====================== Extra-Wide Desktop Only (Overrides Mobile, Tablet, and Desktop Styles) ========================== */
+@media only screen and (min-width: 1500px) {
+	.degree-match::before {
+		content: '';
+		top: 25px;
+		left: 0px;
+		width: 231px;
+		height: 407px;
+		position: absolute;
+		background: url('../../images/degree_banner_shapes_left.svg') no-repeat; /* CHANGE TO YOUR IMAGE PATH */
+	}	
+}

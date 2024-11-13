@@ -38,55 +38,50 @@
 		<link type="text/css" rel="stylesheet" href="/css/global/dept.css" />
 
 		<!-- CSS FOR THIS COMPONENT -->
-		<link href="../css/advisor-banner.css" rel="stylesheet" />
+        <link href="../css/degree-match-banner.css" rel="stylesheet" />
 
-		<title>Advisor Banner</title>
+		<title>Degree Match Banner</title>
 	</head>
 	<body>
-		<!-- CODED BY AL BAKER FOR USE ON CET PAGES -->
+		<!-- CODED BY AL BAKER AND BEN LINTON FOR USE ON CET LANDING PAGE -->
 		<main id="content-wrap" class="content-wrap">
-			<!-- HEADER, DESCRIPTION WITH PHONE NUMBER, AND ADVISOR CARD COMPONENT -->
-			<section class="padding-top-40 padding-bottom-40 bg-grey-xlight">
-				<!-- SET SECTION TO TWO COLUMN, PUT BG COLOR CLASS ON SECTION -->
-				<div class="container-fluid">
-					<div class="row equal-height">
-						<div class="col-xs-12 col-sm-6 col-target region">
-							<!-- COPY INTO FIRST REGION -->
-							<h2 class="bold uppercase text-48 margin-top-0">Have Questions?</h2>
-							<p class="text-24 text-rajdhani">
-								Login to myUVU to see your advisor or contact our front desk at
-								<a class="bold text-black" href="tel:8018638648">801-863-8648</a> for questions regarding which advisor to see.
-							</p>
-							<!-- END FIRST REGION -->
-						</div>
-						<div class="col-xs-12 col-sm-6 col-target region">
-							<!-- INSERT ADVISOR CARD COMPONENT INTO SECOND REGION. SEE advisor-card.css FOR MORE. -->
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- HEADER, DESCRIPTION WITH PHONE NUMBER, AND BUTTONS -->
-			<section class="padding-top-40 padding-bottom-40 bg-grey-xlight">
-				<!-- SET SECTION TO TWO COLUMN BIG LEFT, PUT BG COLOR CLASS ON SECTION -->
+			<!-- ICON, DESCRIPTION, BUTTON, AND DEGREE NUMBER LIST -->
+			<section class="padding-top-40 padding-bottom-40 bg-grey degree-match">
+				<!-- SET SECTION TO TWO COLUMN BIG LEFT, ADD BG COLOR AND .degree-banner CLASSES TO SECTION -->
 				<div class="container-fluid">
 					<div class="row equal-height">
 						<div class="col-xs-12 col-sm-8 col-target region">
-							<!-- COPY INTO FIRST REGION -->
-							<h2 class="bold uppercase text-48 margin-top-0">Have Questions?</h2>
-							<p class="text-24 text-rajdhani">
-								Log in to myUVU to see your advisor or contact our front desk at
-								<a class="bold text-black" href="tel:8018638648">801-863-8648</a> for questions regarding which advisor to see. Not a student? Contact
-								the Service Desk for assistance.
+							<!-- COPY INTO BIG LEFT REGION -->
+							<span class="fal fa-graduation-cap fa-3x text-uvu-green" aria-hidden="true"></span>
+							<h2 class="uppercase font-weight-400"><span class="bold">Degree</span> Match</h2>
+							<p class="text-rajdhani text-20">Over <span class="bold">## degree options</span> to match your career goals.</p>
+							<p>
+								From certificates to graduate degrees, the [College Name] has options for you to reach your career goals and find your unique degree
+								match.
 							</p>
-							<!-- END FIRST REGION -->
+							<a class="button-border border-uvu-green" href="#">Check Out Our Departments</a>
+							<!-- END REGION -->
 						</div>
 						<div class="col-xs-12 col-sm-4 col-target region">
-							<div class="height-100 display-flex flex-column align-items-center">
-								<a class="button-border border-uvu-green wide-button" href="https://my.uvu.edu/student/" target="_blank" rel="noopener">Log In to myUVU</a>
-								<a class="button-border border-uvu-green wide-button" href="#">Send Us an Email</a>
-								<a class="button-border border-uvu-green wide-button" href="{{d:388241}}" target="_blank" rel="noopener">Service Desk</a>
+							<!-- COPY INTO SMALL RIGHT REGION -->
+							<div class="display-flex flex-column justify-content-center flex-wrap">
+								<div class="degree-num-container">
+									<span class="text-48">##</span><span class="degree-label">Master's Degrees</span>
+								</div>
+								<div class="degree-num-container">
+									<span class="text-48">##</span><span class="degree-label">Bachelor's Degrees</span>
+								</div>
+								<div class="degree-num-container">
+									<span class="text-48">##</span><span class="degree-label">Associate Degrees</span>
+								</div>
+								<div class="degree-num-container">
+									<span class="text-48">##</span><span class="degree-label">Minors</span>
+								</div>
+								<div class="degree-num-container">
+									<span class="text-48">##</span><span class="degree-label">Certificates</span>
+								</div>
 							</div>
+							<!-- END REGION -->
 						</div>
 					</div>
 				</div>

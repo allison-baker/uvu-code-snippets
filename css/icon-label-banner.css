@@ -1,0 +1,20 @@
+/* ====================== Mobile and Up ========================== */
+
+/* CODED BY AL BAKER FOR USE ON CET PAGES */
+/* ABOUT PAGE - ICON LINKS */
+.icon-links div:hover a,
+.icon-links div:hover span {
+	color: #c5e86c;
+	text-decoration: none;
+}
+.icon-links div::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 2px;
+	background: #c5e86c;
+	transition: width 0.3s;
+}
+.icon-links div:hover::after {
+	width: 100%;
+}
