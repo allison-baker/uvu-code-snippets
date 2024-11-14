@@ -1,0 +1,17 @@
+/* ====================== Mobile and Up ========================== */
+
+/* CODED BY AL BAKER FOR USE ON ALL CET PAGES */
+
+.custom-person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
+@media only screen and (min-width: 768px) {
+    .custom-person-card.wide {
+        flex-direction: row;
+    }
+}

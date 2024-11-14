@@ -1,6 +1,8 @@
 /* ====================== Mobile and Up ========================== */
 
-/* START WITH CARD PICTURE CUSTOM */
+/* MODIFIED BY BEN LINTON FOR USE ON ALL CET PAGES. START WITH OMNI COMPONENT CARD-PICTURE-CUSTOM */
+
+/* LOOKS LIKE OMNI COMPONENT CARD-PICTURE-5 BUT WITH GREEN INSTEAD OF BLACK */
 .card-picture-custom {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

@@ -1,6 +1,7 @@
 /* ====================== Mobile and Up ========================== */
 
-/* DEGREE CARDS - CODED BY AL BAKER */
+/* CODED BY AL BAKER FOR USE ON ALL CET PROGRAM PAGES */
+
 .degree-card {
 	background-color: #fff;
 	min-height: 200px;
@@ -20,8 +21,7 @@
 }
 p + .degree-card,
 a + .degree-card,
-ul + .degree-card,
-.main-degree {
+ul + .degree-card {
 	margin-block-start: 40px;
 }
 .degree-card .degree-name {

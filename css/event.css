@@ -1,6 +1,8 @@
 /* ====================== Mobile and Up ========================== */
 
-/* EVENT LIST ITEM - START WITH EVENT LIST ITEM 1 */
+/* MODIFIED BY AL BAKER FOR USE ON ALL CET PAGES */
+
+/* START WITH OMNI COMPONENT EVENT-LIST-ITEM-1 */
 .event-item[data-component-event-style='1'] .event-item-container {
 	box-shadow: none;
 	border: none;
@@ -20,7 +22,7 @@
 	text-transform: none;
 	margin-bottom: 5px;
 }
-/* TO HIDE TIME, WRAP CARD IN DIV WITH CLASS .no-time */
+/* TO HIDE TIME, WRAP ELEMENT IN DIV WITH CLASS .no-time */
 div.no-time .event-item[data-component-event-style='1'] .event-time {
 	display: none;
 }

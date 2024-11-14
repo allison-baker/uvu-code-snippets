@@ -1,13 +1,15 @@
 /* ====================== Mobile and Up ========================== */
 
-/* IF USING PROGRAM RESOURCES WITH TWO COLUMNS OF BUTTONS */
+/* CODED BY AL BAKER FOR USE ON ALL CET PAGES */
+
+/* FOR PROGRAM RESOURCES WITH TWO COLUMNS OF BUTTONS */
 .program-grid {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    margin-top: 20px;
+	display: grid;
+	gap: 10px;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+	margin-top: 20px;
 }
 .program-grid a {
-    margin: 0 !important;
+	margin: 0 !important;
 }

@@ -1,15 +1,16 @@
 /* ====================== Mobile and Up ========================== */
 
-/* HOME PAGE CARDS - MODIFIED BY AL BAKER FROM THE OLD UVU HOME PAGE */
-/* FOR DEPARTMENTS WITH 4 PROGRAMS. START WITH UVU COMPONENT CARD-PICTURE-2 */
-.homepage-card .card-picture {
+/* MODIFIED BY AL BAKER FROM THE OLD UVU HOME PAGE FOR USE ON ALL CET DEPARTMENT LANDING PAGES */
+
+/* START WITH OMNI COMPONENT CARD-PICTURE-2. WRAP COMPONENT IN DIV WITH CLASS .image-button-card */
+.image-button-card .card-picture {
 	padding-bottom: 20px;
 }
-.homepage-card .card-picture-title {
+.image-button-card .card-picture-title {
 	background-color: #fff;
 	color: #275d38;
 }
-.homepage-card h2.card-picture-title {
+.image-button-card h2.card-picture-title {
 	font-size: 18px;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -23,26 +24,15 @@
 	color: #275d38;
 }
 
-/* ONLY FOR ICON VERSION - ADDED BY AL BAKER */
-.homepage-card h2.card-picture-title::before {
-	content: '\f19d';
-	font-family: "Font Awesome 5 Pro";
-	display: block;
-	text-align: center;
-	font-size: 36px;
-	font-weight: 300;
-	margin-bottom: 8px;
-}
-
-.homepage-card .card-picture-img {
+.image-button-card .card-picture-img {
 	object-fit: cover;
 	max-height: 194px;
 	width: 100%;
 }
-.homepage-card .card-picture-content {
+.image-button-card .card-picture-content {
 	display: none;
 }
-.homepage-card .card-picture-button {
+.image-button-card .card-picture-button {
 	border-top: none;
 	text-align: left;
 	padding: 10px;
@@ -58,7 +48,7 @@
 	position: relative;
 	color: #275d38;
 }
-.homepage-card .card-picture-button:after {
+.image-button-card .card-picture-button:after {
 	content: '\f061';
 	font-family: 'Font Awesome 5 Pro';
 	position: absolute;
@@ -68,9 +58,20 @@
 	bottom: 18px;
 }
 
+/* ONLY FOR ICON VERSION - ADS AN ICON BEFORE THE CARD TITLE */
+.image-button-card h2.card-picture-title::before {
+	content: '\f19d';
+	font-family: "Font Awesome 5 Pro";
+	display: block;
+	text-align: center;
+	font-size: 36px;
+	font-weight: 300;
+	margin-bottom: 8px;
+}
+
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
-	.homepage-card .card-picture-img {
+	.image-button-card .card-picture-img {
 		max-height: none;
 	}
 }

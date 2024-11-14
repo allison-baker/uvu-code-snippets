@@ -1,6 +1,7 @@
 /* ====================== Mobile and Up ========================== */
 
-/* TESTIMONIAL CARDS & SLIDER - FROM NEW CHSS HOME PAGE */
+/* MODIFIED FROM NEW CHSS HOME PAGE BY AL BAKER FOR USE ON CET LANDING PAGE */
+
 .slick-slide.slick-active:not(.slick-current) {
 	opacity: 1;
 }

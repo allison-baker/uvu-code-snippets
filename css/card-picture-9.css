@@ -1,6 +1,8 @@
 /* ====================== Mobile and Up ========================== */
 
-/* FOR DEGREE PAGES - MINOR CHANGES TO CARD:PICTURE-CARD 9 COMPONENT */
+/* MODIFIED BY AL BAKER FOR USE ON ALL CET PROGRAMS & DEGREES PAGES */
+
+/* START WITH OMNI COMPONENT CARD-PICTURE-9 */
 .card-picture-9 + .card-picture-9 {
 	margin-block-start: 30px;
 }

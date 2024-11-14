@@ -1,6 +1,7 @@
 /* ====================== Mobile and Up ========================== */
 
 /* COMMON CSS THAT IS USED ON ALL OR ALMOST ALL CET WEB PAGES */
+
 h1,
 h2 {
 	font-weight: 600;
@@ -19,7 +20,7 @@ h2 {
 	z-index: 0;
 }
 
-/* REMOVE SPACE AND BORDER ON HERO IMAGES. USE ON HOME PAGES THAT HAVE A BANNER FLUSH WITH THE HERO */
+/* REMOVE SPACE AND BORDER ON HERO IMAGES ONLY WHEN FOLLOWED BY A BANNER FLUSH WITH THE HERO */
 .fullbleed:has(+ [class*='bg-']) {
 	margin-bottom: 0;
 	border-bottom: none;
@@ -38,6 +39,7 @@ section[class*='bg-']:has([data-directory-style='styleAdvisor2']) {
 .accordion-content {
 	padding-top: 10px;
 }
+/* USE ONLY WHEN PLACING A TABLE IN THE DROPDOWN BOTTOM */
 .accordion-content td {
 	vertical-align: top;
 }

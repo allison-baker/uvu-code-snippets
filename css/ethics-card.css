@@ -1,6 +1,7 @@
 /* ====================== Mobile and Up ========================== */
 
-/* ETHICS CARDS - CODED BY AL BAKER */
+/* CODED BY AL BAKER FOR USE ON ALL CET PAGES */
+
 .ethics-card {
     display: grid;
     grid-template-rows: 150px 1fr;

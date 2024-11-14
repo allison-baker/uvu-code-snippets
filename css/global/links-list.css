@@ -1,6 +1,8 @@
 /* ====================== Mobile and Up ========================== */
 
-/* SPECIFIC STYLING FOR HELPFUL LINKS LISTS - ORIGINALLY FROM OLD ENGINEERING PROGRAM PAGES */
+/* MODIFIED FROM OLD ENGINEERING PROGRAM PAGES BY AL BAKER FOR USE ON ALL CET PAGES */
+
+/* FERN */
 .links-list-1 {
 	background-color: #f2f9e9;
 }
@@ -11,6 +13,7 @@
 	color: #78be20;
 }
 
+/* CLOVER */
 .links-list-2 {
 	background-color: #edf6ec;
 }
@@ -21,6 +24,7 @@
 	color: #4ba23f;
 }
 
+/* FOREST */
 .links-list-3 {
 	background-color: #e6f3ec;
 }
@@ -31,7 +35,7 @@
 	color: #00843d;
 }
 
-/* Parent li with child ul */
+/* PARENT LI WITH CHILD UL */
 .list-dropdown {
 	display: flex;
 	flex-direction: row;

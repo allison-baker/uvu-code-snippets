@@ -34,57 +34,49 @@
 		<link type="text/css" rel="stylesheet" href="/css/global/faculty-card.css" />
 		<link type="text/css" rel="stylesheet" href="/css/global/links-list.css" />
 		<link type="text/css" rel="stylesheet" href="/css/global/news.css" />
-		<link type="text/css" rel="stylesheet" href="/css/global/resources.css" />
+		<link type="text/css" rel="stylesheet" href="/css/global/icon-text-button.css" />
 		<link type="text/css" rel="stylesheet" href="/css/global/dept.css" />
 
-		<!-- CSS FOR THIS COMPONENT -->
-		<link href="../css/ethics-card.css" rel="stylesheet" />
-
-		<title>Ethics Cards</title>
+		<title>Resources Section</title>
 	</head>
 	<body>
+		<!-- CODED BY AL BAKER FOR USE ON ALL CET PAGES -->
 		<main id="content-wrap" class="content-wrap">
-			<!-- CODED BY AL BAKER. CURRENTLY ONLY IN USE ON CS ETHICS PAGE -->
 			<section class="padding-top-40 padding-bottom-40">
-				<!-- SET SECTION TO ONE COLUMN -->
+				<!-- SET SECTION TO TWO COLUMN -->
 				<div class="container-fluid">
-					<div class="row">
-						<!-- PASTE AS MANY CARDS AS NEEDED INTO ONE REGION -->
-						<div class="col-xs-12 col-target region">
-							<!-- START CARD LIST -->
-							<div class="ethics-card">
-								<div class="circle bg-forest display-flex align-items-center justify-content-center">
-									<p class="text-rajdhani text-96 bold text-white text-center margin-bottom-0">1</p>
-								</div>
+					<div class="row equal-height">
+						<div class="col-xs-12 col-sm-6 col-target region">
+							<!-- COPY INTO LEFT COLUMN OF LAYOUT -->
+							<div class="resources-grid">
+								<!-- START SINGLE RESOURCE -->
+								<i class="fal fa-users" aria-hidden="true"></i>
 								<div>
-									<h3 class="uppercase bold margin-top-0">Act at All Times With Integrity</h3>
-									<p class="bold">Disciplinary Considerations:</p>
-									<ul class="margin-bottom-0">
-										<li>
-											Disciplinary actions will depend upon the nature of the offense and are up to the instructor. Repeated or flagrant violations
-											may result in permanent expulsion from the CS programs.
-										</li>
-										<li>Misuse of equipment may result in action restricting or banning future use of equipment and/or other action.</li>
-									</ul>
+									<h3 class="uppercase text-black font-weight-600 text-28 margin-top-0">[DEPT ACRONYM] Internships</h3>
+									<p>Visit the CET internships page for [DEPARTMENT NAME] or talk to the CET Internship Advisor Stacey Brown.</p>
+									<p><a class="button-myuvu" href="#" target="_blank" rel="noopener">View [DEPT ACRONYM] Internships</a></p>
+								</div>
+								<!-- END SINGLE RESOURCE -->
+
+								<!-- BEST WITH TWO TO FOUR RESOURCES -->
+								<i class="fal fa-graduation-cap" aria-hidden="true"></i>
+								<div>
+									<h3 class="uppercase text-black font-weight-600 text-28 margin-top-0">[DEPT ACRONYM] Student Resources</h3>
+									<p>From tutoring to scholarships and everything in between, you can find it all on the [DEPARTMENT NAME] Student Resources page.</p>
+									<p><a class="button-myuvu" href="#">View [DEPT ACRONYM] Resources</a></p>
+								</div>
+
+								<i class="fal fa-users-class" aria-hidden="true"></i>
+								<div>
+									<h3 class="uppercase text-black font-weight-600 text-28 margin-top-0">Resource Title</h3>
+									<p>Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+									<p><a class="button-myuvu" href="#">View [RESOURCE NAME]</a></p>
 								</div>
 							</div>
-							<div class="ethics-card">
-								<div class="circle bg-forest display-flex align-items-center justify-content-center">
-									<p class="text-rajdhani text-96 bold text-white text-center margin-bottom-0">2</p>
-								</div>
-								<div>
-									<h3 class="uppercase bold margin-top-0">Strive to Increase Competence and the Competence and Prestige of the Profession</h3>
-									<p class="bold">Ethical Considerations:</p>
-									<ul class="margin-bottom-0">
-										<li>One should be willing to aid beginners without doing their work.</li>
-										<li>
-											One should be willing to extend public knowledge, understanding and appreciation of information processing, and to oppose all
-											false or deceptive statements relating to information processing.
-										</li>
-									</ul>
-								</div>
-							</div>
-							<!-- END CARD LIST -->
+							<!-- END RESOURCES SECTION -->
+						</div>
+						<div class="col-xs-12 col-sm-6 col-target region">
+							<!-- INSERT ONE TO THREE ADVISOR CARDS HERE. SEE advisor-card.css -->
 						</div>
 					</div>
 				</div>

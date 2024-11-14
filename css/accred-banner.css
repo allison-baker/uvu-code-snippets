@@ -1,6 +1,8 @@
 /* ====================== Mobile and Up ========================== */
 
-/* ACCREDITATION BANNER - CURRENTLY ONLY USED ON CULINARY PAGES */
+/* CODED BY AL BAKER FOR USE ON ALL CET PAGES */
+/* CURRENTLY ONLY USED ON CULINARY PAGES */
+
 .accred-banner {
 	display: flex;
 	flex-direction: row;
