@@ -2,11 +2,18 @@
 
 /* CODED BY AL BAKER FOR USE ON ALL CET PAGES */
 
+/* LARGE RECTANGLE BUTTONS LATO TEXT */
 a.button-border.border-uvu-green,
 a.button-border.border-white,
 a.button-border.border-lime,
+a.button-border.border-fern,
+a.button-border.border-clover,
+a.button-border.border-forest,
 a.button-solid,
+a.button-border.button-solid-white,
 a.button-border.button-solid-lime,
+a.button-border.button-solid-fern,
+a.button-border.button-solid-clover,
 a.button-border.button-solid-forest {
 	border-radius: 0px;
 	position: relative;
@@ -23,8 +30,14 @@ a.button-border.button-solid-forest {
 a.button-border.border-uvu-green::after,
 a.button-border.border-white::after,
 a.button-border.border-lime::after,
+a.button-border.border-fern::after,
+a.button-border.border-clover::after,
+a.button-border.border-forest::after,
 a.button-solid::after,
+a.button-border.button-solid-white::after,
 a.button-border.button-solid-lime::after,
+a.button-border.button-solid-fern::after,
+a.button-border.button-solid-clover::after,
 a.button-border.button-solid-forest::after {
 	content: '\f061';
 	font-family: 'Font Awesome 5 Pro';
@@ -33,6 +46,22 @@ a.button-border.button-solid-forest::after {
 	top: 17px;
 	font-size: 14px;
 }
+a.button-border.border-uvu-green:hover,
+a.button-border.border-white:hover,
+a.button-border.border-lime:hover,
+a.button-border.border-fern:hover,
+a.button-border.border-clover:hover,
+a.button-border.border-forest:hover,
+a.button-solid:hover,
+a.button-border.button-solid-white:hover,
+a.button-border.button-solid-lime:hover,
+a.button-border.button-solid-fern:hover,
+a.button-border.button-solid-clover:hover,
+a.button-border.button-solid-forest:hover {
+	text-decoration: none;
+}
+
+/* PRIMARY GREEN - WHITE, GREY-XLIGHT, AND GREY BACKGROUNDS ONLY */
 a.button-border.border-uvu-green {
 	background-color: transparent;
 	color: #275d38;
@@ -40,8 +69,13 @@ a.button-border.border-uvu-green {
 a.button-border.border-uvu-green:hover {
 	background-color: #275d38;
 	color: #fff;
-	text-decoration: none;
 }
+a.button-solid:hover {
+	background-color: transparent;
+	color: #275d38;
+}
+
+/* WHITE - PRIMARY GREEN OR BLACK BACKGROUNDS ONLY */
 a.button-border.border-white {
 	background-color: transparent;
 	color: #fff;
@@ -49,8 +83,18 @@ a.button-border.border-white {
 a.button-border.border-white:hover {
 	background-color: #fff;
 	color: #275d38;
-	text-decoration: none;
 }
+a.button-border.button-solid-white {
+	background-color: #fff;
+	border-color: #fff;
+	color: #275d38;
+}
+a.button-border.button-solid-white:hover {
+	background-color: #275d38;
+	color: #fff;
+}
+
+/* LIME - PRIMARY GREEN OR BLACK BACKGROUNDS ONLY */
 a.button-border.border-lime {
 	background-color: transparent;
 	color: #c5e86c;
@@ -58,12 +102,6 @@ a.button-border.border-lime {
 a.button-border.border-lime:hover {
 	background-color: #c5e86c;
 	color: #275d38;
-	text-decoration: none;
-}
-a.button-solid:hover {
-	background-color: transparent;
-	color: #275d38;
-	text-decoration: none;
 }
 a.button-border.button-solid-lime {
 	color: #275d38;
@@ -72,23 +110,74 @@ a.button-border.button-solid-lime:hover {
 	background-color: transparent;
 	border-color: #c5e86c;
 	color: #c5e86c;
-	text-decoration: none;
+}
+
+/* FERN - ON BLACK BACKGROUNDS ONLY */
+a.button-border.border-fern {
+	background-color: #000;
+	color: #78be20;
+}
+a.button-border.border-fern:hover {
+	background-color: #78be20;
+	color: #000;
+}
+a.button-border.button-solid-fern {
+	background-color: #78be20;
+	color: #000;
+}
+a.button-border.button-solid-fern:hover {
+	background-color: #000;
+	border-color: #78be20;
+	color: #78be20;
+}
+
+/* CLOVER - ON BLACK BACKGROUNDS ONLY */
+a.button-border.border-clover {
+	background-color: #000;
+	color: #4ba23f;
+}
+a.button-border.border-clover:hover {
+	background-color: #4ba23f;
+	color: #000;
+}
+.button-border.button-solid-clover {
+	background-color: #4ba23f;
+	color: #000;
+}
+.button-border.button-solid-clover:hover {
+	background-color: #000;
+	border-color: #4ba23f;
+	color: #4ba23f;
+}
+
+/* FOREST - WHITE OR GREY-XLIGHT BACKGROUNDS ONLY */
+a.button-border.border-forest {
+	background-color: transparent;
+	color: #00843d;
+}
+a.button-border.border-forest:hover {
+	background-color: #00843d;
+	color: #fff;
 }
 a.button-border.button-solid-forest:hover {
 	background-color: transparent;
 	border-color: #00843d;
 	color: #00843d;
-	text-decoration: none;
 }
+
+/* SPACE BETWEEN BUTTONS IN A COLUMN */
 a.button-border + a.button-border,
 a.button-border + a.button-solid,
 a.button-solid + a.button-solid,
 a.button-solid + a.button-border {
 	margin-top: 0;
 }
+
+/* SMALL ROUND BUTTONS UPPERCASE RAJDHANI TEXT */
 a.button-myuvu,
 a.button-myuvu-white,
-a.button-myuvu-outline {
+a.button-myuvu-outline,
+a.button-myuvu-outline-white {
 	padding-inline-start: 25px;
 	padding-inline-end: 25px;
 	padding-block-start: 8px;
@@ -103,19 +192,11 @@ a.button-myuvu-outline {
 	text-transform: uppercase;
 	text-decoration: none !important;
 }
+
+/* PRIMARY GREEN FILL */
 a.button-myuvu {
 	background-color: #275d38;
 	color: #fff;
-	border: 2px solid #275d38;
-}
-a.button-myuvu-white {
-	background-color: #fff;
-	color: #275d38;
-	border: 2px solid #fff;
-}
-a.button-myuvu-outline {
-	background-color: transparent;
-	color: #275d38;
 	border: 2px solid #275d38;
 }
 a.button-myuvu:hover {
@@ -123,25 +204,53 @@ a.button-myuvu:hover {
 	border: 2px solid #275d38;
 	color: #275d38;
 }
-a.button-myuvu-white:hover {
-	background-color: #275d38;
-	border: 2px solid #fff;
-	color: #fff;
+
+/* PRIMARY GREEN OUTLINE */
+a.button-myuvu-outline {
+	background-color: transparent;
+	color: #275d38;
+	border: 2px solid #275d38;
 }
 a.button-myuvu-outline:hover {
 	background-color: #275d38;
-	border: 2px solid #275d38;
 	color: #fff;
 }
 
-/*End mobile and up styles*/
+/* WHITE FILL */
+a.button-myuvu-white {
+	background-color: #fff;
+	color: #275d38;
+	border: 2px solid #fff;
+}
+a.button-myuvu-white:hover {
+	background-color: #275d38;
+	color: #fff;
+}
+
+/* WHITE OUTLINE */
+a.button-myuvu-outline-white {
+	background: transparent;
+	color: #fff;
+	border: 2px solid #fff;
+}
+a.button-myuvu-outline-white:hover {
+	background-color: #fff;
+	color: #275d38;
+}
+
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
 	a.button-border.border-uvu-green,
 	a.button-border.border-white,
 	a.button-border.border-lime,
+	a.button-border.border-fern,
+	a.button-border.border-clover,
+	a.button-border.border-forest,
 	a.button-solid,
+	a.button-border.button-solid-white,
 	a.button-border.button-solid-lime,
+	a.button-border.button-solid-fern,
+	a.button-border.button-solid-clover,
 	a.button-border.button-solid-forest {
 		min-width: 200px;
 		width: fit-content;
@@ -153,6 +262,3 @@ a.button-myuvu-outline:hover {
 		width: 100% !important;
 	}
 }
-
-/*end media query*/
-/*End tablet and up styles*/
