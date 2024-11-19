@@ -1,0 +1,1 @@
+<script src='/college-name/department-name/_extra/blog-config.js'></script>

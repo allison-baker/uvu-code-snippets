@@ -8,9 +8,9 @@ In December 2023, UVU began their website redesign project. As the developer on 
 2. Reference HTML for some UVU components.
 3. CSS for all custom components.
 4. CSS that modifies existing UVU components to match CET designs and/or make the component more responsive.
-6. The common CSS used on all CET pages.
-7. Instructions for creating student work directories using the CET video template or blog template.
-8. Some JS snippets (for sliders and countup).
+5. The common CSS used on all CET pages.
+6. Instructions for creating student work directories using the CET video template or blog template.
+7. Some JS snippets (for sliders and countup).
 
 The pages are all documented with any tips a UVU developer would need to recreate these components on their own pages. The directories with examples for student work and the blog have readme files with in depth instructions. There are a few images used in these instruction files, and for some components that implement APFY shapes. Placeholder images in components are created through [Placehold](https://www.placehold.co/).
 
