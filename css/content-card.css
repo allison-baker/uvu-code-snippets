@@ -1,0 +1,36 @@
+/* ====================== Mobile and Up ========================== */
+
+/* MODIFIED BY AL BAKER FOR USE ON ALL CET PROGRAMS PAGES */
+
+/* START WITH OMNI COMPONENT CONTENT-CARD WITH STYLE SHADOW */
+.card-content-shadow .card-content-title {
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.card-content-shadow .card-content-title::before {
+	font-family: 'Font Awesome 5 Pro';
+	font-size: 30px;
+	font-weight: 300;
+	margin-right: 8px;
+}
+
+/* EXAMPLE OF HOW TO IMPLEMENT ICONS. EACH CARD IS WRAPPED IN A DIV WITH A DIFFERENT CLASS TO SPECIFY WHICH ICON */
+.carriers .card-content-shadow .card-content-title::before {
+	content: '\f072';
+}
+.uam-evtol .card-content-shadow .card-content-title::before {
+	content: '\f860';
+}
+.business .card-content-shadow .card-content-title::before {
+	content: '\f0b1';
+}
+.defense .card-content-shadow .card-content-title::before {
+	content: '\f0fb';
+}
+.uas .card-content-shadow .card-content-title::before {
+	content: '\f85f';
+}
+.space .card-content-shadow .card-content-title::before {
+	content: '\f135';
+}
