@@ -2,15 +2,11 @@
 
 /* MODIFIED BY AL BAKER FROM THE OLD UVU HOME PAGE FOR USE ON ALL CET DEPARTMENT LANDING PAGES */
 
-/* START WITH OMNI COMPONENT CARD-PICTURE-2. WRAP COMPONENT IN DIV WITH CLASS .image-button-card */
-.image-button-card .card-picture {
+/* START WITH OMNI COMPONENT CARD-PICTURE-2 */
+.card-picture-2 {
 	padding-bottom: 20px;
 }
-.image-button-card .card-picture-title {
-	background-color: #fff;
-	color: #275d38;
-}
-.image-button-card h2.card-picture-title {
+.card-picture-2 .card-picture-title {
 	font-size: 18px;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -23,16 +19,15 @@
 	text-align: center;
 	color: #275d38;
 }
-
-.image-button-card .card-picture-img {
+.card-picture-2 .card-picture-img {
 	object-fit: cover;
 	max-height: 194px;
 	width: 100%;
 }
-.image-button-card .card-picture-content {
+.card-picture-2 .card-picture-content {
 	display: none;
 }
-.image-button-card .card-picture-button {
+.card-picture-2 .card-picture-button {
 	border-top: none;
 	text-align: left;
 	padding: 10px;
@@ -48,7 +43,7 @@
 	position: relative;
 	color: #275d38;
 }
-.image-button-card .card-picture-button:after {
+.card-picture-2 .card-picture-button::after {
 	content: '\f061';
 	font-family: 'Font Awesome 5 Pro';
 	position: absolute;
@@ -58,8 +53,8 @@
 	bottom: 18px;
 }
 
-/* ONLY FOR ICON VERSION - ADS AN ICON BEFORE THE CARD TITLE */
-.image-button-card h2.card-picture-title::before {
+/* ONLY FOR ICON VERSION - ADDS AN ICON BEFORE THE CARD TITLE */
+.card-picture-2 .card-picture-title::before {
 	content: '\f19d';
 	font-family: "Font Awesome 5 Pro";
 	display: block;
@@ -71,7 +66,7 @@
 
 /* ====================== Tablet and Up (Overrides Mobile Styles) ========================== */
 @media only screen and (min-width: 768px) {
-	.image-button-card .card-picture-img {
+	.card-picture-2 .card-picture-img {
 		max-height: none;
 	}
 }
