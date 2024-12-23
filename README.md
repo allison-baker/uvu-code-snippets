@@ -5,14 +5,14 @@ In December 2023, UVU began their website redesign project. As the developer on 
 ## In this Repository
 
 1. HTML for all custom components.
-2. Reference HTML for some UVU components.
 3. CSS for all custom components.
 4. CSS that modifies existing UVU components to match CET designs and/or make the component more responsive.
 5. The common CSS used on all CET pages.
 6. Instructions for creating student work directories using the CET video template or blog template.
-7. Some JS snippets (for sliders and countup).
+7. HTML and CSS for the old News banner (no longer in use with the launch of Content Hub, but here for reference).
+8. Some JS snippets (for sliders and countup).
 
-The pages are all documented with any tips a UVU developer would need to recreate these components on their own pages. The directories with examples for student work and the blog have readme files with in depth instructions. There are a few images used in these instruction files, and for some components that implement APFY shapes. Placeholder images in components are created through [Placehold](https://www.placehold.co/).
+The pages are all documented with any tips a UVU developer would need to recreate these components on their own pages. The directories with examples for student work and the blog have readme files with more instructions. There are a few images used in these instruction files, and for some components that implement APFY shapes. Placeholder images in components are created through [Placehold](https://www.placehold.co/).
 
 ## Developing for UVU
 
@@ -27,7 +27,6 @@ UVU uses [Modern Campus CMS](https://moderncampus.com/products/web-content-manag
 ## Design Resources
 
 - The Figma file with our team's design can be viewed [here](https://www.figma.com/design/YPPwrvoP3BhovcP3Aw26Sj/CET-Web-Strategy?node-id=3957-5145&t=uD8KNbutgbmjNoQl-1).
-- The UVU Design System Figma file can be viewd [here](https://www.figma.com/design/bsAB4aWCBM5w8MMimoOZy6/UVU-Design-System?node-id=179-103&t=vVa4OLSlghMzxhLB-1). Contact Emma Lam (below) for questions about this design system or to request access.
 
 ### UVU Branding Guidelines
 
@@ -38,4 +37,4 @@ UVU uses [Modern Campus CMS](https://moderncampus.com/products/web-content-manag
 
 If you have any questions, you can reach me (Al Baker, CET MarCom Junior Marketing/Design Lead & Student Developer) on [LinkedIn](https://www.linkedin.com/in/almarieb/) or at [baker.allison.m@gmail.com](mailto:baker.allison.m@gmail.com).
 
-The other Junior Marketing/Design Leads on the CET Web Team at the start of the project were [Emma Lam](https://www.linkedin.com/in/enlam/) and [Tessa Johson](https://www.linkedin.com/in/tessjohnson/), with [Katelyn Swain](https://www.linkedin.com/in/katelyn-swain-247670184/) replacing them later on for a short time. The developer in the Digital Experiences and Accessible Technologies department for CET at the start of the project was [Ben Linton](https://www.linkedin.com/in/ben-linton/), and later [Cesar Espinoza](https://www.linkedin.com/in/cesrr/) filled the role. The MarCom Director for CET and the head of our team at the time of this project is [Maddison Eborn](https://www.linkedin.com/in/maddisoneborn/).
+The other web/graphic designers on the CET Web Team at the start of the project were [Emma Lam](https://www.linkedin.com/in/enlam/) and [Tessa Johson](https://www.linkedin.com/in/tessjohnson/), with [Katelyn Swain](https://www.linkedin.com/in/katelyn-swain-247670184/) replacing them later on for a short time, and [Olha Mykytka](https://www.linkedin.com/in/olha-mykytka-070737198/) coming on in December 2024. The developer in the Digital Experiences and Accessible Technologies department for CET at the start of the project was [Ben Linton](https://www.linkedin.com/in/ben-linton/), and later [Cesar Espinoza](https://www.linkedin.com/in/cesrr/) filled the role. The MarCom Director for CET and the head of our team at the time of this project is [Maddison Eborn](https://www.linkedin.com/in/maddisoneborn/).
