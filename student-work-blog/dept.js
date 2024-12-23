@@ -1,7 +1,7 @@
 // FOR CAPSTONE POSTS
 $(document).ready(function () {
     uvu.import('slider', '.capstone-slider', function () {
-        $('.capstone-slider ul').slick({
+        $('.capstone-slider div.slick-items').slick({
             dots: true,
             infinite: true,
             slidesToShow: 2,
