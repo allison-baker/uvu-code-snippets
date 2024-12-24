@@ -14,8 +14,11 @@
 }
 
 /* IMAGE SLIDER ON CAPSTONE POSTS */
+.capstone-slider {
+	margin-bottom: 40px;
+}
 .capstone-slider .slick-slide {
-	padding-bottom: 15px;
+	padding: 15px;
 }
 .capstone-slider .slick-slide.slick-active:not(.slick-current) {
 	opacity: 1;
@@ -24,7 +27,7 @@
 	opacity: 1;
 }
 .capstone-slider ul.slick-dots {
-	bottom: -20px;
+	bottom: -40px;
 }
 
 /* CAPSTONE DROPDOWNS - MODIFIED MINIMAL DROPDOWN COMPONENT. WRAP IN DIV WITH CLASS .capstone-dropdown */
